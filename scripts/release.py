@@ -9,11 +9,13 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+BUILD_DIR = ROOT / ".build"
+DOCS_DIR = ROOT / "docs"
 
 VERSION_FILES = [
     ROOT / ".claude-plugin" / "marketplace.json",
-    ROOT / "extensions" / "gemini" / "example-skills" / "gemini-extension.json",
-    ROOT / "extensions" / "gemini" / "document-skills" / "gemini-extension.json",
+    BUILD_DIR / "extensions" / "gemini" / "example-skills" / "gemini-extension.json",
+    BUILD_DIR / "extensions" / "gemini" / "document-skills" / "gemini-extension.json",
 ]
 
 
@@ -42,7 +44,7 @@ def _render_section(title: str, bullets: list[str]) -> str:
 
 
 def _extract_changelog_section(version: str) -> str:
-    changelog = ROOT / "CHANGELOG.md"
+    changelog = DOCS_DIR / "CHANGELOG.md"
     content = changelog.read_text(encoding="utf-8").splitlines()
     header = f"## [{version}]"
     start = None
@@ -62,7 +64,7 @@ def _extract_changelog_section(version: str) -> str:
 
 
 def _update_changelog(version: str, date_str: str, added: list[str], changed: list[str], fixed: list[str]) -> None:
-    changelog = ROOT / "CHANGELOG.md"
+    changelog = DOCS_DIR / "CHANGELOG.md"
     content = changelog.read_text(encoding="utf-8")
 
     entry_lines = [f"## [{version}] - {date_str}"]

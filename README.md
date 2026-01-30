@@ -1,18 +1,18 @@
 # AI Agent Skills Repository
 
-> **85 production-ready skills** for AI coding assistants | Open Source (Apache 2.0)
+> **84 production-ready skills** for AI coding assistants | Open Source (Apache 2.0)
 
 [![Validate Skills](https://github.com/your-org/ai-skills/workflows/Validate%20Skills/badge.svg)](https://github.com/your-org/ai-skills/actions)
-[![Skills](https://img.shields.io/badge/skills-85-blue.svg)](./CATEGORIES.md)
+[![Skills](https://img.shields.io/badge/skills-84-blue.svg)](./docs/CATEGORIES.md)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](./LICENSE)
 
 ## 🚀 Quick Links
 
-- **📚 [Browse All Skills by Category](./CATEGORIES.md)** - Organized overview of all 85 skills
+- **📚 [Browse All Skills by Category](./docs/CATEGORIES.md)** - Organized overview of all 84 skills
 - **🎯 [Getting Started Guide](./docs/guides/getting-started.md)** - New to skills? Start here
-- **🔍 [Find Skills by Purpose](./collections/by-purpose/)** - Code quality, testing, security, etc.
+- **🔍 [Find Skills by Purpose](./.build/collections/by-purpose/)** - Code quality, testing, security, etc.
 - **📖 [Creating Skills Guide](./docs/guides/creating-skills.md)** - Build your own skills
-- **🤝 [Contributing Guide](./CONTRIBUTING.md)** - Help improve this repository
+- **🤝 [Contributing Guide](./docs/CONTRIBUTING.md)** - Help improve this repository
 
 ## What Are Skills?
 
@@ -59,7 +59,6 @@ This repository includes a diverse collection of example skills demonstrating di
 
 ## Meta Skills
 - **skill-creator** - Guide for creating effective skills that extend Claude's capabilities
-- **template-skill** - A basic template to use as a starting point for new skills
 
 # Document Skills
 
@@ -97,28 +96,25 @@ After installing the plugin, you can use the skill by just mentioning it. For in
 Note: `document-skills` and `example-skills` both include `docx`, `pdf`, `pptx`, and `xlsx` in different forms. Install one collection at a time to avoid duplicate skill names.
 
 ## Codex (OpenAI)
-Codex can load skills from a repo-local `.codex/skills` directory. This repo provides generated link directories for the top-level skills and the document skills:
+Codex can load skills from a repo-local `.codex/skills` directory. This repo provides generated link directories in `.build/`:
 
 ```bash
-# Top-level skills (default)
+# Regenerate all bundles
 python3 scripts/refresh_skill_collections.py
-
-# Document skills (reference set)
-python3 scripts/refresh_skill_collections.py --mode copy
 ```
 
-Use `.codex/skills` for the top-level set and `.codex/skills-document` for the document set.
+Use `.build/codex/skills` for the example skills and `.build/codex/skills-document` for the document skills.
 To use symlinks instead of copies, run with `--mode symlink`.
 
 ## Gemini CLI
-This repo ships two Gemini extensions:
+This repo ships two Gemini extensions in `.build/extensions/`:
 
 ```bash
-# Example skills (top-level)
-gemini extensions install ./extensions/gemini/example-skills
+# Example skills
+gemini extensions install ./.build/extensions/gemini/example-skills
 
 # Document skills (reference set)
-gemini extensions install ./extensions/gemini/document-skills
+gemini extensions install ./.build/extensions/gemini/document-skills
 ```
 
 If you add or remove skills, re-run:
@@ -141,12 +137,13 @@ You can use Anthropic's pre-built skills, and upload custom skills, via the Clau
 
 # Creating a Basic Skill
 
-Skills are simple to create - just a folder with a `SKILL.md` file containing YAML frontmatter and instructions. You can use the **template-skill** in this repository as a starting point:
+Skills are simple to create - just a folder with a `SKILL.md` file containing YAML frontmatter and instructions. Create new skills in the `skills/` directory:
 
 ```markdown
 ---
 name: my-skill-name
 description: A clear description of what this skill does and when to use it
+license: MIT
 ---
 
 # My Skill Name
@@ -162,9 +159,10 @@ description: A clear description of what this skill does and when to use it
 - Guideline 2
 ```
 
-The frontmatter requires only two fields:
+The frontmatter requires three fields:
 - `name` - A unique identifier for your skill (lowercase, hyphens for spaces)
 - `description` - A complete description of what the skill does and when to use it
+- `license` - License type (MIT for open skills)
 
 The markdown content below contains the instructions, examples, and guidelines that Claude will follow. For more details, see [How to create custom skills](https://support.claude.com/en/articles/12512198-creating-custom-skills).
 
@@ -185,4 +183,4 @@ Skills are a great way to teach Claude how to get better at using specific piece
 
 # Changelog
 
-See `CHANGELOG.md` for release notes.
+See `docs/CHANGELOG.md` for release notes.

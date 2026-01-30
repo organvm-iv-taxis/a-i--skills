@@ -6,24 +6,25 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+BUILD_DIR = ROOT / ".build"
 
 BUNDLES = {
     "example": {
-        "list": ROOT / "collections" / "example-skills.txt",
+        "list": BUILD_DIR / "collections" / "example-skills.txt",
         "targets": [
-            ROOT / "skills",
-            ROOT / ".codex" / "skills",
-            ROOT / ".claude" / "skills",
-            ROOT / "extensions" / "gemini" / "example-skills" / "skills",
+            BUILD_DIR / "direct" / "example",
+            BUILD_DIR / "codex" / "skills",
+            BUILD_DIR / "claude" / "skills",
+            BUILD_DIR / "extensions" / "gemini" / "example-skills" / "skills",
         ],
     },
     "document": {
-        "list": ROOT / "collections" / "document-skills.txt",
+        "list": BUILD_DIR / "collections" / "document-skills.txt",
         "targets": [
-            ROOT / "skills-document",
-            ROOT / ".codex" / "skills-document",
-            ROOT / ".claude" / "skills-document",
-            ROOT / "extensions" / "gemini" / "document-skills" / "skills",
+            BUILD_DIR / "direct" / "document",
+            BUILD_DIR / "codex" / "skills-document",
+            BUILD_DIR / "claude" / "skills-document",
+            BUILD_DIR / "extensions" / "gemini" / "document-skills" / "skills",
         ],
     },
 }

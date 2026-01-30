@@ -7,14 +7,42 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is the Anthropic AI Skills repository—a collection of example skills that extend Claude's capabilities. Each skill is a self-contained folder with a `SKILL.md` file containing YAML frontmatter and instructions.
 
 Two skill collections exist:
-- **Example skills**: Top-level directories (e.g., `algorithmic-art/`, `mcp-builder/`)
+- **Example skills**: Located in `skills/` directory (e.g., `skills/algorithmic-art/`, `skills/mcp-builder/`)
 - **Document skills**: Reference implementations in `document-skills/` (docx, pdf, pptx, xlsx)
+
+## Repository Structure
+
+```
+ai-skills/
+├── README.md              # Repository documentation
+├── CLAUDE.md              # Claude Code instructions (this file)
+├── skills/                # All example skills (85+)
+│   ├── algorithmic-art/
+│   ├── api-design-patterns/
+│   └── ...
+├── document-skills/       # Reference document skills (4)
+├── docs/                  # Documentation files
+│   ├── CHANGELOG.md
+│   ├── CONTRIBUTING.md
+│   ├── ROADMAP.md
+│   └── ...
+├── scripts/               # Build and validation tools
+├── staging/               # Skills in development
+├── .build/                # Generated outputs (hidden)
+│   ├── collections/       # Skill path lists
+│   ├── claude/            # Claude Code bundles
+│   ├── codex/             # Codex bundles
+│   ├── direct/            # Direct link directories
+│   └── extensions/        # Gemini CLI extensions
+└── .claude-plugin/        # Marketplace metadata
+```
 
 ## Common Commands
 
 ```bash
 # Refresh collections and generated link directories after adding/removing skills
 python3 scripts/refresh_skill_collections.py
+python3 scripts/refresh_skill_collections.py --mode symlink  # Use symlinks instead of copies
 
 # Validate skill frontmatter (run both for full validation)
 python3 scripts/validate_skills.py --collection example --unique
@@ -27,6 +55,7 @@ python3 scripts/validate_generated_dirs.py
 python3 scripts/release.py 1.2.0 \
   --change "Description" \
   --add "New feature" \
+  --fix "Bug fix" \
   --commit --tag --push --release --notes-from-changelog
 ```
 
@@ -46,27 +75,30 @@ my-skill/
 ---
 name: my-skill-name          # Must match folder name, lowercase + hyphens
 description: What it does    # Task-focused sentence
+license: MIT                 # Required: license type
 ---
 
 # Instructions and content here
 ```
 
-### Generated Directories (managed by refresh script)
-- `collections/example-skills.txt` / `collections/document-skills.txt` — skill path lists
-- `skills/` / `skills-document/` — link directories
-- `.codex/skills` / `.claude/skills` — agent-specific bundles
-- `extensions/gemini/*/skills` — Gemini CLI extensions
+### Generated Directories (in .build/, managed by refresh script)
+- `.build/collections/example-skills.txt` / `document-skills.txt` — skill path lists
+- `.build/direct/example/` / `document/` — direct link directories
+- `.build/codex/skills` / `.build/claude/skills` — agent-specific bundles
+- `.build/extensions/gemini/*/skills` — Gemini CLI extensions
 
-These are committed artifacts; include refreshed outputs in PRs that change skills.
+These are committed artifacts; include refreshed outputs in PRs that change skills. CI validates that generated files are up-to-date (no git diff allowed).
 
 ### Version Files (updated during releases)
 - `.claude-plugin/marketplace.json` (metadata.version)
-- `extensions/gemini/example-skills/gemini-extension.json`
-- `extensions/gemini/document-skills/gemini-extension.json`
+- `.build/extensions/gemini/example-skills/gemini-extension.json`
+- `.build/extensions/gemini/document-skills/gemini-extension.json`
 
 ## Key Guidelines
 
 - Skill `name` in frontmatter must exactly match the directory name
+- All skills must have a `license` field (MIT for open skills)
 - Install only one collection at a time to avoid duplicate skill names (docx, pdf, pptx, xlsx exist in both sets)
 - No repo-wide test suite; run per-skill tests when they exist (e.g., `python3 document-skills/pdf/scripts/check_bounding_boxes_test.py`)
-- Update `THIRD_PARTY_NOTICES.md` when adding external assets
+- Update `docs/THIRD_PARTY_NOTICES.md` when adding external assets
+- CI includes secret detection for patterns like `sk-`, `ghp_`, `AKIA` in new files

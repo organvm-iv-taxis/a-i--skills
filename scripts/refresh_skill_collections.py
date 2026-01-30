@@ -9,7 +9,9 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SKILLS_DIR = ROOT / "skills"
 DOC_SKILLS_DIR = ROOT / "document-skills"
+BUILD_DIR = ROOT / ".build"
 
 
 def _find_skill_dirs(base_dir: Path) -> list[Path]:
@@ -128,10 +130,10 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    example_skill_dirs = _find_skill_dirs(ROOT)
+    example_skill_dirs = _find_skill_dirs(SKILLS_DIR)
     document_skill_dirs = _find_skill_dirs(DOC_SKILLS_DIR)
 
-    collections_dir = ROOT / "collections"
+    collections_dir = BUILD_DIR / "collections"
     collections_dir.mkdir(parents=True, exist_ok=True)
 
     _write_list(collections_dir / "example-skills.txt", example_skill_dirs)
@@ -143,23 +145,23 @@ def main() -> int:
             [str(p.relative_to(ROOT)) for p in document_skill_dirs],
         )
 
-    # Generated link directories
-    _sync_links(ROOT / "skills", example_skill_dirs, args.mode)
-    _sync_links(ROOT / "skills-document", document_skill_dirs, args.mode)
+    # Generated link directories in .build/
+    _sync_links(BUILD_DIR / "direct" / "example", example_skill_dirs, args.mode)
+    _sync_links(BUILD_DIR / "direct" / "document", document_skill_dirs, args.mode)
 
-    _sync_links(ROOT / ".codex" / "skills", example_skill_dirs, args.mode)
-    _sync_links(ROOT / ".codex" / "skills-document", document_skill_dirs, args.mode)
+    _sync_links(BUILD_DIR / "codex" / "skills", example_skill_dirs, args.mode)
+    _sync_links(BUILD_DIR / "codex" / "skills-document", document_skill_dirs, args.mode)
 
-    _sync_links(ROOT / ".claude" / "skills", example_skill_dirs, args.mode)
-    _sync_links(ROOT / ".claude" / "skills-document", document_skill_dirs, args.mode)
+    _sync_links(BUILD_DIR / "claude" / "skills", example_skill_dirs, args.mode)
+    _sync_links(BUILD_DIR / "claude" / "skills-document", document_skill_dirs, args.mode)
 
     _sync_links(
-        ROOT / "extensions" / "gemini" / "example-skills" / "skills",
+        BUILD_DIR / "extensions" / "gemini" / "example-skills" / "skills",
         example_skill_dirs,
         args.mode,
     )
     _sync_links(
-        ROOT / "extensions" / "gemini" / "document-skills" / "skills",
+        BUILD_DIR / "extensions" / "gemini" / "document-skills" / "skills",
         document_skill_dirs,
         args.mode,
     )

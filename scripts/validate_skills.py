@@ -7,6 +7,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SKILLS_DIR = ROOT / "skills"
 DOC_SKILLS_DIR = ROOT / "document-skills"
 NAME_RE = re.compile(r"^[a-z0-9-]+$")
 
@@ -95,11 +96,11 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.collection == "example":
-        skill_dirs = _find_skill_dirs(ROOT)
+        skill_dirs = _find_skill_dirs(SKILLS_DIR)
     elif args.collection == "document":
         skill_dirs = _find_skill_dirs(DOC_SKILLS_DIR)
     else:
-        skill_dirs = _find_skill_dirs(ROOT) + _find_skill_dirs(DOC_SKILLS_DIR)
+        skill_dirs = _find_skill_dirs(SKILLS_DIR) + _find_skill_dirs(DOC_SKILLS_DIR)
 
     errors: list[str] = []
     name_counts: dict[str, int] = {}

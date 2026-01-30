@@ -39,7 +39,21 @@ jobs:
     - name: Validate generated directories
       run: |
         python3 scripts/validate_generated_dirs.py
-    
+
+    - name: Validate directory structure
+      run: |
+        # Verify skills are in skills/ directory
+        [ -d "skills" ] || { echo "ERROR: skills/ directory missing"; exit 1; }
+        [ -d ".build" ] || { echo "ERROR: .build/ directory missing"; exit 1; }
+        # Verify no skill directories at root level
+        for dir in */; do
+          if [ -f "${dir}SKILL.md" ] && [ "$dir" != "skills/" ] && [ "$dir" != "document-skills/" ]; then
+            echo "ERROR: Skill directory at root level: $dir"
+            exit 1
+          fi
+        done
+        echo "Directory structure validated"
+
     - name: Check for secrets in new files
       if: github.event_name == 'pull_request'
       run: |

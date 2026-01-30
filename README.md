@@ -164,3 +164,7 @@ python3 scripts/validate_skills.py --collection document --unique
 Skills are a great way to teach Claude how to get better at using specific pieces of software. As we see awesome example skills from partners, we may highlight some of them here:
 
 - **Notion** - [Notion Skills for Claude](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0)
+
+# Changelog
+
+See `CHANGELOG.md` for release notes.

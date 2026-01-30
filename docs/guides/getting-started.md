@@ -10,25 +10,25 @@ Skills are markdown files that give AI agents specialized knowledge and workflow
 
 ### 1. Browse Available Skills
 
-- See [CATEGORIES.md](../../CATEGORIES.md) for all 85 skills organized by category
-- Check `collections/by-purpose/` for purpose-specific lists
-- Look in `collections/by-complexity/` if you're just starting
+- See [CATEGORIES.md](../CATEGORIES.md) for all 80 skills organized by category
+- Check `.build/collections/by-purpose/` for purpose-specific lists
+- Look in `.build/collections/by-complexity/` if you're just starting
 
 ### 2. Find Skills for Your Needs
 
 **I want to improve code quality:**
 ```bash
-cat collections/by-purpose/code-quality.txt
+cat .build/collections/by-purpose/code-quality.txt
 ```
 
 **I need testing help:**
 ```bash
-cat collections/by-purpose/testing.txt
+cat .build/collections/by-purpose/testing.txt
 ```
 
 **I'm working on backend:**
 ```bash
-cat collections/by-purpose/backend-development.txt
+cat .build/collections/by-purpose/backend-development.txt
 ```
 
 ### 3. Install Skills
@@ -51,22 +51,26 @@ Skills are already available in your AI agent if you've cloned/installed this re
 ```
 ai-skills/
 ├── README.md                    # Start here!
-├── CATEGORIES.md                # Browse all skills by category
-├── CONTRIBUTING.md              # How to contribute
+├── docs/                        # Documentation
+│   ├── CATEGORIES.md            # Browse all skills by category
+│   ├── CONTRIBUTING.md          # How to contribute
+│   ├── architecture/
+│   ├── guides/                  # You are here
+│   └── api/
 │
-├── [85 skill directories]/      # Individual skills
-│   └── skill-name/
-│       └── SKILL.md             # Skill definition
+├── skills/                      # 80 skills organized by category
+│   ├── creative/               # Art, music, design
+│   ├── development/            # Coding patterns, tools
+│   ├── professional/           # Business, career
+│   └── ...                     # Other categories
 │
-├── collections/                 # Curated skill lists
-│   ├── by-category/            # By domain
-│   ├── by-purpose/             # By use case
-│   └── by-complexity/          # By difficulty
-│
-└── docs/                        # Documentation
-    ├── architecture/
-    ├── guides/                  # You are here
-    └── api/
+└── .build/                      # Generated outputs
+    ├── collections/             # Curated skill lists
+    │   ├── by-category/        # By domain
+    │   ├── by-purpose/         # By use case
+    │   └── by-complexity/      # By difficulty
+    ├── claude/                  # Claude Code bundles
+    └── codex/                   # Codex bundles
 ```
 
 ## Using Skills
@@ -182,13 +186,13 @@ Some skills include helper scripts in `scripts/` directory. Check for:
 - [Repository Structure](../architecture/repository-structure.md)
 - [Creating Skills](creating-skills.md)
 - [Skill Format Spec](../api/skill-spec.md)
-- [Contributing Guide](contributing.md)
+- [Contributing Guide](../CONTRIBUTING.md)
 
 ### Finding Skills
 
-- Browse by category: `CATEGORIES.md`
-- Browse by purpose: `collections/by-purpose/`
-- Browse by complexity: `collections/by-complexity/`
+- Browse by category: `docs/CATEGORIES.md`
+- Browse by purpose: `.build/collections/by-purpose/`
+- Browse by complexity: `.build/collections/by-complexity/`
 - Search: `grep -r "keyword" */SKILL.md`
 
 ### Issues & Questions
@@ -199,7 +203,7 @@ Some skills include helper scripts in `scripts/` directory. Check for:
 
 ## Next Steps
 
-1. **Browse** [CATEGORIES.md](../../CATEGORIES.md) to see all available skills
+1. **Browse** [CATEGORIES.md](../CATEGORIES.md) to see all available skills
 2. **Read** a few `SKILL.md` files to understand the format
 3. **Try** using skills with your AI agent
 4. **Contribute** your own skills (see [creating-skills.md](creating-skills.md))
@@ -225,5 +229,5 @@ A: Yes! Skills are just markdown files with instructions.
 
 **Ready to dive deeper?** Check out:
 - [Creating Your Own Skills](creating-skills.md)
-- [Contributing to the Repository](contributing.md)
+- [Contributing to the Repository](../CONTRIBUTING.md)
 - [Skill Format Specification](../api/skill-spec.md)

@@ -3,11 +3,15 @@
 Thanks for contributing to this skills repository. Each skill is a self-contained folder with a `SKILL.md` entrypoint. Follow the steps below to keep the collections consistent across Claude Code, Codex, and Gemini CLI.
 
 ## Add or Update a Skill
-1. Create a new folder at the repo root using kebab-case (e.g., `my-new-skill/`).
-2. Add `SKILL.md` with YAML frontmatter:
+1. Choose the appropriate category subdirectory in `skills/` (see [CATEGORIES.md](CATEGORIES.md) for the list).
+2. Create a new folder using kebab-case (e.g., `skills/development/my-new-skill/`).
+3. Add `SKILL.md` with YAML frontmatter:
    - `name:` must match the folder name.
    - `description:` short, specific, and task-focused.
-3. Put helper scripts in `scripts/` and any supporting material in `references/` or `assets/`.
+   - `license:` required (use `MIT` for open-source skills).
+4. Put helper scripts in `scripts/` and any supporting material in `references/` or `assets/`.
+
+For detailed guidance, see [Creating Skills](guides/creating-skills.md).
 
 ## Refresh Collections
 Run after adding/removing skills:
@@ -18,9 +22,10 @@ python3 scripts/refresh_skill_collections.py
 Use `--mode symlink` if you prefer symlinks instead of copies.
 
 This regenerates:
-- `collections/example-skills.txt`
-- `collections/document-skills.txt`
-- link directories under `skills/`, `.codex/skills`, `.claude/skills`, and `extensions/gemini/*/skills`
+- `.build/collections/example-skills.txt`
+- `.build/collections/document-skills.txt`
+- Link directories under `.build/claude/skills`, `.build/codex/skills`, and `.build/extensions/gemini/*/skills`
+
 These generated files are committed to the repo. Include the updated outputs in your PRs.
 
 ## Validate
@@ -38,8 +43,8 @@ python3 scripts/validate_skills.py --collection document --unique
 
 ## Gemini / Codex / Claude Code Notes
 - Install only one collection at a time to avoid duplicate skill names (e.g., `docx`, `pdf` exist in both sets).
-- Gemini CLI extensions live under `extensions/gemini/` and point to the generated `skills/` links.
-- Codex and Claude Code load skills from `.codex/skills` and `.claude/skills` respectively.
+- Gemini CLI extensions live under `.build/extensions/gemini/` and point to the generated `skills/` links.
+- Codex and Claude Code load skills from `.build/codex/skills` and `.build/claude/skills` respectively.
 
 ## Release Checklist
 1. Run refresh + validation:

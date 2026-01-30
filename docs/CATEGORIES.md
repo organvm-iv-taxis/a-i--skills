@@ -1,6 +1,6 @@
 # Skill Categories
 
-This repository contains 85 AI agent skills organized into the following categories.
+This repository contains 80 AI agent skills organized into the following categories.
 
 ## 📝 Creative & Content (10 skills)
 

@@ -56,3 +56,12 @@ python3 scripts/validate_skills.py --collection document --unique
 4. Update `README.md` if install steps or collection membership changed.
 5. Verify CI passes (`.github/workflows/validate-skills.yml`).
 6. Tag and publish, then create a release (prefer `gh release create vX.Y.Z --generate-notes` or attach the changelog section as notes).
+
+Optional: use the release helper to do steps 1-3 automatically:
+
+```bash
+python3 scripts/release.py 1.2.0 \\
+  --change \"Describe the release\" \\
+  --add \"New capability\" \\
+  --fix \"Bug fix summary\"
+```

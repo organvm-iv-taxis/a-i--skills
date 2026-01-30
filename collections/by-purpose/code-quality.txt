@@ -1,0 +1,5 @@
+code-refactoring-patterns
+coding-standards-enforcer
+testing-patterns
+verification-loop
+webapp-testing

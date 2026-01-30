@@ -1,0 +1,10 @@
+blockchain-integration-builder
+game-mechanics-designer
+interfaith-sacred-geometry
+local-llm-fine-tuning
+specstory-guard
+specstory-link-trail
+specstory-organize
+specstory-project-stats
+specstory-session-summary
+specstory-yak

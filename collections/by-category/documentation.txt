@@ -1,0 +1,8 @@
+doc-coauthoring
+docx
+github-profile-architect
+github-repo-curator
+github-repository-standards
+pdf
+pptx
+xlsx

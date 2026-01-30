@@ -1,0 +1,10 @@
+algorithmic-art
+audio-engineering-patterns
+canvas-design
+creative-writing-craft
+generative-art-algorithms
+modular-synthesis-philosophy
+narratological-algorithms
+reality-tv-narrative-analyzer
+theme-factory
+three-js-interactive-builder

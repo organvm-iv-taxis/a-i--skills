@@ -1,0 +1,3 @@
+skill-creator
+speckit
+template-skill

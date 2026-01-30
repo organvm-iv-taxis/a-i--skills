@@ -1,4 +1,21 @@
-# Skills
+# AI Agent Skills Repository
+
+> **85 production-ready skills** for AI coding assistants | Open Source (Apache 2.0)
+
+[![Validate Skills](https://github.com/your-org/ai-skills/workflows/Validate%20Skills/badge.svg)](https://github.com/your-org/ai-skills/actions)
+[![Skills](https://img.shields.io/badge/skills-85-blue.svg)](./CATEGORIES.md)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](./LICENSE)
+
+## 🚀 Quick Links
+
+- **📚 [Browse All Skills by Category](./CATEGORIES.md)** - Organized overview of all 85 skills
+- **🎯 [Getting Started Guide](./docs/guides/getting-started.md)** - New to skills? Start here
+- **🔍 [Find Skills by Purpose](./collections/by-purpose/)** - Code quality, testing, security, etc.
+- **📖 [Creating Skills Guide](./docs/guides/creating-skills.md)** - Build your own skills
+- **🤝 [Contributing Guide](./CONTRIBUTING.md)** - Help improve this repository
+
+## What Are Skills?
+
 Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, whether that's creating documents with your company's brand guidelines, analyzing data using your organization's specific workflows, or automating personal tasks.
 
 For more information, check out:

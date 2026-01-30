@@ -1,0 +1,4 @@
+api-design-patterns
+backend-implementation-patterns
+nextjs-fullstack-patterns
+postgres-advanced-patterns

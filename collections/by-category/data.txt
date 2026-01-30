@@ -1,0 +1,3 @@
+data-storytelling-analyst
+sql-query-optimizer
+systemic-product-analyst

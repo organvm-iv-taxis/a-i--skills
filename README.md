@@ -157,6 +157,7 @@ After adding or removing a skill, run:
 python3 scripts/refresh_skill_collections.py
 python3 scripts/validate_skills.py --collection example --unique
 python3 scripts/validate_skills.py --collection document --unique
+python3 scripts/validate_generated_dirs.py
 ```
 
 # Partner Skills

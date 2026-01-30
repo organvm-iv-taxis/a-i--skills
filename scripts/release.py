@@ -41,6 +41,26 @@ def _render_section(title: str, bullets: list[str]) -> str:
     return "\n".join(lines)
 
 
+def _extract_changelog_section(version: str) -> str:
+    changelog = ROOT / "CHANGELOG.md"
+    content = changelog.read_text(encoding="utf-8").splitlines()
+    header = f"## [{version}]"
+    start = None
+    for idx, line in enumerate(content):
+        if line.startswith(header):
+            start = idx
+            break
+    if start is None:
+        raise ValueError(f"CHANGELOG.md has no entry for {version}")
+
+    end = len(content)
+    for idx in range(start + 1, len(content)):
+        if content[idx].startswith("## ["):
+            end = idx
+            break
+    return "\n".join(content[start:end]).strip()
+
+
 def _update_changelog(version: str, date_str: str, added: list[str], changed: list[str], fixed: list[str]) -> None:
     changelog = ROOT / "CHANGELOG.md"
     content = changelog.read_text(encoding="utf-8")
@@ -77,6 +97,14 @@ def main() -> int:
     parser.add_argument("--fix", action="append", default=[], help="Changelog entry under Fixed.")
     parser.add_argument("--skip-refresh", action="store_true", help="Skip refresh_skill_collections.py")
     parser.add_argument("--skip-validate", action="store_true", help="Skip validate_skills.py")
+    parser.add_argument("--commit", action="store_true", help="Commit updated files.")
+    parser.add_argument("--tag", action="store_true", help="Create a git tag for the release.")
+    parser.add_argument("--push", action="store_true", help="Push commit and tags to remote.")
+    parser.add_argument("--remote", default="origin", help="Git remote to push to (default: origin).")
+    parser.add_argument("--tag-prefix", default="v", help="Prefix to use for tags (default: v).")
+    parser.add_argument("--release", action="store_true", help="Create or update a GitHub release.")
+    parser.add_argument("--notes-from-changelog", action="store_true", help="Use CHANGELOG section as release notes.")
+    parser.add_argument("--notes", help="Explicit release notes to pass to gh release create/edit.")
     args = parser.parse_args()
 
     date_str = args.date or dt.date.today().isoformat()
@@ -89,6 +117,34 @@ def main() -> int:
     if not args.skip_validate:
         _run(["python3", "scripts/validate_skills.py", "--collection", "example", "--unique"])
         _run(["python3", "scripts/validate_skills.py", "--collection", "document", "--unique"])
+        _run(["python3", "scripts/validate_generated_dirs.py"])
+
+    tag_name = f"{args.tag_prefix}{args.version}"
+
+    if args.commit:
+        _run(["git", "add", "-A"])
+        _run(["git", "commit", "-m", f"Release {tag_name}"])
+
+    if args.tag:
+        _run(["git", "tag", "-a", tag_name, "-m", f"Release {tag_name}"])
+
+    if args.push:
+        if args.tag:
+            _run(["git", "push", args.remote, "HEAD", "--tags"])
+        else:
+            _run(["git", "push", args.remote, "HEAD"])
+
+    if args.release:
+        notes = args.notes
+        if args.notes_from_changelog:
+            notes = _extract_changelog_section(args.version)
+        if not notes:
+            raise ValueError("Release notes are required (use --notes or --notes-from-changelog).")
+        # Create or edit release if it already exists.
+        try:
+            _run(["gh", "release", "create", tag_name, "--title", tag_name, "--notes", notes])
+        except subprocess.CalledProcessError:
+            _run(["gh", "release", "edit", tag_name, "--notes", notes])
 
     print(f"Updated versions and CHANGELOG for {args.version} ({date_str}).")
     return 0

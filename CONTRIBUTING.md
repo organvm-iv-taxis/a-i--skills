@@ -57,11 +57,12 @@ python3 scripts/validate_skills.py --collection document --unique
 5. Verify CI passes (`.github/workflows/validate-skills.yml`).
 6. Tag and publish, then create a release (prefer `gh release create vX.Y.Z --generate-notes` or attach the changelog section as notes).
 
-Optional: use the release helper to do steps 1-3 automatically:
+Optional: use the release helper to do steps 1-6 automatically:
 
 ```bash
 python3 scripts/release.py 1.2.0 \\
   --change \"Describe the release\" \\
   --add \"New capability\" \\
-  --fix \"Bug fix summary\"
+  --fix \"Bug fix summary\" \\
+  --commit --tag --push --release --notes-from-changelog
 ```

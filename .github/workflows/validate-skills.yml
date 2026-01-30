@@ -20,3 +20,6 @@ jobs:
         run: |
           python3 scripts/refresh_skill_collections.py
           git diff --exit-code
+      - name: Validate generated bundles
+        run: |
+          python3 scripts/validate_generated_dirs.py

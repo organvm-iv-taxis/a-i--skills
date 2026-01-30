@@ -21,6 +21,7 @@ Examples:
 - `python3 scripts/refresh_skill_collections.py` (regenerates collections and link dirs)
 - `python3 scripts/validate_skills.py --collection example --unique`
 - `python3 scripts/refresh_skill_collections.py --mode symlink` (optional symlink mode)
+- `python3 scripts/validate_generated_dirs.py` (ensures bundles are copied and in sync)
 
 ## Coding Style & Naming Conventions
 - Skills are Markdown-first. Keep instructions in `SKILL.md` with YAML frontmatter:

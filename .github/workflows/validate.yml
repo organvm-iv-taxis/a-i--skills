@@ -52,6 +52,13 @@ jobs:
             exit 1
           fi
         done
+        # Verify skills are organized into category subdirectories
+        for item in skills/*/; do
+          if [ -f "${item}SKILL.md" ]; then
+            echo "ERROR: Skill at top level of skills/: $item (should be in a category)"
+            exit 1
+          fi
+        done
         echo "Directory structure validated"
 
     - name: Check for secrets in new files

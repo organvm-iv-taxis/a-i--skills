@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is the Anthropic AI Skills repository—a collection of example skills that extend Claude's capabilities. Each skill is a self-contained folder with a `SKILL.md` file containing YAML frontmatter and instructions.
 
 Two skill collections exist:
-- **Example skills**: Located in `skills/` directory (e.g., `skills/algorithmic-art/`, `skills/mcp-builder/`)
+- **Example skills**: Located in `skills/` directory, organized by category (e.g., `skills/creative/algorithmic-art/`, `skills/development/mcp-builder/`)
 - **Document skills**: Reference implementations in `document-skills/` (docx, pdf, pptx, xlsx)
 
 ## Repository Structure
@@ -16,10 +16,19 @@ Two skill collections exist:
 ai-skills/
 ├── README.md              # Repository documentation
 ├── CLAUDE.md              # Claude Code instructions (this file)
-├── skills/                # All example skills (85+)
-│   ├── algorithmic-art/
-│   ├── api-design-patterns/
-│   └── ...
+├── skills/                # All example skills (80), organized by category
+│   ├── creative/          # Art, music, design (10 skills)
+│   ├── data/              # Data analysis and SQL (3 skills)
+│   ├── development/       # Coding patterns and tools (25 skills)
+│   ├── documentation/     # Docs and GitHub profiles (4 skills)
+│   ├── education/         # Teaching and learning (4 skills)
+│   ├── integrations/      # Third-party integrations (6 skills)
+│   ├── knowledge/         # Knowledge management (2 skills)
+│   ├── professional/      # Business and career (11 skills)
+│   ├── project-management/ # Planning and roadmaps (4 skills)
+│   ├── security/          # Security and compliance (5 skills)
+│   ├── specialized/       # Niche domains (4 skills)
+│   └── tools/             # Meta-skills for creating skills (2 skills)
 ├── document-skills/       # Reference document skills (4)
 ├── docs/                  # Documentation files
 │   ├── CHANGELOG.md
@@ -98,7 +107,8 @@ These are committed artifacts; include refreshed outputs in PRs that change skil
 
 - Skill `name` in frontmatter must exactly match the directory name
 - All skills must have a `license` field (MIT for open skills)
-- Install only one collection at a time to avoid duplicate skill names (docx, pdf, pptx, xlsx exist in both sets)
+- Skills are organized into category subdirectories; new skills must go in the appropriate category
+- Document skills (docx, pdf, pptx, xlsx) are only in `document-skills/`, not in `skills/`
 - No repo-wide test suite; run per-skill tests when they exist (e.g., `python3 document-skills/pdf/scripts/check_bounding_boxes_test.py`)
 - Update `docs/THIRD_PARTY_NOTICES.md` when adding external assets
 - CI includes secret detection for patterns like `sk-`, `ghp_`, `AKIA` in new files

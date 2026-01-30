@@ -1,0 +1,6 @@
+specstory-guard
+specstory-link-trail
+specstory-organize
+specstory-project-stats
+specstory-session-summary
+specstory-yak

@@ -1,14 +1,14 @@
 # AI Agent Skills Repository
 
-> **84 production-ready skills** for AI coding assistants | Open Source (Apache 2.0)
+> **80 production-ready skills** for AI coding assistants | Open Source (Apache 2.0)
 
 [![Validate Skills](https://github.com/your-org/ai-skills/workflows/Validate%20Skills/badge.svg)](https://github.com/your-org/ai-skills/actions)
-[![Skills](https://img.shields.io/badge/skills-84-blue.svg)](./docs/CATEGORIES.md)
+[![Skills](https://img.shields.io/badge/skills-80-blue.svg)](./docs/CATEGORIES.md)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](./LICENSE)
 
 ## 🚀 Quick Links
 
-- **📚 [Browse All Skills by Category](./docs/CATEGORIES.md)** - Organized overview of all 84 skills
+- **📚 [Browse All Skills by Category](./docs/CATEGORIES.md)** - Organized overview of all 80 skills
 - **🎯 [Getting Started Guide](./docs/guides/getting-started.md)** - New to skills? Start here
 - **🔍 [Find Skills by Purpose](./.build/collections/by-purpose/)** - Code quality, testing, security, etc.
 - **📖 [Creating Skills Guide](./docs/guides/creating-skills.md)** - Build your own skills
@@ -93,7 +93,7 @@ Alternatively, directly install either Plugin via:
 
 After installing the plugin, you can use the skill by just mentioning it. For instance, if you install the `document-skills` plugin from the marketplace, you can ask Claude Code to do something like: "Use the PDF skill to extract the form fields from path/to/some-file.pdf"
 
-Note: `document-skills` and `example-skills` both include `docx`, `pdf`, `pptx`, and `xlsx` in different forms. Install one collection at a time to avoid duplicate skill names.
+Note: Document skills (`docx`, `pdf`, `pptx`, `xlsx`) are only available in the `document-skills` collection.
 
 ## Codex (OpenAI)
 Codex can load skills from a repo-local `.codex/skills` directory. This repo provides generated link directories in `.build/`:
@@ -137,7 +137,7 @@ You can use Anthropic's pre-built skills, and upload custom skills, via the Clau
 
 # Creating a Basic Skill
 
-Skills are simple to create - just a folder with a `SKILL.md` file containing YAML frontmatter and instructions. Create new skills in the `skills/` directory:
+Skills are simple to create - just a folder with a `SKILL.md` file containing YAML frontmatter and instructions. Create new skills in the appropriate category under `skills/` (e.g., `skills/development/my-new-skill/`):
 
 ```markdown
 ---

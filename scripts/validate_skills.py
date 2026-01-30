@@ -14,7 +14,7 @@ NAME_RE = re.compile(r"^[a-z0-9-]+$")
 
 def _find_skill_dirs(base_dir: Path) -> list[Path]:
     return sorted(
-        [p for p in base_dir.iterdir() if p.is_dir() and (p / "SKILL.md").exists()],
+        [p.parent for p in base_dir.rglob("SKILL.md") if p.parent != base_dir],
         key=lambda p: p.name,
     )
 

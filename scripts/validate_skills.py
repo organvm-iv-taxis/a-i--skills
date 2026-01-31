@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import re
 from pathlib import Path
+from typing import Iterator
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = ROOT / "skills"
@@ -16,6 +17,10 @@ VALID_COMPLEXITY = {"beginner", "intermediate", "advanced"}
 VALID_TIME_TO_LEARN = {"5min", "30min", "1hour", "multi-hour"}
 MIN_DESCRIPTION_LENGTH = 20
 MAX_DESCRIPTION_LENGTH = 600
+
+# Regex for internal markdown links
+INTERNAL_LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
+REFERENCE_RE = re.compile(r'`(references/[^`]+)`')
 
 
 def _find_skill_dirs(base_dir: Path) -> list[Path]:
@@ -55,7 +60,28 @@ def _extract_frontmatter(text: str) -> dict[str, str]:
     return data
 
 
-def _validate_skill(skill_dir: Path) -> list[str]:
+def _find_broken_links(skill_dir: Path, text: str) -> Iterator[str]:
+    """Find broken internal links in skill content."""
+    # Check markdown links to local files
+    for match in INTERNAL_LINK_RE.finditer(text):
+        link_text, link_target = match.groups()
+        # Skip external URLs and anchors
+        if link_target.startswith(('http://', 'https://', '#', 'mailto:')):
+            continue
+        # Resolve relative path
+        target_path = (skill_dir / link_target).resolve()
+        if not target_path.exists():
+            yield f"broken link: [{link_text}]({link_target})"
+
+    # Check backtick references to files
+    for match in REFERENCE_RE.finditer(text):
+        ref_path = match.group(1)
+        target_path = skill_dir / ref_path
+        if not target_path.exists():
+            yield f"missing reference: `{ref_path}`"
+
+
+def _validate_skill(skill_dir: Path, check_links: bool = False) -> list[str]:
     errors = []
     skill_file = skill_dir / "SKILL.md"
     try:
@@ -110,6 +136,11 @@ def _validate_skill(skill_dir: Path) -> list[str]:
             f"must be one of: {', '.join(sorted(VALID_TIME_TO_LEARN))}"
         )
 
+    # Check for broken links if requested
+    if check_links:
+        for link_error in _find_broken_links(skill_dir, text):
+            errors.append(f"{skill_dir}: {link_error}")
+
     return errors
 
 
@@ -126,6 +157,11 @@ def main() -> int:
         action="store_true",
         help="Fail if skill names are duplicated in the selected collection.",
     )
+    parser.add_argument(
+        "--check-links",
+        action="store_true",
+        help="Check for broken internal links and missing reference files.",
+    )
     args = parser.parse_args()
 
     if args.collection == "example":
@@ -139,7 +175,7 @@ def main() -> int:
     name_counts: dict[str, int] = {}
 
     for skill_dir in skill_dirs:
-        errors.extend(_validate_skill(skill_dir))
+        errors.extend(_validate_skill(skill_dir, check_links=args.check_links))
         name_counts[skill_dir.name] = name_counts.get(skill_dir.name, 0) + 1
 
     if args.unique:

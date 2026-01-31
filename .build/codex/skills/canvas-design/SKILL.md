@@ -128,3 +128,15 @@ Take a second pass. Go back to the code and refine/polish further to make this a
 ## MULTI-PAGE OPTION
 
 To create additional pages when requested, create more creative pages along the same lines as the design philosophy but distinctly different as well. Bundle those pages in the same .pdf or many .pngs. Treat the first page as just a single page in a whole coffee table book waiting to be filled. Make the next pages unique twists and memories of the original. Have them almost tell a story in a very tasteful way. Exercise full creative freedom.
+
+---
+
+## Design Philosophy Templates
+
+Pre-crafted design philosophies in `assets/templates/` to inspire or use directly:
+
+- `minimal-geometric.md` - Mathematical harmony, geometric primitives, deliberate restraint
+- `organic-systems.md` - Natural growth patterns, biological architectures, clustering behaviors
+- `brutalist-poetry.md` - Monumental form, visual weight, industrial palettes
+- `chromatic-data.md` - Color as primary information system, scientific visualization aesthetic
+- `analog-meditation.md` - Quiet contemplation, texture, material honesty, wabi-sabi influence

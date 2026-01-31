@@ -313,3 +313,12 @@ with emerging technology.
 - `references/action-verbs.md` - Strong verbs by category
 - `references/industry-keywords.md` - Keywords by field
 - `references/formats.md` - Visual format examples
+
+## Templates
+
+Ready-to-use resume templates in `assets/templates/`:
+
+- `chronological-resume.md` - Standard format for steady career progression
+- `hybrid-resume.md` - Skills summary + chronological experience (recommended for most)
+- `functional-resume.md` - Skills-based format for career changers
+- `academic-cv.md` - Full academic CV structure with publications, grants, teaching

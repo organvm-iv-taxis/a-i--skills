@@ -2,7 +2,7 @@
 
 ## Current Status (v1.0.0)
 
-✅ **85 skills** across 11 categories
+✅ **95 skills** across 12 categories
 ✅ Multi-agent support (Claude Code, Codex, Gemini CLI)
 ✅ Comprehensive documentation and categorization
 ✅ GitHub workflows for validation

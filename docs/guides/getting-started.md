@@ -10,26 +10,20 @@ Skills are markdown files that give AI agents specialized knowledge and workflow
 
 ### 1. Browse Available Skills
 
-- See [CATEGORIES.md](../CATEGORIES.md) for all 80 skills organized by category
-- Check `.build/collections/by-purpose/` for purpose-specific lists
-- Look in `.build/collections/by-complexity/` if you're just starting
+- See [CATEGORIES.md](../CATEGORIES.md) for all 95 skills organized by category
+- Check `.build/collections/` for curated skill lists
+- Browse skills by category in `skills/`
 
 ### 2. Find Skills for Your Needs
 
 **I want to improve code quality:**
-```bash
-cat .build/collections/by-purpose/code-quality.txt
-```
+Browse `skills/development/` for patterns like `testing-patterns`, `verification-loop`, `tdd-workflow`
 
 **I need testing help:**
-```bash
-cat .build/collections/by-purpose/testing.txt
-```
+Check `skills/development/testing-patterns/` and `skills/development/tdd-workflow/`
 
 **I'm working on backend:**
-```bash
-cat .build/collections/by-purpose/backend-development.txt
-```
+Look at `skills/development/backend-implementation-patterns/` and `skills/development/api-design-patterns/`
 
 ### 3. Install Skills
 
@@ -58,19 +52,19 @@ ai-skills/
 │   ├── guides/                  # You are here
 │   └── api/
 │
-├── skills/                      # 80 skills organized by category
+├── skills/                      # 95 skills organized by category
 │   ├── creative/               # Art, music, design
 │   ├── development/            # Coding patterns, tools
 │   ├── professional/           # Business, career
 │   └── ...                     # Other categories
 │
+├── document-skills/             # Reference document skills (pdf, docx, xlsx, pptx)
+│
 └── .build/                      # Generated outputs
-    ├── collections/             # Curated skill lists
-    │   ├── by-category/        # By domain
-    │   ├── by-purpose/         # By use case
-    │   └── by-complexity/      # By difficulty
+    ├── collections/             # Skill path lists
     ├── claude/                  # Claude Code bundles
-    └── codex/                   # Codex bundles
+    ├── codex/                   # Codex bundles
+    └── direct/                  # Direct link directories
 ```
 
 ## Using Skills
@@ -191,9 +185,9 @@ Some skills include helper scripts in `scripts/` directory. Check for:
 ### Finding Skills
 
 - Browse by category: `docs/CATEGORIES.md`
-- Browse by purpose: `.build/collections/by-purpose/`
-- Browse by complexity: `.build/collections/by-complexity/`
-- Search: `grep -r "keyword" */SKILL.md`
+- Browse skills directly: `skills/{category}/`
+- Check collections: `.build/collections/`
+- Search: `grep -r "keyword" skills/*/SKILL.md`
 
 ### Issues & Questions
 

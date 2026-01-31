@@ -1,0 +1,146 @@
+# Claude Project Manifest Template
+# Copy this file to your project root as manifest.yaml
+
+manifest:
+  id: "PROJ-2024-001"        # Update: PROJ-{YEAR}-{SEQ}
+  version: "1.0.0"
+  created: "2024-01-15T10:30:00Z"  # Update to current timestamp
+  modified: "2024-01-15T10:30:00Z"
+
+  project:
+    name: "Project Name"     # Update: Your project name
+    description: "Brief description of what this project does"
+    status: active           # active | archived | dormant
+    tags: []                 # Optional: project-level tags
+    repository: ""           # Optional: git repository URL
+
+# ============================================================================
+# FILES
+# Track all significant files with annotations
+# ============================================================================
+
+files:
+  # Example: Source file
+  - id: "FILE-001"
+    path: "src/main.py"
+    type: source             # source | config | doc | asset | generated
+    thread_id: "THR-001"     # Which conversation created this
+    title: "Main Entry Point"
+    summary: "Application entry point and initialization"
+    notes: |
+      PURPOSE: Initializes application and starts main loop.
+
+      APPROACH: Uses dependency injection for testability.
+      Configuration loaded from environment variables.
+
+      CONTEXT: Created during initial project setup.
+
+      TODO: Add graceful shutdown handling.
+    tags: [core, initialization]
+    depends_on: ["FILE-002"]
+    created: "2024-01-15T10:30:00Z"
+
+  # Example: Configuration file
+  - id: "FILE-002"
+    path: "config.yaml"
+    type: config
+    thread_id: "THR-001"
+    title: "Application Configuration"
+    summary: "Central configuration with environment overrides"
+    notes: |
+      Loads defaults from this file, overrides from environment.
+      Secrets must use env vars, never stored in this file.
+    tags: [config]
+    created: "2024-01-15T10:35:00Z"
+
+  # Example: Documentation
+  - id: "FILE-003"
+    path: "README.md"
+    type: doc
+    title: "Project README"
+    summary: "Project overview and setup instructions"
+    tags: [documentation]
+
+# ============================================================================
+# THREADS
+# Track conversation sessions and their outcomes
+# ============================================================================
+
+threads:
+  - id: "THR-001"
+    started: "2024-01-15T10:30:00Z"
+    ended: "2024-01-15T12:45:00Z"
+    title: "Initial Project Setup"
+    summary: "Created project structure, core infrastructure, and configuration"
+    accomplishments:
+      - "Created directory structure"
+      - "Implemented configuration loading"
+      - "Set up logging infrastructure"
+      - "Added initial documentation"
+    files_created: ["FILE-001", "FILE-002", "FILE-003"]
+    files_modified: []
+    decisions:
+      - "YAML over JSON for config: better readability and comments"
+      - "Dataclasses over Pydantic: simpler, fewer dependencies"
+    next_steps:
+      - "Implement core business logic"
+      - "Add unit tests"
+    tags: [setup, infrastructure]
+
+  # Template for new thread
+  - id: "THR-002"
+    started: "2024-01-16T09:00:00Z"
+    # ended: ""              # Fill when session ends
+    title: "Session Title"
+    summary: "What was accomplished in this session"
+    accomplishments: []
+    files_created: []
+    files_modified: []
+    decisions: []
+    tags: []
+
+# ============================================================================
+# RELATIONS
+# Track dependencies and connections between files
+# ============================================================================
+
+relations:
+  # Example: Import dependency
+  - id: "REL-001"
+    type: depends_on         # depends_on | extends | implements | references | supersedes
+    source: "FILE-001"
+    target: "FILE-002"
+    annotation: "Main imports configuration settings"
+    strength: strong         # strong | weak | optional
+
+  # Example: Documentation relation
+  - id: "REL-002"
+    type: documents
+    source: "FILE-003"
+    target: "FILE-001"
+    annotation: "README documents the main module usage"
+
+# ============================================================================
+# CUSTOM SECTIONS (Optional)
+# Add project-specific tracking as needed
+# ============================================================================
+
+# decisions:
+#   - id: "DEC-001"
+#     date: "2024-01-15"
+#     thread_id: "THR-001"
+#     title: "Use YAML for configuration"
+#     context: "Needed to choose a config format"
+#     options_considered:
+#       - "JSON: widely supported but no comments"
+#       - "YAML: readable, supports comments"
+#       - "TOML: good for simple configs"
+#     decision: "YAML"
+#     rationale: "Best balance of readability and features for our use case"
+
+# milestones:
+#   - id: "MILE-001"
+#     title: "MVP Complete"
+#     target_date: "2024-02-01"
+#     status: in_progress
+#     threads: ["THR-001", "THR-002"]

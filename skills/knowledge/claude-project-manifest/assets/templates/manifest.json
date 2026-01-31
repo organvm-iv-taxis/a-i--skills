@@ -1,0 +1,91 @@
+{
+  "manifest": {
+    "id": "PROJ-2024-001",
+    "version": "1.0.0",
+    "created": "2024-01-15T10:30:00Z",
+    "modified": "2024-01-15T10:30:00Z",
+    "project": {
+      "name": "Project Name",
+      "description": "Brief description of what this project does",
+      "status": "active",
+      "tags": [],
+      "repository": ""
+    }
+  },
+  "files": [
+    {
+      "id": "FILE-001",
+      "path": "src/main.py",
+      "type": "source",
+      "thread_id": "THR-001",
+      "title": "Main Entry Point",
+      "summary": "Application entry point and initialization",
+      "notes": "PURPOSE: Initializes application and starts main loop.\n\nAPPROACH: Uses dependency injection for testability.\n\nCONTEXT: Created during initial project setup.",
+      "tags": ["core", "initialization"],
+      "depends_on": ["FILE-002"],
+      "created": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": "FILE-002",
+      "path": "config.yaml",
+      "type": "config",
+      "thread_id": "THR-001",
+      "title": "Application Configuration",
+      "summary": "Central configuration with environment overrides",
+      "notes": "Loads defaults from this file, overrides from environment.\nSecrets must use env vars, never stored in this file.",
+      "tags": ["config"],
+      "created": "2024-01-15T10:35:00Z"
+    },
+    {
+      "id": "FILE-003",
+      "path": "README.md",
+      "type": "doc",
+      "title": "Project README",
+      "summary": "Project overview and setup instructions",
+      "tags": ["documentation"]
+    }
+  ],
+  "threads": [
+    {
+      "id": "THR-001",
+      "started": "2024-01-15T10:30:00Z",
+      "ended": "2024-01-15T12:45:00Z",
+      "title": "Initial Project Setup",
+      "summary": "Created project structure, core infrastructure, and configuration",
+      "accomplishments": [
+        "Created directory structure",
+        "Implemented configuration loading",
+        "Set up logging infrastructure",
+        "Added initial documentation"
+      ],
+      "files_created": ["FILE-001", "FILE-002", "FILE-003"],
+      "files_modified": [],
+      "decisions": [
+        "YAML over JSON for config: better readability and comments",
+        "Dataclasses over Pydantic: simpler, fewer dependencies"
+      ],
+      "next_steps": [
+        "Implement core business logic",
+        "Add unit tests"
+      ],
+      "tags": ["setup", "infrastructure"]
+    }
+  ],
+  "relations": [
+    {
+      "id": "REL-001",
+      "type": "depends_on",
+      "source": "FILE-001",
+      "target": "FILE-002",
+      "annotation": "Main imports configuration settings",
+      "strength": "strong"
+    },
+    {
+      "id": "REL-002",
+      "type": "documents",
+      "source": "FILE-003",
+      "target": "FILE-001",
+      "annotation": "README documents the main module usage"
+    }
+  ]
+}

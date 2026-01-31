@@ -1,6 +1,6 @@
 # Skill Categories
 
-This repository contains 95 AI agent skills organized into the following categories.
+This repository contains 98 AI agent skills organized into the following categories.
 
 ## 📝 Creative & Content (13 skills)
 
@@ -122,10 +122,11 @@ This repository contains 95 AI agent skills organized into the following categor
 - `feedback-pedagogy` - Pedagogical feedback techniques
 - `socratic-tutor` - Socratic teaching method
 
-## 🧠 Knowledge Management (5 skills)
+## 🧠 Knowledge Management (6 skills)
 
 **Purpose**: Personal knowledge systems, information architecture, and research synthesis.
 
+- `claude-project-manifest` - Annotated bibliography-style manifests for Claude projects
 - `knowledge-architecture` - Information architecture design
 - `second-brain-librarian` - Personal knowledge management (PKM)
 - `knowledge-graph-builder` - Build and query knowledge graphs
@@ -170,13 +171,15 @@ Tools for working with SpecStory AI coding session histories:
 - `oauth-flow-architect` - OAuth authentication flows
 - `webhook-integration-patterns` - Webhook design and handling
 
-## 🛠️ Utilities & Tools (3 skills)
+## 🛠️ Utilities & Tools (5 skills)
 
 **Purpose**: Skill development, agent orchestration, and repository maintenance.
 
 - `skill-creator` - Create new skills
 - `speckit` - SpecStory toolkit
 - `agent-swarm-orchestrator` - Multi-agent swarm coordination
+- `multi-agent-workforce-planner` - Design parallel agent workstreams for large feature sets
+- `ontological-renamer` - Rename projects with dense, meaningful ontological titles
 
 ---
 
@@ -217,6 +220,6 @@ Tools for working with SpecStory AI coding session histories:
 
 ---
 
-**Total**: 95 skills across 12 major categories
+**Total**: 98 skills across 12 major categories
 
 For detailed information about any skill, see its `SKILL.md` file in the skill directory.

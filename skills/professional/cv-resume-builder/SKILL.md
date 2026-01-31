@@ -2,6 +2,15 @@
 name: cv-resume-builder
 description: Optimize resumes and CVs for impact, ATS compatibility, and audience targeting. Supports multiple formats (chronological, functional, hybrid), accomplishment framing (STAR/XYZ), and tailoring for specific roles. Triggers on resume review, CV update, job application prep, or career document requests.
 license: MIT
+complexity: beginner
+time_to_learn: 30min
+tags:
+  - resume
+  - cv
+  - career
+  - job-search
+  - ats
+  - professional
 ---
 
 # CV/Resume Builder

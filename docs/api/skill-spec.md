@@ -49,6 +49,11 @@ license: MIT
 | Field | Type | Description |
 |-------|------|-------------|
 | `license` | string | License type (e.g., `MIT`, `Apache-2.0`, `Complete terms in LICENSE.txt`) |
+| `complexity` | string | Skill complexity level: `beginner`, `intermediate`, or `advanced` |
+| `time_to_learn` | string | Estimated time to learn: `5min`, `30min`, `1hour`, or `multi-hour` |
+| `prerequisites` | list | Skills that should be learned first (list of skill names) |
+| `tags` | list | Searchable keywords for discovery |
+| `metadata` | object | Additional metadata (e.g., `source`, `adapted-by`, `category`) |
 
 ### Field Constraints
 
@@ -63,11 +68,49 @@ license: MIT
 - Task-focused, not agent-focused (describe the task, not Claude)
 - Use third-person phrasing: "Guide for creating..." not "Use this to create..."
 - Include trigger phrases that help agents recognize when to apply the skill
+- Length: 20-600 characters (enforced by validation)
 
 **license**
 - Required for skills contributed to this repository
 - Use `MIT` for open-source skills
 - Use `Complete terms in LICENSE.txt` if providing a separate license file
+
+**complexity** (optional)
+- One of: `beginner`, `intermediate`, `advanced`
+- `beginner`: Foundational skills with no prior knowledge required
+- `intermediate`: Requires some domain experience
+- `advanced`: Requires significant expertise or multiple prerequisite skills
+
+**time_to_learn** (optional)
+- One of: `5min`, `30min`, `1hour`, `multi-hour`
+- Estimated time for a developer to become productive with the skill
+- `5min`: Quick reference, simple patterns
+- `30min`: Standard skill with moderate depth
+- `1hour`: Comprehensive skill with multiple concepts
+- `multi-hour`: Deep skill requiring significant study
+
+**prerequisites** (optional)
+- List of skill names that should be learned first
+- Use exact skill names (e.g., `testing-patterns`, `api-design-patterns`)
+- Example:
+  ```yaml
+  prerequisites:
+    - testing-patterns
+    - backend-implementation-patterns
+  ```
+
+**tags** (optional)
+- List of searchable keywords
+- Use lowercase, no spaces (use hyphens)
+- Include synonyms and related terms
+- Example:
+  ```yaml
+  tags:
+    - api
+    - rest
+    - graphql
+    - openapi
+  ```
 
 ### Markdown Content
 

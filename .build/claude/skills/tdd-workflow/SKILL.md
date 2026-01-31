@@ -2,6 +2,16 @@
 name: tdd-workflow
 description: Test-driven development workflow with comprehensive coverage requirements including unit, integration, and E2E tests
 license: MIT
+complexity: intermediate
+time_to_learn: 30min
+prerequisites:
+  - testing-patterns
+tags:
+  - tdd
+  - test-driven-development
+  - red-green-refactor
+  - coverage
+  - quality
 metadata:
   source: affaan-m/everything-claude-code
   adapted-by: ai-skills

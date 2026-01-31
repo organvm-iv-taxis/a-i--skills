@@ -11,6 +11,12 @@ SKILLS_DIR = ROOT / "skills"
 DOC_SKILLS_DIR = ROOT / "document-skills"
 NAME_RE = re.compile(r"^[a-z0-9-]+$")
 
+# Valid values for optional fields
+VALID_COMPLEXITY = {"beginner", "intermediate", "advanced"}
+VALID_TIME_TO_LEARN = {"5min", "30min", "1hour", "multi-hour"}
+MIN_DESCRIPTION_LENGTH = 20
+MAX_DESCRIPTION_LENGTH = 600
+
 
 def _find_skill_dirs(base_dir: Path) -> list[Path]:
     return sorted(
@@ -76,6 +82,33 @@ def _validate_skill(skill_dir: Path) -> list[str]:
 
     if not description:
         errors.append(f"{skill_dir}: missing 'description' in frontmatter")
+    else:
+        # Validate description length
+        if len(description) < MIN_DESCRIPTION_LENGTH:
+            errors.append(
+                f"{skill_dir}: description too short ({len(description)} chars, "
+                f"minimum {MIN_DESCRIPTION_LENGTH})"
+            )
+        elif len(description) > MAX_DESCRIPTION_LENGTH:
+            errors.append(
+                f"{skill_dir}: description too long ({len(description)} chars, "
+                f"maximum {MAX_DESCRIPTION_LENGTH})"
+            )
+
+    # Validate optional fields if present
+    complexity = data.get("complexity")
+    if complexity and complexity not in VALID_COMPLEXITY:
+        errors.append(
+            f"{skill_dir}: invalid complexity '{complexity}', "
+            f"must be one of: {', '.join(sorted(VALID_COMPLEXITY))}"
+        )
+
+    time_to_learn = data.get("time_to_learn")
+    if time_to_learn and time_to_learn not in VALID_TIME_TO_LEARN:
+        errors.append(
+            f"{skill_dir}: invalid time_to_learn '{time_to_learn}', "
+            f"must be one of: {', '.join(sorted(VALID_TIME_TO_LEARN))}"
+        )
 
     return errors
 

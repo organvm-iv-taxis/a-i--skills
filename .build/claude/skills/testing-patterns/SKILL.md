@@ -2,6 +2,16 @@
 name: testing-patterns
 description: Write effective tests across the stack—unit, integration, E2E, and visual regression. Covers testing philosophy, framework selection, mocking strategies, and CI integration. Triggers on testing, test coverage, TDD, or quality assurance requests.
 license: MIT
+complexity: beginner
+time_to_learn: 30min
+tags:
+  - testing
+  - unit-tests
+  - integration-tests
+  - e2e
+  - vitest
+  - playwright
+  - mocking
 ---
 
 # Testing Patterns

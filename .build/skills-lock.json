@@ -1,532 +1,532 @@
 {
-  "version": "1.1",
-  "generated_at": "2026-02-06T09:20:40.613826+00:00",
-  "git_commit": "7359ed4502060d183ca987d44b03145938a08c74",
+  "version": "1.2",
+  "generated_at": "2026-02-06T12:26:35.240998+00:00",
+  "git_commit": "1557e2f905d9701acc7dd59562e0e01950eb24fd",
   "skills": [
     {
       "name": "accessibility-patterns",
       "path": "skills/development/accessibility-patterns",
-      "sha256": "0906515b283abfbe59bd654246ce95dc69797772eb68d0cf3cff0682af55f435"
+      "sha256": "f46856336359983227d0c01c150ec973496042a5aff48095a2b99c49abeaf34d"
     },
     {
       "name": "agent-swarm-orchestrator",
       "path": "skills/tools/agent-swarm-orchestrator",
-      "sha256": "71ffc37f2ee81244c877ef89488defa28391ec98beb232f8570607a43661b2ea"
+      "sha256": "c830a44cd77fd7a9547c5bba76f25748c176c38a5d9715a35aae33a1a7ea22f8"
     },
     {
       "name": "algorithmic-art",
       "path": "skills/creative/algorithmic-art",
-      "sha256": "db85e2f54580951024eaed11444ed61d4348165c7556450677e8549a0655e721"
+      "sha256": "860161bc3c8fb2025d137ce619b57ec5c99baf694105b56ff1348930196a79e3"
     },
     {
       "name": "api-design-patterns",
       "path": "skills/development/api-design-patterns",
-      "sha256": "ec6e253247676aace9159ad7b3d4340ab7b2fb0ae009cec2d095d388d3bfee51"
+      "sha256": "d76cc855712513477636fa8a7f3f2c300d84f13e58427f24f5b5618aea4ef71f"
     },
     {
       "name": "artifacts-builder",
       "path": "skills/development/artifacts-builder",
-      "sha256": "8455a64e627d203fd7b43df64c83d8870cb98907aae21edce4ec8eeef651d850"
+      "sha256": "8dc1e60454c164d9780a97c9f6c51b23ec8620681b8e4fb01ac589216ace4da0"
     },
     {
       "name": "audio-engineering-patterns",
       "path": "skills/creative/audio-engineering-patterns",
-      "sha256": "12797441f063bed9531cc38512541e8487748d8a700728b0dd38bc7f03ecc9ba"
+      "sha256": "9017acd2c3015a4ff066a0050614796b7ac52690a9d25e6ec489a31239ef0bf5"
     },
     {
       "name": "backend-implementation-patterns",
       "path": "skills/development/backend-implementation-patterns",
-      "sha256": "795bb3861de491e625fb7bbf2ffe183e6907169720c3376b97afe8c5ce6902a5"
+      "sha256": "f26dea229618c001114055ddab9a050dbf0ffc0c54056505f0129cf8b424ea52"
     },
     {
       "name": "blockchain-integration-builder",
       "path": "skills/specialized/blockchain-integration-builder",
-      "sha256": "8e86764c6dc67f70a332c2b8ed12360360a618bf4fa04fad4c798f4e6d77f82f"
+      "sha256": "daefbaf32a2d1b53fc1463a7f50e5197db604cb506669ab995a0ad52770e6a27"
     },
     {
       "name": "brand-guidelines",
       "path": "skills/professional/brand-guidelines",
-      "sha256": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe"
+      "sha256": "b2a390b9027ab93121c2dbeb4ee7890ccbdb85a46b4e4d84b4b528b6556ada7b"
     },
     {
       "name": "canvas-design",
       "path": "skills/creative/canvas-design",
-      "sha256": "e119d2327af923f58e276a3b1685382fc63b79a4f57d51da36fb7385d182950d"
+      "sha256": "3ae06c69e74e4c827b142c528f80e8f77262283c378c81f77c8f05bb14dafa63"
     },
     {
       "name": "claude-project-manifest",
       "path": "skills/knowledge/claude-project-manifest",
-      "sha256": "7b3540a3ca0e9d5c7fa03194e00ecb86a00a5523bfa4c00acc7eda93df4228a0"
+      "sha256": "77303fd1090d64ed64811d4b33d6eb2d83f3d51383dece5a585eba0bc004d2a5"
     },
     {
       "name": "code-refactoring-patterns",
       "path": "skills/development/code-refactoring-patterns",
-      "sha256": "5d07e9ad5b71d73fab2faa5bb50e8ac7cf979b36db28a25fab43275a83e0a302"
+      "sha256": "7e02e1fe58132589f13f7f21be2eedec94cd77da72873eb9f17a5b8ad3a8ad19"
     },
     {
       "name": "coding-standards-enforcer",
       "path": "skills/development/coding-standards-enforcer",
-      "sha256": "4790ca58e08928fd91d7359a578a923836ef754082fbb1ef2bd65f4bc4a1e223"
+      "sha256": "97c278543159af7bf0f3735dc15ec33a3fbe3dcbd93231f786bfd31ad1bf6838"
     },
     {
       "name": "content-distribution",
       "path": "skills/professional/content-distribution",
-      "sha256": "95514011ab47b0f9e8a1c631c6ac0bce35c368a7e0193776d2d12d74f635c743"
+      "sha256": "94ee50761c5e877daabff7e968f6d2feaffed202700dd8061d442996a32adcd8"
     },
     {
       "name": "continuous-learning-agent",
       "path": "skills/development/continuous-learning-agent",
-      "sha256": "7363aa9263bbd22b0487bee2efbe2b982fede8cd08a5cf5ba4c6f4bf64dac265"
+      "sha256": "cb6c6350911e9a344763d95ea904389a0a5bdbfd63d3522a84e81dd716d4a6ae"
     },
     {
       "name": "contract-risk-analyzer",
       "path": "skills/security/contract-risk-analyzer",
-      "sha256": "93683dd015130cd3ac63bb280dc85482cd3ce933ddc214b0009122b2b4ab3fd5"
+      "sha256": "592d72fe3c0f7ac322a0f4977837cbc887daf3fba46fb68d0fbb29fc1cdf25cf"
     },
     {
       "name": "creative-writing-craft",
       "path": "skills/creative/creative-writing-craft",
-      "sha256": "cf3106c363a34ca32606da3fce9a85ea9b462594729b04ad1c9aad39be4eec23"
+      "sha256": "5c88805242b9d991a1355397f69c286de015fe9521e1ff6d0fdbdc1fc97fe231"
     },
     {
       "name": "cv-resume-builder",
       "path": "skills/professional/cv-resume-builder",
-      "sha256": "56191060c18845da95822f1f82f75b141ab85b098c0dfbc640aa30bc94e73366"
+      "sha256": "8a193b0f5cf70855efe7ba068cfc04c6be75226b6084f5d4395e5f2235e60ac7"
     },
     {
       "name": "data-pipeline-architect",
       "path": "skills/data/data-pipeline-architect",
-      "sha256": "0c85caf280eda9a44b6dea8ee97874ea0125462132b6e5d101a078f071fea4a0"
+      "sha256": "f160b5e683684347065280dd6b955f8bf8c99ad864956d2e88184ee85257f9c5"
     },
     {
       "name": "data-storytelling-analyst",
       "path": "skills/data/data-storytelling-analyst",
-      "sha256": "efa19b44e24f8c7115ae3c1115638ad96e1b99ee2da391c4b33dcfc44f5da00b"
+      "sha256": "2925f17fdf57a3267424fa0f79b278e3b6f2698b38d694a1e4c25843f11de53c"
     },
     {
       "name": "defi-trading-systems",
       "path": "skills/specialized/defi-trading-systems",
-      "sha256": "ac4670a19af948d07aea58f49e9bdfa35bdcd6752cbbc3fd675d2dc93e83b47f"
+      "sha256": "e30093352063fc5fbf8c072018853246aea3073eed15b2b9c37b79d5016d70f3"
     },
     {
       "name": "deployment-cicd",
       "path": "skills/development/deployment-cicd",
-      "sha256": "e53e875787385ec0a18e2e9691e384285759d6b3bcf038ec3ba515a1fb418f50"
+      "sha256": "c808325ec4a6b14a2bf2efe30c7adfddc68872977fff1950c92540505d658a97"
     },
     {
       "name": "doc-coauthoring",
       "path": "skills/documentation/doc-coauthoring",
-      "sha256": "4efdcbfb3af486d6fb438ab3bdf7db1ca7e5a90dd2696f3ee86c17f2972aef67"
+      "sha256": "4080edd69df3a6c49575198214afd35c824caf6bbac63464f5cd37144f2b8ff0"
     },
     {
       "name": "dotfile-systems-architect",
       "path": "skills/development/dotfile-systems-architect",
-      "sha256": "100cad48925c419b9739eb41f54f9e87abd5cead661757dd3e560c5e72d119ff"
+      "sha256": "46e0c717681b6c7f217d9b19e6c3146cea4b97d17d9e1f6b2489ff8bf5a54743"
     },
     {
       "name": "enc1101-curriculum-designer",
       "path": "skills/education/enc1101-curriculum-designer",
-      "sha256": "87dd5b23499dca0a7d07ceef436b1c5a7d0a8ab318ad791a6ddda7730467adb1"
+      "sha256": "f49cf50c2d38d0b88db20b9f9d85f4c220329ad74725f50df028ae7474c57d10"
     },
     {
       "name": "evaluation-to-growth",
       "path": "skills/education/evaluation-to-growth",
-      "sha256": "ebdc7046b2b73c9225974e2c52d6b8d443f39a0a28e259482a36529da35c17eb"
+      "sha256": "78e9a263e7fa4e8c0536bbb531d5922598fc5dc8d299f2e7c5cdbe5d0fcaed3d"
     },
     {
       "name": "feature-workflow-orchestrator",
       "path": "skills/development/feature-workflow-orchestrator",
-      "sha256": "96a2e7959d1fa7069e9d84b962c7611dc266d6eb2adac247311df135881bd619"
+      "sha256": "14b85a4894581cd0b4f300633addb125136ea03a4dc75f412b485d94f3bb9149"
     },
     {
       "name": "feedback-pedagogy",
       "path": "skills/education/feedback-pedagogy",
-      "sha256": "63ba5c8b7079a72a725356662aa8260e1334b774fccf75f84aef4a726d9c9af5"
+      "sha256": "08a5ceac0e8cd9e9cc8376ddecbac5d1cb3eaee14079d406a673d84c4ddb72ba"
     },
     {
       "name": "freelance-client-ops",
       "path": "skills/professional/freelance-client-ops",
-      "sha256": "70a23a5f11f9175176bc05be82e2625939e675b30b28658a615946a80f1a75fe"
+      "sha256": "92e1f253afca7bd1e4a88a0f327c65b406dc920446140f5ab780ad84a5fdd216"
     },
     {
       "name": "frontend-design-systems",
       "path": "skills/development/frontend-design-systems",
-      "sha256": "a64578614f43ad229eefdcf4e583182b72f07375482e871c47b27d9ca5ab844d"
+      "sha256": "ebc162ff65f2ba3d0278b694cb02626744c716ec8a2b0119b20105e3c0b9e697"
     },
     {
       "name": "fullstack-starter-pack",
       "path": "skills/development/fullstack-starter-pack",
-      "sha256": "64c55bed7596717e35cacb7019ccdf01351a05638727bc9f5297749844c089ca"
+      "sha256": "453613a8b56b921e715c6679e938c59e67f70a2076a401feed7a269328cd5727"
     },
     {
       "name": "game-mechanics-designer",
       "path": "skills/specialized/game-mechanics-designer",
-      "sha256": "f307cf6ca777a25a2ab499e227d397f2e92b64e94711a53672fac2ff8cad2503"
+      "sha256": "6d07528fb36881c854f5d8c9841807b59f91dd4e677ad2fb6bd28d5b0aef1e32"
     },
     {
       "name": "gcp-resource-optimizer",
       "path": "skills/development/gcp-resource-optimizer",
-      "sha256": "24db25e517bd30bc28433dc1a1cf6aae3320ab64aa79a09ab87e258917807414"
+      "sha256": "dc5323257d97e7e7e0a998a2d106521e6b4bd2a9e75476fd766925fd05597be2"
     },
     {
       "name": "gdpr-compliance-check",
       "path": "skills/security/gdpr-compliance-check",
-      "sha256": "3a32ee09be8d81416e7569e8b6202e4081743bdc3f77f147c586e25a49f37352"
+      "sha256": "d3e5df5fa43d9aa2b03dbbbfbbe08a3aecc72f55d67df1453470cfc4c527ffde"
     },
     {
       "name": "generative-art-algorithms",
       "path": "skills/creative/generative-art-algorithms",
-      "sha256": "5ff5be8e2b8f49815ccf4f1f35525b37b04e4393c41c1b79344dce8935947184"
+      "sha256": "c27934a970761adc34b19d453d01cf1491fa161c1846d30e94e7e4f675c21d99"
     },
     {
       "name": "generative-music-composer",
       "path": "skills/creative/generative-music-composer",
-      "sha256": "634cfc16c001c5f3f6f42840e8802520fabc8951da515c06a9b9b72ed4b62c1d"
+      "sha256": "7931e093fe3219d223704c9d715f962868cef1b75caf2176f56f98d3166eba41"
     },
     {
       "name": "github-profile-architect",
       "path": "skills/documentation/github-profile-architect",
-      "sha256": "959817955f4402713dec31337adb4eb900010af98c1d23ebe3e575588904801c"
+      "sha256": "bbce05d51a95699f4228f20f8ab30725cbe6188a0f9d9edded2a475e82676886"
     },
     {
       "name": "github-repo-curator",
       "path": "skills/documentation/github-repo-curator",
-      "sha256": "e8e8a310118f7d36b0c40f123030ef9873b7750aead480ade5a6c0f42b362df9"
+      "sha256": "137d706588d2b48a06fcd9426702b6d88108402b86dfa06cf3cfecfea09d3793"
     },
     {
       "name": "github-repository-standards",
       "path": "skills/documentation/github-repository-standards",
-      "sha256": "d6c55bd5585963da04f4bc515bf9c425a89e5dea5ff16c15f87dcb5a311ef07a"
+      "sha256": "2e8cc4caf45d9457f2250872c5cb152dd517292b1a2cdb975552b4f771571799"
     },
     {
       "name": "github-roadmap-strategist",
       "path": "skills/project-management/github-roadmap-strategist",
-      "sha256": "a2aded5c2fda03aa0a496f650c40f1a5288682a38728821939fc42bf8c618357"
+      "sha256": "b7248bca916d04c8adfb1c6d42d119cf18e45c83bd57852bebd922a768772ecd"
     },
     {
       "name": "grant-proposal-writer",
       "path": "skills/professional/grant-proposal-writer",
-      "sha256": "bf075d09b710e4c0a62c3fefc8302a33bda4b2f96e64f1339e35d6be4e5f3717"
+      "sha256": "a5fa14ace32c6a82eed940f8b78e55b4ec0de89d1da8687bb626b5d2eb74a151"
     },
     {
       "name": "incident-response-commander",
       "path": "skills/security/incident-response-commander",
-      "sha256": "a8ca65ccc84a4fa8ca89c3ec6bcbb7230d4f156794692beeaa14d47baedbf41c"
+      "sha256": "4d3912a0ef0a6501edf06ab48859bc93693de45bb4fa3395043141d7021041b3"
     },
     {
       "name": "interactive-theatre-designer",
       "path": "skills/creative/interactive-theatre-designer",
-      "sha256": "d499ba5c7090d7858e2dbb34c2e5cade60fbfd08024fa4b3d4222b9397c2333a"
+      "sha256": "767c8ab16bb7748b01aaf9cf589bf475ddd92ad9def46876e4aabdefed856980"
     },
     {
       "name": "interfaith-sacred-geometry",
       "path": "skills/specialized/interfaith-sacred-geometry",
-      "sha256": "ee12b44811075239f4cce68aabbbce9527edacaf25654cfeaf5335efaf1aec32"
+      "sha256": "2b67812e6857ffb203d1367e3ccea53700b4c622aaf703b874a120261d8a4932"
     },
     {
       "name": "internal-comms",
       "path": "skills/professional/internal-comms",
-      "sha256": "067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475"
+      "sha256": "c461aa593bb776bfaab1e464101d70ee6a727ef469fa025fc6f71e7ba6cac632"
     },
     {
       "name": "interview-preparation",
       "path": "skills/professional/interview-preparation",
-      "sha256": "7878b109e726daa9e380e16e6d46afbb9570aff8b768d70c5675388330b1d11c"
+      "sha256": "e74db8014c1ae2eb434cfecc72a00243d80812434eef231311c7d280ed0d3c37"
     },
     {
       "name": "iterative-code-exploration",
       "path": "skills/development/iterative-code-exploration",
-      "sha256": "99ddae2a9ee29a04c8769e3f568cacd25b18a95c993143460adb69064c42b7e7"
+      "sha256": "ca771a6f4f93638cad3a3ad882b4d7a962523866cb89dce301a054e327eac54a"
     },
     {
       "name": "knowledge-architecture",
       "path": "skills/knowledge/knowledge-architecture",
-      "sha256": "cd6a8b37ce35a30a22b868f5182e45e6928843c66fede61b095ed2f920c1f8f1"
+      "sha256": "bf0adea93c1e45cf700cf368e8d29e78c0594efd855694b2fb95f7c6f0378b13"
     },
     {
       "name": "knowledge-graph-builder",
       "path": "skills/knowledge/knowledge-graph-builder",
-      "sha256": "dc1b177c4c06277180ee455b94de9135efdf2d45053a35b7137a7324a3ce578a"
+      "sha256": "cf2e469f3e4af3464c192d530089a12cb5ce6839b2e20bb79e1f39302dbc95d8"
     },
     {
       "name": "local-llm-fine-tuning",
       "path": "skills/specialized/local-llm-fine-tuning",
-      "sha256": "2494f45513b18c4bf0270c609d12c74e1fbf01cf91bb0605e3a597f28d277e58"
+      "sha256": "4cc234a700268c31a28cf569a38e1e3150fddd10c6004bb719ad8bc065b3cbc6"
     },
     {
       "name": "location-ar-experience",
       "path": "skills/specialized/location-ar-experience",
-      "sha256": "c5c782f440d38c9dfa6f425cdbc254bebaa93ee116fe821856be9b9081a808d8"
+      "sha256": "7a505663d1101ba1607f9ea7bddbe40f94db64146eeba1ce23a13a1f9892385e"
     },
     {
       "name": "mcp-builder",
       "path": "skills/development/mcp-builder",
-      "sha256": "5e673b79c88d4cc96150552c77b9015cf8b59c1d12986f5c2bf97398c90cf698"
+      "sha256": "ef864862fcaccbd9ce92fb835700aabc3f6c79cae9866983ad3daa7ef4dc7659"
     },
     {
       "name": "mcp-integration-patterns",
       "path": "skills/integrations/mcp-integration-patterns",
-      "sha256": "8df7318c425c5f6f0cb557b3b1789ed4583cbd3c1ebd671bf3ae540b1c38dd14"
+      "sha256": "3b692424df1f96bab1a1577af54f33eeb7502c5771721fd7682a6f74bbf7a5b6"
     },
     {
       "name": "mcp-server-orchestrator",
       "path": "skills/development/mcp-server-orchestrator",
-      "sha256": "753b6e4e7c0e32321458dd6943adb2bbf5a7ac1d6cd57c89780645d157b33bde"
+      "sha256": "4e98cf8c3cd8c91a2ac6c61df5e375a05a08e3c96241944021031bbd66266e0d"
     },
     {
       "name": "ml-experiment-tracker",
       "path": "skills/data/ml-experiment-tracker",
-      "sha256": "106d413a74e8314cf1c6e7f3d15614502d7e34ceaaab2a1adb649bfd7ef3c0f7"
+      "sha256": "23acc9ef3411e88ed1992f6a0ab7da09aa3a58e2895bb184141c182db8bd7ebe"
     },
     {
       "name": "mobile-platform-architect",
       "path": "skills/development/mobile-platform-architect",
-      "sha256": "637bc83f8125145bc0cf9e632dbf16c82b955782ee49130f8ac30cdc447878dc"
+      "sha256": "50c6714709fb520e61d09fe38bd161049d6d6f2d5f47c66e35c7a1b6041fb372"
     },
     {
       "name": "modular-synthesis-philosophy",
       "path": "skills/creative/modular-synthesis-philosophy",
-      "sha256": "08fe30492f581431a028b041c1a4c32fd693c2af9aa66c348a04e6d98d8cad72"
+      "sha256": "92588264728d59c565a9b6382a842a5703f7af75c1ad6ce320e5a2e083b289a1"
     },
     {
       "name": "movement-notation-systems",
       "path": "skills/creative/movement-notation-systems",
-      "sha256": "413988433ffcbccbfd9c31c21f1c060e9511175dc1a82dc9ab609260bd3f9311"
+      "sha256": "fed43f9a762ba835528349fc2bd3e55e413f490148a054d20378e92600f2a058"
     },
     {
       "name": "multi-agent-workforce-planner",
       "path": "skills/tools/multi-agent-workforce-planner",
-      "sha256": "8aed389ed7c3624c7f7966c1195ef353fa7a8ebac7cea8c9fc6dd2cb59581b24"
+      "sha256": "b50301e12042f00d70f2b3f18a802ddee62d9359d13ac9a91c796702f9565de7"
     },
     {
       "name": "narratological-algorithms",
       "path": "skills/creative/narratological-algorithms",
-      "sha256": "18a97d626a1c1aa26544b04c3090ad3f19e6d3304a6a85978251bc4895223d10"
+      "sha256": "b53f2df194210896badd2436a7cad70911636accb7f0888e509321b79e653cfe"
     },
     {
       "name": "networking-outreach",
       "path": "skills/professional/networking-outreach",
-      "sha256": "473c389352d4a6c453a130476b31623554b6344e11ad001cd76a710d8b9df388"
+      "sha256": "dc8e41b815c9df0829c4a36e405c91e929df1fdc846d9df6a3fc2974337724f6"
     },
     {
       "name": "nextjs-fullstack-patterns",
       "path": "skills/development/nextjs-fullstack-patterns",
-      "sha256": "d4058df47de97759fc9ed0ce2a4ce8de4da5f2a5a3aeed4ed52c70a246828c75"
+      "sha256": "0a595c7b5b237e18099400e2db8b33987e4fe0cb0dddfd27c51c6b11dade38cd"
     },
     {
       "name": "oauth-flow-architect",
       "path": "skills/integrations/oauth-flow-architect",
-      "sha256": "9ab54f5acead11fdefd25f2be220bcaba51082d229974229afb711f38bdca550"
+      "sha256": "67584a0fd412203c65c35d3bfad04d936a7b12322f9b1cb761b2aee01b9ddb30"
     },
     {
       "name": "ontological-renamer",
       "path": "skills/tools/ontological-renamer",
-      "sha256": "7c5ffa60a8209712f3a08cbabd704c6f923492eeb1fb42b8cd7fc77ae91eff8f"
+      "sha256": "ae7b90a6436f38301ad7a5b83f220e5a57f11092e9b5e598da2f31f26faa68fd"
     },
     {
       "name": "portfolio-presentation",
       "path": "skills/professional/portfolio-presentation",
-      "sha256": "f1ec32f521ac08b1948e56f8da9aa0b84e51dcd6b868a34218839c99873b46d2"
+      "sha256": "c6da8bc9b2998a62f1bbce782f58153ac0f5d95c79be8604dcb71f203f59076a"
     },
     {
       "name": "postgres-advanced-patterns",
       "path": "skills/development/postgres-advanced-patterns",
-      "sha256": "4d6953c0d2ed069f0bd263c08568c7e384a58149e45aec5c75a61839c5ef677d"
+      "sha256": "83c32cabe301e9a2c10a7033361afa4c0a913206f0769616c8f539d74dbce28a"
     },
     {
       "name": "product-requirements-designer",
       "path": "skills/project-management/product-requirements-designer",
-      "sha256": "076c78b408203ec02bc0f89882067921b854a6c4f326a447611c8f9b6a9288d0"
+      "sha256": "eb85a09aee511a2773452415c236ba76921d444b032aad58fdc8396df87d60f8"
     },
     {
       "name": "project-alchemy-orchestrator",
       "path": "skills/project-management/project-alchemy-orchestrator",
-      "sha256": "e944a965c02578cb430fb16ffe7ebedf4afacae82925e79984f869202340750c"
+      "sha256": "3e58b54860058322e3f145cc40f11424b4a685dd1d95f756295ce163fb67600f"
     },
     {
       "name": "project-orchestration",
       "path": "skills/project-management/project-orchestration",
-      "sha256": "efff4034d04dc3933a4c27fa630a6236cd00f3fe52856ea27228085085ad91fb"
+      "sha256": "58133d7e6255cb7eb82b43639cfb3b55ad4f8183edbd55ad52c7a6471e919136"
     },
     {
       "name": "reality-tv-narrative-analyzer",
       "path": "skills/creative/reality-tv-narrative-analyzer",
-      "sha256": "0a269759cf4e213a89bf4f4e1713339090cd8a733249e8beafc982e3a9feccd1"
+      "sha256": "df2ef943c44674f6281a3a39c71ad94a93614f44e052d7287c8b55c460f58e19"
     },
     {
       "name": "recursive-systems-architect",
       "path": "skills/knowledge/recursive-systems-architect",
-      "sha256": "ff358be925d5df50c0950851ffba93cdc073df4059e592bd93453f14821ab254"
+      "sha256": "4c015bc99080b61b1c3a3a8eecdd88d8cc05f298badef0e5d97a4335b811ef81"
     },
     {
       "name": "research-synthesis-workflow",
       "path": "skills/knowledge/research-synthesis-workflow",
-      "sha256": "5a839fba856bcdc82cd850de6509930b95863637530bf71ef199da86b03fddbf"
+      "sha256": "4af2b76805e21194279743c619dc621c28a85388c37264e04c02fe9d007cbd78"
     },
     {
       "name": "responsive-design-patterns",
       "path": "skills/development/responsive-design-patterns",
-      "sha256": "44b2d368576923b67a3c6b544cce02366814b392ce72f1f0881873c5ca6e2388"
+      "sha256": "68cf53b244368d25e9e526e5356180195b8c2801ddc249b014a4dc30511894a2"
     },
     {
       "name": "rust-systems-design",
       "path": "skills/development/rust-systems-design",
-      "sha256": "e6fa9c198d5b3abd5bff573b314ee5cfd0843f1722867780783de2a38f303b50"
+      "sha256": "f99bd21f06fc48de88865e959cb141ea6363905956b8bef8b3ff55744a47df43"
     },
     {
       "name": "second-brain-librarian",
       "path": "skills/knowledge/second-brain-librarian",
-      "sha256": "6b24e2a3301c96464ff3caea8af31d162cd71157b50b2e34ba615214e13e9a0d"
+      "sha256": "68790acb0eb7dddf7e8c164befaf490d642c07002204ad7bcaf1f763869b8f1b"
     },
     {
       "name": "security-essentials-pack",
       "path": "skills/security/security-essentials-pack",
-      "sha256": "744726aa266c17d517412ff49dce7203c494f8f9520f6dc4b6def9b073682520"
+      "sha256": "cf1e67bb0a84770a322bba36ef49bca8a86ad1cc6d38b2b04cbcd9088afb43ac"
     },
     {
       "name": "security-implementation-guide",
       "path": "skills/security/security-implementation-guide",
-      "sha256": "06c257523a93788b2aa476294287e99a66ff1484778a8ae0953ab9f7f0f306cb"
+      "sha256": "22ed092498b84e6ca9a5a698fe43fa8ac156f2d840e52cdc76303110990041f7"
     },
     {
       "name": "security-threat-modeler",
       "path": "skills/security/security-threat-modeler",
-      "sha256": "a76b946de7230114aa80b058bedb01ec20f833f00cc705a6a1cfe14965d94409"
+      "sha256": "f2714996f17458e90cc1c4552ed984efb487c9b57d09f3afb142bf7040597eac"
     },
     {
       "name": "skill-chain-prompts",
       "path": "skills/tools/skill-chain-prompts",
-      "sha256": "2c632d856bb89f6ec8d5f89c7abb2d0f5efd3323771ffc0018b9d0fed97fe18e"
+      "sha256": "5d2794412377b58e3a2a18a55e5988bacfb485d5c9fe3e320d0a26202ae794b9"
     },
     {
       "name": "skill-creator",
       "path": "skills/tools/skill-creator",
-      "sha256": "8c0ce23bb87be91f5b0853c2e9815617c3858b63acdddfe5da47d2c2d3a60816"
+      "sha256": "7fea9b0e777289fd11fbbd35a8354a7383f9485339af251884c83f3ab761bd72"
     },
     {
       "name": "slack-gif-creator",
       "path": "skills/professional/slack-gif-creator",
-      "sha256": "e5ce81d3dc40e7780b0fa2a0a36b5ada888beb3931d2badd2909b57c50002aed"
+      "sha256": "8898fd52c2feccd87bf2ab885e95989807c703ca0e0ed517257278bfdb9b5d4a"
     },
     {
       "name": "socratic-tutor",
       "path": "skills/education/socratic-tutor",
-      "sha256": "2a3a9c33b31b043a762247dead4e2c0ef67f04388362f26966c0689a52886098"
+      "sha256": "8967cb5a631d6eb98f64988f4fe02177d96fca29bd5af2929bb812c6f293bdcf"
     },
     {
       "name": "speckit",
       "path": "skills/tools/speckit",
-      "sha256": "cffc2da6ef0226beabe9078fc397c0631b6ec4f6f9fca96c011cfe73f500a86f"
+      "sha256": "6b99186f492f33dea00e18421a582fab7eff70e9977b7983d26401d892d230a8"
     },
     {
       "name": "specstory-guard",
       "path": "skills/integrations/specstory-guard",
-      "sha256": "bc34cfac32d9e11ac3cdf5531d5133d8c93b5d6afc04074fb0a71247b21caac2"
+      "sha256": "133c5857d0616bdf384b5744299d4c15c8b46f13269301e900ef401912eded0e"
     },
     {
       "name": "specstory-link-trail",
       "path": "skills/integrations/specstory-link-trail",
-      "sha256": "d832e48c7f904ba2f2ab31485ab02b8801baccd65e7dea80014d438b408faf1e"
+      "sha256": "9710bc079bc01d90b5db009f93c597a9266a7a51f1f8a73a7a87c21d8ae80e7b"
     },
     {
       "name": "specstory-organize",
       "path": "skills/integrations/specstory-organize",
-      "sha256": "df1f19f9263426d85ee8419362f0cf3ebfb82904a3ed0fafa39b963cae790fa6"
+      "sha256": "7afe01208dfaf6536fe229362b5862f96560b70623623f0cfdb9758f8e6eeb94"
     },
     {
       "name": "specstory-project-stats",
       "path": "skills/integrations/specstory-project-stats",
-      "sha256": "6063deccaadf74c927666a5034e3fbb5d6c625ddeee8e08b9517a7bf5e07f184"
+      "sha256": "a273149f43d8439952d3b93686ae5172b42600a67b954901e600edf3d84f6798"
     },
     {
       "name": "specstory-session-summary",
       "path": "skills/integrations/specstory-session-summary",
-      "sha256": "38c429ffa3de819cd16aa41bda2e1ff045cbf69c76f234c3d9c896e8434da571"
+      "sha256": "83438b8f6c09a8c4501726a8ef9ad781ae84a218cfe90e9f809c69d1a4aefc65"
     },
     {
       "name": "specstory-yak",
       "path": "skills/integrations/specstory-yak",
-      "sha256": "0db8e76e63ace5989d8f05a18bae9f564722177d21226e49ecd1e6524a15be84"
+      "sha256": "6bafb94d19899a28c5f10e14008dfd09bf0bb91a0016e05026e75c9cae1b6399"
     },
     {
       "name": "sql-query-optimizer",
       "path": "skills/data/sql-query-optimizer",
-      "sha256": "1c40b36458ddb9a6d11ce4518de46d0700731a31296524637f044a6c85164495"
+      "sha256": "ba371486887a48c87d25468866875ec4a36edfd7491d9f2b93b3413789529feb"
     },
     {
       "name": "systemic-product-analyst",
       "path": "skills/data/systemic-product-analyst",
-      "sha256": "5be80a32aaf17672847734054ffef73d7c74d884fe591caf365b054251afadcd"
+      "sha256": "12c26b51e3a46b029a298c10256b07731a36f1fb335e656269a962d82e8cffe7"
     },
     {
       "name": "tdd-workflow",
       "path": "skills/development/tdd-workflow",
-      "sha256": "31922dce962340e549c8addb1674130196cb4952ce231a8edefab303606d1306"
+      "sha256": "c91bdc610b49e2a661ae26bd9b0e91f5c492d3a84a7d8af773c7d53d3d24408b"
     },
     {
       "name": "testing-patterns",
       "path": "skills/development/testing-patterns",
-      "sha256": "7d574ebc1e4e88666f5c5fbfac731f832a5d4a45ffcb6bae4462139e8d10a145"
+      "sha256": "748fc9423664f149d9c6ecb1fb46fb215a2b9e44f09db43d67f59d455c06bdfb"
     },
     {
       "name": "theme-factory",
       "path": "skills/creative/theme-factory",
-      "sha256": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552"
+      "sha256": "8423e471edea4038e988c1eeb592fe6b38145cd1a375d7764b964fd27bbbd885"
     },
     {
       "name": "three-js-interactive-builder",
       "path": "skills/creative/three-js-interactive-builder",
-      "sha256": "b621730a4ba3500a733013ed792e0bb432969cd1cef37db8a785374ed8ecafa7"
+      "sha256": "15d452bbac65214a655929098c325e6efe0576c00c66364526258d9492703358"
     },
     {
       "name": "time-series-analyst",
       "path": "skills/data/time-series-analyst",
-      "sha256": "e021b715098211fce0dd49ead7e5012e2a1bd9b206938bf7fc9fd3ea032aaaaa"
+      "sha256": "b476cef63c3946c4a4bfec8aca3b79c9dffd739509aaa3bf7db678a62dd8a1c9"
     },
     {
       "name": "verification-loop",
       "path": "skills/development/verification-loop",
-      "sha256": "2a39fcce19e7772392a5cb60d74c38025823ffa69c278275569e0d9ee94469fe"
+      "sha256": "4b5eb58166b12de486e45f1671aecd621ebfd7dc8bf6daa6cbbf3df3f8c89723"
     },
     {
       "name": "web-artifacts-builder",
       "path": "skills/development/web-artifacts-builder",
-      "sha256": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8"
+      "sha256": "f5b063cfd995da26d36386360de2ca38caa7aa4cc32b0737dae217f720f6fd00"
     },
     {
       "name": "webapp-testing",
       "path": "skills/development/webapp-testing",
-      "sha256": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2"
+      "sha256": "183a29d210cdea39e57cec7467b5109cf9db1cb1a10e5a7f9b6d46ebc677102f"
     },
     {
       "name": "webhook-integration-patterns",
       "path": "skills/integrations/webhook-integration-patterns",
-      "sha256": "cccd88667331716ffa7893d9f2cc51100cb827589e0659dcdf2f830ae9797cad"
+      "sha256": "dfb251dededb57eaf67ac241889ad2a7c42e70a5fb7c39988b516d41a445cdd2"
     },
     {
       "name": "workshop-presentation-design",
       "path": "skills/professional/workshop-presentation-design",
-      "sha256": "be718aa028ca6be6fb96ba6bb02ae839221ec8ca98aae760715d97704bd66213"
+      "sha256": "cd33e7700acd0d3a3f348993902c9de94374eab1a4232bc8d342c088c7c46eb4"
     },
     {
       "name": "docx",
       "path": "document-skills/docx",
-      "sha256": "0bd90681fcab2e282025ee14acf508b60bbd6c41ac6c3bf83c0dc14d52c37933"
+      "sha256": "d7f065e40ee89828ebcadaef4f95edc9623f02ab4e5ffbdc042712be1a9374d2"
     },
     {
       "name": "pdf",
       "path": "document-skills/pdf",
-      "sha256": "9eaf49c8be2b2e6f809faff20456ef4c075bad5a2d1b501095ee9a5f3de458d3"
+      "sha256": "0b8695b6ec6dfe7bbab3463769a8c25af341313dc457c51b7aa6d669653e784c"
     },
     {
       "name": "pptx",
       "path": "document-skills/pptx",
-      "sha256": "b6f25545bfb358739f1532f793458b5dbc87ee009933cb7c306b2d951ab6617f"
+      "sha256": "4c03bdb74f6349d9daac162dde1a70ca7c117665d4944d3549ba6129fecada5c"
     },
     {
       "name": "xlsx",
       "path": "document-skills/xlsx",
-      "sha256": "020ccdb5932257b66c638ec1157ea248d57fa52c8c01f1f68b559b5970c7df35"
+      "sha256": "da60715a502eca36f3724ec11a006cbc170f6c8741c4f354d0058c643e18fce4"
     }
   ]
 }

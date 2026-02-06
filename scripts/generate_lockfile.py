@@ -24,10 +24,20 @@ def _find_skill_dirs(base_dir: Path) -> list[Path]:
     )
 
 
-def _sha256(path: Path) -> str:
-    """Return hex SHA-256 digest of a file's contents."""
+def _sha256_tree(directory: Path) -> str:
+    """Return hex SHA-256 digest of all files in a directory.
+
+    Hashes are computed over sorted relative paths and their contents
+    for deterministic output regardless of filesystem ordering.
+    """
     h = hashlib.sha256()
-    h.update(path.read_bytes())
+    files = sorted(
+        p for p in directory.rglob("*") if p.is_file()
+    )
+    for filepath in files:
+        rel = filepath.relative_to(directory)
+        h.update(str(rel).encode("utf-8"))
+        h.update(filepath.read_bytes())
     return h.hexdigest()
 
 
@@ -54,15 +64,14 @@ def main() -> int:
 
     skills = []
     for skill_dir in skill_dirs:
-        skill_file = skill_dir / "SKILL.md"
         skills.append({
             "name": skill_dir.name,
             "path": str(skill_dir.relative_to(ROOT)),
-            "sha256": _sha256(skill_file),
+            "sha256": _sha256_tree(skill_dir),
         })
 
     lockfile = {
-        "version": "1.1",
+        "version": "1.2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "git_commit": git_commit,
         "skills": skills,

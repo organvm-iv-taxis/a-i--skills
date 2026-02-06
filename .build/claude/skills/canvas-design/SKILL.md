@@ -2,6 +2,33 @@
 name: canvas-design
 description: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.
 license: Complete terms in LICENSE.txt
+complexity: intermediate
+time_to_learn: 30min
+tags:
+  - design
+  - art
+  - visual
+  - canvas
+  - pdf
+  - png
+inputs:
+  - design-brief
+  - creative-direction
+outputs:
+  - png-image
+  - pdf-document
+  - design-philosophy
+side_effects:
+  - creates-files
+triggers:
+  - user-asks-about-design
+  - user-asks-about-poster
+  - user-asks-about-art
+  - context:visual-design
+complements:
+  - algorithmic-art
+  - theme-factory
+tier: core
 ---
 
 These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.

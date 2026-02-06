@@ -13,6 +13,22 @@ tags:
   - api-integration
   - python
   - typescript
+inputs:
+  - api-documentation
+  - service-requirements
+outputs:
+  - mcp-server-code
+  - tool-definitions
+side_effects:
+  - creates-files
+  - runs-commands
+triggers:
+  - user-asks-about-mcp
+  - user-asks-about-model-context-protocol
+  - context:mcp-server
+complements:
+  - api-design-patterns
+tier: core
 ---
 
 # MCP Server Development Guide

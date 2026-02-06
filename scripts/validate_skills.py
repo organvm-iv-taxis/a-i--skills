@@ -15,6 +15,11 @@ NAME_RE = re.compile(r"^[a-z0-9-]+$")
 # Valid values for optional fields
 VALID_COMPLEXITY = {"beginner", "intermediate", "advanced"}
 VALID_TIME_TO_LEARN = {"5min", "30min", "1hour", "multi-hour"}
+VALID_SIDE_EFFECTS = {
+    "creates-files", "modifies-git", "runs-commands",
+    "network-access", "installs-packages", "reads-filesystem",
+}
+VALID_TIERS = {"core", "community"}
 MIN_DESCRIPTION_LENGTH = 20
 MAX_DESCRIPTION_LENGTH = 600
 
@@ -58,6 +63,30 @@ def _extract_frontmatter(text: str) -> dict[str, str]:
         current_key = key.strip()
         data[current_key] = value.strip()
     return data
+
+
+def _parse_list_field(value: str) -> list[str]:
+    """Parse a frontmatter list field value into individual items.
+
+    Handles both inline format ``[a, b, c]`` and multiline YAML (joined with
+    newlines, each line starting with ``- ``).
+    """
+    if not value:
+        return []
+    # Inline bracket format: [a, b, c]
+    stripped = value.strip()
+    if stripped.startswith("[") and stripped.endswith("]"):
+        inner = stripped[1:-1]
+        return [item.strip() for item in inner.split(",") if item.strip()]
+    # Multiline YAML list (lines joined by newlines, prefixed with "- ")
+    items: list[str] = []
+    for line in stripped.split("\n"):
+        line = line.strip()
+        if line.startswith("- "):
+            items.append(line[2:].strip())
+        elif line:
+            items.append(line)
+    return items
 
 
 def _find_broken_links(skill_dir: Path, text: str) -> Iterator[str]:
@@ -136,6 +165,40 @@ def _validate_skill(skill_dir: Path, check_links: bool = False) -> list[str]:
             f"must be one of: {', '.join(sorted(VALID_TIME_TO_LEARN))}"
         )
 
+    # Validate new semantic fields
+    for list_field in ("inputs", "outputs", "side_effects", "triggers", "complements", "includes"):
+        raw = data.get(list_field)
+        if raw:
+            items = _parse_list_field(raw)
+            if not items:
+                errors.append(f"{skill_dir}: '{list_field}' is present but empty or unparseable")
+
+            if list_field == "side_effects":
+                for item in items:
+                    if item not in VALID_SIDE_EFFECTS:
+                        errors.append(
+                            f"{skill_dir}: invalid side_effect '{item}', "
+                            f"must be one of: {', '.join(sorted(VALID_SIDE_EFFECTS))}"
+                        )
+
+    # Validate tier field
+    tier = data.get("tier")
+    if tier and tier not in VALID_TIERS:
+        errors.append(
+            f"{skill_dir}: invalid tier '{tier}', "
+            f"must be one of: {', '.join(sorted(VALID_TIERS))}"
+        )
+
+    # Stricter validation for core-tier skills
+    if tier == "core":
+        if not complexity:
+            errors.append(f"{skill_dir}: core skill missing 'complexity'")
+        if not time_to_learn:
+            errors.append(f"{skill_dir}: core skill missing 'time_to_learn'")
+        tags_raw = data.get("tags")
+        if not tags_raw or not _parse_list_field(tags_raw):
+            errors.append(f"{skill_dir}: core skill missing 'tags'")
+
     # Check for broken links if requested
     if check_links:
         for link_error in _find_broken_links(skill_dir, text):
@@ -183,6 +246,33 @@ def main() -> int:
         if duplicates:
             dup_list = ", ".join(sorted(duplicates))
             errors.append(f"duplicate skill names in collection: {dup_list}")
+
+    # Cross-reference validation for includes and complements
+    all_skill_names = set(name_counts.keys())
+    for skill_dir in skill_dirs:
+        skill_file = skill_dir / "SKILL.md"
+        try:
+            text = skill_file.read_text(encoding="utf-8")
+            fm = _extract_frontmatter(text)
+        except (OSError, ValueError):
+            continue
+
+        includes_raw = fm.get("includes")
+        if includes_raw:
+            for item in _parse_list_field(includes_raw):
+                if item not in all_skill_names:
+                    errors.append(
+                        f"{skill_dir}: includes references unknown skill '{item}'"
+                    )
+
+        complements_raw = fm.get("complements")
+        if complements_raw:
+            for item in _parse_list_field(complements_raw):
+                if item not in all_skill_names:
+                    print(
+                        f"WARNING: {skill_dir}: complements references "
+                        f"unknown skill '{item}'"
+                    )
 
     if errors:
         for err in errors:

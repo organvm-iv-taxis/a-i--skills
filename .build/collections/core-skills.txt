@@ -1,0 +1,7 @@
+skills/development/api-design-patterns
+skills/creative/canvas-design
+skills/development/fullstack-starter-pack
+skills/development/mcp-builder
+skills/security/security-essentials-pack
+skills/security/security-threat-modeler
+skills/development/tdd-workflow

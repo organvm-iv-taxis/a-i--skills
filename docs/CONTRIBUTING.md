@@ -7,11 +7,37 @@ Thanks for contributing to this skills repository. Each skill is a self-containe
 2. Create a new folder using kebab-case (e.g., `skills/development/my-new-skill/`).
 3. Add `SKILL.md` with YAML frontmatter:
    - `name:` must match the folder name.
-   - `description:` short, specific, and task-focused.
+   - `description:` short, specific, and task-focused (20-600 chars).
    - `license:` required (use `MIT` for open-source skills).
-4. Put helper scripts in `scripts/` and any supporting material in `references/` or `assets/`.
+4. Add optional semantic fields to improve discoverability and enable composition:
+   - `inputs:` what the skill expects (e.g., `[source-code, openapi-spec]`)
+   - `outputs:` what the skill produces (e.g., `[test-report, mcp-server-code]`)
+   - `side_effects:` environment changes (values: `creates-files`, `modifies-git`, `runs-commands`, `network-access`, `installs-packages`, `reads-filesystem`)
+   - `triggers:` activation conditions (see [Activation Conditions](api/activation-conditions.md))
+   - `complements:` skills that pair well (list of skill names)
+   - `tier:` quality tier (`core` or `community`)
+5. Put helper scripts in `scripts/` and any supporting material in `references/` or `assets/`.
 
-For detailed guidance, see [Creating Skills](guides/creating-skills.md).
+For detailed guidance, see [Creating Skills](guides/creating-skills.md) and the [Skill Specification](api/skill-spec.md).
+
+## Skill Bundles
+
+To create a skill bundle (a pack that groups related skills):
+
+1. Create a skill directory like any other skill.
+2. Add an `includes:` field listing the skill names to bundle (all must exist in the repo).
+3. The SKILL.md body should describe the bundle's purpose and list the included skills.
+
+Example: `skills/development/fullstack-starter-pack/` bundles 6 development skills.
+
+## Quality Tiers
+
+Skills can be tagged with `tier: core` or `tier: community`:
+
+- **Core**: Curated, reviewed skills with stricter validation (must have `complexity`, `time_to_learn`, `tags`).
+- **Community**: Contributed skills with standard validation.
+
+See [Core vs Community](guides/core-vs-community.md) for the promotion path and quality gates.
 
 ## Refresh Collections
 Run after adding/removing skills:
@@ -22,8 +48,10 @@ python3 scripts/refresh_skill_collections.py
 Use `--mode symlink` if you prefer symlinks instead of copies.
 
 This regenerates:
-- `.build/collections/example-skills.txt`
-- `.build/collections/document-skills.txt`
+- `.build/collections/example-skills.txt` and `document-skills.txt`
+- `.build/collections/core-skills.txt` and `community-skills.txt` (tier lists)
+- `.build/skills-registry.json` (machine-readable registry)
+- `.build/skills-lock.json` (lockfile with SHA-256 hashes)
 - Link directories under `.build/claude/skills`, `.build/codex/skills`, and `.build/extensions/gemini/*/skills`
 
 These generated files are committed to the repo. Include the updated outputs in your PRs.
@@ -34,6 +62,14 @@ Ensure the frontmatter and naming rules are correct:
 ```bash
 python3 scripts/validate_skills.py --collection example --unique
 python3 scripts/validate_skills.py --collection document --unique
+python3 scripts/validate_generated_dirs.py
+```
+
+Run health checks to verify scripts, references, and resource integrity:
+
+```bash
+python3 scripts/skill_health_check.py                    # All skills
+python3 scripts/skill_health_check.py --skill mcp-builder  # Single skill
 ```
 
 ## Commit Guidance

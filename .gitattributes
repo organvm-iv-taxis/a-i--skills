@@ -1,0 +1,45 @@
+# Disable LFS for this repository.
+# The global ~/.config/git/attributes enables LFS for binary types,
+# but this repo stores binaries directly (they're small enough).
+#
+# The -filter directive prevents the LFS clean/smudge filter from running.
+
+# Fonts
+*.eot -filter -diff -merge binary
+*.otf -filter -diff -merge binary
+*.ttf -filter -diff -merge binary
+*.woff -filter -diff -merge binary
+*.woff2 -filter -diff -merge binary
+
+# Archives
+*.7z -filter -diff -merge binary
+*.bz2 -filter -diff -merge binary
+*.gz -filter -diff -merge binary
+*.rar -filter -diff -merge binary
+*.tar -filter -diff -merge binary
+*.zip -filter -diff -merge binary
+
+# Images
+*.gif -filter -diff -merge binary
+*.ico -filter -diff -merge binary
+*.jpg -filter -diff -merge binary
+*.jpeg -filter -diff -merge binary
+*.png -filter -diff -merge binary
+*.psd -filter -diff -merge binary
+*.svg -filter -diff -merge binary
+*.webp -filter -diff -merge binary
+
+# Audio/Video
+*.avi -filter -diff -merge binary
+*.mov -filter -diff -merge binary
+*.mp3 -filter -diff -merge binary
+*.mp4 -filter -diff -merge binary
+*.ogg -filter -diff -merge binary
+*.wav -filter -diff -merge binary
+*.webm -filter -diff -merge binary
+
+# Compiled
+*.dll -filter -diff -merge binary
+*.dylib -filter -diff -merge binary
+*.exe -filter -diff -merge binary
+*.so -filter -diff -merge binary

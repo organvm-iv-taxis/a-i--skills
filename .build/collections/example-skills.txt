@@ -28,6 +28,7 @@ skills/development/feature-workflow-orchestrator
 skills/education/feedback-pedagogy
 skills/professional/freelance-client-ops
 skills/development/frontend-design-systems
+skills/development/fullstack-starter-pack
 skills/specialized/game-mechanics-designer
 skills/development/gcp-resource-optimizer
 skills/security/gdpr-compliance-check
@@ -72,6 +73,7 @@ skills/knowledge/research-synthesis-workflow
 skills/development/responsive-design-patterns
 skills/development/rust-systems-design
 skills/knowledge/second-brain-librarian
+skills/security/security-essentials-pack
 skills/security/security-implementation-guide
 skills/security/security-threat-modeler
 skills/tools/skill-chain-prompts

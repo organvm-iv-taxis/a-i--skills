@@ -10,8 +10,9 @@ Skills are markdown files that give AI agents specialized knowledge and workflow
 
 ### 1. Browse Available Skills
 
-- See [CATEGORIES.md](../CATEGORIES.md) for all 95 skills organized by category
+- See [CATEGORIES.md](../CATEGORIES.md) for all 101 skills organized by category
 - Check `.build/collections/` for curated skill lists
+- Browse the machine-readable registry at `.build/skills-registry.json`
 - Browse skills by category in `skills/`
 
 ### 2. Find Skills for Your Needs
@@ -50,9 +51,9 @@ ai-skills/
 │   ├── CONTRIBUTING.md          # How to contribute
 │   ├── architecture/
 │   ├── guides/                  # You are here
-│   └── api/
+│   └── api/                     # Skill spec, federation schema, activation conditions
 │
-├── skills/                      # 95 skills organized by category
+├── skills/                      # 101 skills organized by category
 │   ├── creative/               # Art, music, design
 │   ├── development/            # Coding patterns, tools
 │   ├── professional/           # Business, career
@@ -60,8 +61,13 @@ ai-skills/
 │
 ├── document-skills/             # Reference document skills (pdf, docx, xlsx, pptx)
 │
+├── agents/                      # AI agent definitions (skill-planner, etc.)
+├── commands/                    # Slash commands (skill-health, plan-workflow, etc.)
+│
 └── .build/                      # Generated outputs
-    ├── collections/             # Skill path lists
+    ├── collections/             # Skill path lists + tier lists
+    ├── skills-registry.json     # Machine-readable skill metadata
+    ├── skills-lock.json         # Lockfile with SHA-256 hashes
     ├── claude/                  # Claude Code bundles
     ├── codex/                   # Codex bundles
     └── direct/                  # Direct link directories
@@ -153,10 +159,19 @@ Begin with beginner-friendly skills:
 
 ### 2. Combine Skills
 
-Skills work together:
+Skills work together. Check the `complements` field in a skill's frontmatter to see recommended pairings:
 - `tdd-workflow` + `verification-loop` = Complete quality workflow
 - `frontend-design-systems` + `responsive-design-patterns` = Full UI development
 - `postgres-advanced-patterns` + `backend-implementation-patterns` = Complete backend stack
+
+**Skill Bundles** group related skills together. Install a bundle to get a curated set:
+- `fullstack-starter-pack` — 6 skills for full-stack development
+- `security-essentials-pack` — 5 skills for security workflows
+
+**Skill Planner** can automatically chain skills for a goal. Use `/plan-workflow` or ask your agent:
+```
+"Plan a workflow to build and deploy a REST API with tests"
+```
 
 ### 3. Read the SKILL.md
 
@@ -187,6 +202,8 @@ Some skills include helper scripts in `scripts/` directory. Check for:
 - Browse by category: `docs/CATEGORIES.md`
 - Browse skills directly: `skills/{category}/`
 - Check collections: `.build/collections/`
+- Search the registry: `.build/skills-registry.json`
+- Run health checks: `python3 scripts/skill_health_check.py`
 - Search: `grep -r "keyword" skills/*/SKILL.md`
 
 ### Issues & Questions

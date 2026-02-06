@@ -2,6 +2,32 @@
 name: security-threat-modeler
 description: Conducts systematic security analyses using methodologies like STRIDE to identify vulnerabilities in software architectures and propose mitigations.
 license: MIT
+complexity: advanced
+time_to_learn: 1hour
+tags:
+  - security
+  - threat-modeling
+  - stride
+  - risk-assessment
+  - architecture
+inputs:
+  - system-architecture
+  - data-flow-diagram
+outputs:
+  - threat-model-report
+  - risk-assessment
+  - mitigation-plan
+side_effects:
+  - creates-files
+triggers:
+  - user-asks-about-security
+  - user-asks-about-threat-modeling
+  - user-asks-about-stride
+  - context:security-review
+complements:
+  - security-implementation-guide
+  - incident-response-commander
+tier: core
 ---
 
 # Security Threat Modeler

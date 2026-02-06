@@ -2,6 +2,33 @@
 name: api-design-patterns
 description: Design robust APIs with RESTful patterns, GraphQL schemas, versioning strategies, and error handling conventions. Supports OpenAPI/Swagger documentation and SDK generation patterns. Triggers on API design, schema definition, endpoint architecture, or developer experience requests.
 license: MIT
+complexity: intermediate
+time_to_learn: 30min
+tags:
+  - api
+  - rest
+  - graphql
+  - openapi
+  - design-patterns
+inputs:
+  - service-requirements
+  - data-models
+outputs:
+  - api-specification
+  - endpoint-design
+  - openapi-document
+side_effects:
+  - creates-files
+triggers:
+  - user-asks-about-api
+  - user-asks-about-rest
+  - user-asks-about-graphql
+  - file-type:*.openapi.yaml
+  - project-has-openapi-spec
+complements:
+  - backend-implementation-patterns
+  - mcp-builder
+tier: core
 ---
 
 # API Design Patterns

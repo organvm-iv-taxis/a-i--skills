@@ -6,6 +6,8 @@ import argparse
 import json
 import os
 import shutil
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -86,6 +88,57 @@ def _sync_links(target_dir: Path, sources: list[Path], mode: str) -> None:
         link_path.symlink_to(rel_src, target_is_directory=True)
 
 
+def _extract_frontmatter(text: str) -> dict[str, str]:
+    """Minimal frontmatter extractor (same logic as validate_skills.py)."""
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return {}
+    end = None
+    for i in range(1, len(lines)):
+        if lines[i].strip() == "---":
+            end = i
+            break
+    if end is None:
+        return {}
+    data: dict[str, str] = {}
+    current_key = None
+    for raw in lines[1:end]:
+        if not raw.strip() or raw.lstrip().startswith("#"):
+            continue
+        if raw.startswith(" ") or raw.startswith("\t"):
+            if current_key:
+                data[current_key] = f"{data[current_key]}\n{raw.lstrip()}"
+            continue
+        key, sep, value = raw.partition(":")
+        if not sep:
+            continue
+        current_key = key.strip()
+        data[current_key] = value.strip()
+    return data
+
+
+def _write_tier_lists(
+    collections_dir: Path, skill_dirs: list[Path],
+) -> None:
+    """Generate core-skills.txt and community-skills.txt based on tier field."""
+    core: list[Path] = []
+    community: list[Path] = []
+    for d in skill_dirs:
+        skill_file = d / "SKILL.md"
+        try:
+            text = skill_file.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        fm = _extract_frontmatter(text)
+        tier = fm.get("tier", "")
+        if tier == "core":
+            core.append(d)
+        elif tier == "community":
+            community.append(d)
+    _write_list(collections_dir / "core-skills.txt", core)
+    _write_list(collections_dir / "community-skills.txt", community)
+
+
 def _update_marketplace(example_paths: list[str], document_paths: list[str]) -> None:
     marketplace_path = ROOT / ".claude-plugin" / "marketplace.json"
     if not marketplace_path.exists():
@@ -138,6 +191,7 @@ def main() -> int:
 
     _write_list(collections_dir / "example-skills.txt", example_skill_dirs)
     _write_list(collections_dir / "document-skills.txt", document_skill_dirs)
+    _write_tier_lists(collections_dir, example_skill_dirs + document_skill_dirs)
 
     if not args.skip_marketplace:
         _update_marketplace(
@@ -165,6 +219,18 @@ def main() -> int:
         document_skill_dirs,
         args.mode,
     )
+
+    # Generate registry JSON and lockfile
+    scripts_dir = Path(__file__).resolve().parent
+    for script_name in ("generate_registry.py", "generate_lockfile.py"):
+        script = scripts_dir / script_name
+        if script.exists():
+            result = subprocess.run(
+                [sys.executable, str(script)],
+                capture_output=True, text=True,
+            )
+            if result.returncode != 0:
+                print(f"WARNING: {script_name} failed: {result.stderr.strip()}")
 
     return 0
 

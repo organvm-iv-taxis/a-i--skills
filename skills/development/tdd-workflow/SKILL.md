@@ -12,6 +12,24 @@ tags:
   - red-green-refactor
   - coverage
   - quality
+inputs:
+  - feature-requirements
+  - source-code
+outputs:
+  - test-suite
+  - implementation-code
+side_effects:
+  - creates-files
+  - runs-commands
+triggers:
+  - user-asks-about-tdd
+  - user-asks-about-testing
+  - file-type:*.test.ts
+  - file-type:*.spec.py
+complements:
+  - testing-patterns
+  - verification-loop
+tier: core
 metadata:
   source: affaan-m/everything-claude-code
   adapted-by: ai-skills

@@ -54,6 +54,13 @@ license: MIT
 | `prerequisites` | list | Skills that should be learned first (list of skill names) |
 | `tags` | list | Searchable keywords for discovery |
 | `metadata` | object | Additional metadata (e.g., `source`, `adapted-by`, `category`) |
+| `inputs` | list | What the skill expects as input (e.g., `[source-code, openapi-spec]`) |
+| `outputs` | list | What the skill produces (e.g., `[test-report, mcp-server-code]`) |
+| `side_effects` | list | Environment changes the skill may cause (e.g., `[creates-files, runs-commands]`) |
+| `triggers` | list | Activation conditions (see [Activation Conditions](activation-conditions.md)) |
+| `complements` | list | Skills that pair well with this one (list of skill names) |
+| `includes` | list | Bundle: skills to install together (list of skill names; must exist) |
+| `tier` | string | Quality tier: `core` (curated, reviewed) or `community` |
 
 ### Field Constraints
 
@@ -111,6 +118,77 @@ license: MIT
     - graphql
     - openapi
   ```
+
+**inputs** (optional)
+- List of input types the skill expects
+- Use lowercase, hyphen-separated values
+- Describes what the skill needs to operate on
+- Example:
+  ```yaml
+  inputs:
+    - source-code
+    - openapi-spec
+  ```
+
+**outputs** (optional)
+- List of output types the skill produces
+- Use lowercase, hyphen-separated values
+- Describes what artifacts the skill creates
+- Example:
+  ```yaml
+  outputs:
+    - test-report
+    - mcp-server-code
+  ```
+
+**side_effects** (optional)
+- List of environment changes the skill may cause
+- Values must be from the known set: `creates-files`, `modifies-git`, `runs-commands`, `network-access`, `installs-packages`, `reads-filesystem`
+- Example:
+  ```yaml
+  side_effects:
+    - creates-files
+    - runs-commands
+  ```
+
+**triggers** (optional)
+- List of activation conditions that tell agents when to suggest this skill
+- See [Activation Conditions](activation-conditions.md) for the full syntax specification
+- Example:
+  ```yaml
+  triggers:
+    - user-asks-about-mcp
+    - file-type:*.py
+    - project-has-package-json
+  ```
+
+**complements** (optional)
+- List of skill names that pair well with this skill
+- Each value should reference an existing skill name (warning if missing)
+- Example:
+  ```yaml
+  complements:
+    - tdd-workflow
+    - verification-loop
+  ```
+
+**includes** (optional)
+- List of skill names to install together (bundle/pack pattern)
+- Each value must reference an existing skill name (error if missing)
+- Only meaningful for "pack" skills that aggregate others
+- Example:
+  ```yaml
+  includes:
+    - api-design-patterns
+    - testing-patterns
+    - deployment-cicd
+  ```
+
+**tier** (optional)
+- One of: `core`, `community`
+- `core`: Curated, reviewed skills maintained by the repository team
+- `community`: Community-contributed skills with standard validation
+- See [Core vs Community](../guides/core-vs-community.md) for promotion criteria
 
 ### Markdown Content
 

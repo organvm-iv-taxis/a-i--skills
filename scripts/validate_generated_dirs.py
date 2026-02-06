@@ -66,6 +66,51 @@ def _check_top_level(target: Path, expected_names: set[str], errors: list[str]) 
         errors.append(f"{target}: extra {sorted(extra)}")
 
 
+def _check_registry(errors: list[str]) -> None:
+    """Verify skills-registry.json exists and has a plausible skill count."""
+    import json as _json
+
+    registry_path = BUILD_DIR / "skills-registry.json"
+    if not registry_path.exists():
+        errors.append(f"{registry_path}: missing skills-registry.json")
+        return
+
+    try:
+        data = _json.loads(registry_path.read_text(encoding="utf-8"))
+    except Exception as exc:  # noqa: BLE001
+        errors.append(f"{registry_path}: invalid JSON ({exc})")
+        return
+
+    skills = data.get("skills", [])
+    if not skills:
+        errors.append(f"{registry_path}: registry contains no skills")
+
+    # Cross-check with example-skills.txt count
+    example_list = BUILD_DIR / "collections" / "example-skills.txt"
+    if example_list.exists():
+        expected_count = len(_load_list(example_list))
+        example_skills = [s for s in skills if s.get("collection") == "example"]
+        if len(example_skills) != expected_count:
+            errors.append(
+                f"{registry_path}: example skill count mismatch "
+                f"(registry={len(example_skills)}, list={expected_count})"
+            )
+
+
+def _check_lockfile(errors: list[str]) -> None:
+    """Verify skills-lock.json exists if present."""
+    lockfile_path = BUILD_DIR / "skills-lock.json"
+    if not lockfile_path.exists():
+        # Lockfile is optional but warn
+        return
+
+    import json as _json
+    try:
+        data = _json.loads(lockfile_path.read_text(encoding="utf-8"))
+    except Exception as exc:  # noqa: BLE001
+        errors.append(f"{lockfile_path}: invalid JSON ({exc})")
+
+
 def main() -> int:
     errors: list[str] = []
 
@@ -77,6 +122,9 @@ def main() -> int:
             _check_marker(target, errors)
             _check_no_symlinks(target, errors)
             _check_top_level(target, expected_names, errors)
+
+    _check_registry(errors)
+    _check_lockfile(errors)
 
     if errors:
         for err in errors:

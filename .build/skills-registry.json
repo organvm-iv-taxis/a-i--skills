@@ -1,0 +1,3363 @@
+{
+  "version": "1.1",
+  "generated_at": "2026-02-06T09:20:40.576764+00:00",
+  "repository": "anthropic-agent-skills",
+  "skills": [
+    {
+      "name": "accessibility-patterns",
+      "description": "Build inclusive web experiences following WCAG guidelines. Covers semantic HTML, ARIA, keyboard navigation, color contrast, and testing strategies. Triggers on accessibility, a11y, WCAG, screen readers, or inclusive design requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/accessibility-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "wcag-checklist.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "agent-swarm-orchestrator",
+      "description": "Designs multi-agent systems with coordinated agent swarms, task distribution, inter-agent communication, and emergent collective behavior.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/agent-swarm-orchestrator",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "coordination-protocols.md",
+          "emergent-patterns.md",
+          "swarm-topologies.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/algorithmic-art",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": "intermediate",
+      "time_to_learn": "1hour",
+      "tier": null,
+      "prerequisites": [],
+      "tags": [
+        "generative-art",
+        "p5js",
+        "creative-coding",
+        "algorithmic",
+        "procedural",
+        "particles",
+        "flow-fields"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "parameter-tuning-guide.md",
+          "philosophy-examples.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "api-design-patterns",
+      "description": "Design robust APIs with RESTful patterns, GraphQL schemas, versioning strategies, and error handling conventions. Supports OpenAPI/Swagger documentation and SDK generation patterns. Triggers on API design, schema definition, endpoint architecture, or developer experience requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/api-design-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": "core",
+      "prerequisites": [],
+      "tags": [
+        "api",
+        "rest",
+        "graphql",
+        "openapi",
+        "design-patterns"
+      ],
+      "inputs": [
+        "service-requirements",
+        "data-models"
+      ],
+      "outputs": [
+        "api-specification",
+        "endpoint-design",
+        "openapi-document"
+      ],
+      "side_effects": [
+        "creates-files"
+      ],
+      "triggers": [
+        "user-asks-about-api",
+        "user-asks-about-rest",
+        "user-asks-about-graphql",
+        "file-type:*.openapi.yaml",
+        "project-has-openapi-spec"
+      ],
+      "complements": [
+        "backend-implementation-patterns",
+        "mcp-builder"
+      ],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "error-codes.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/artifacts-builder",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "bundle-artifact.sh",
+          "init-artifact.sh",
+          "shadcn-components.tar.gz"
+        ],
+        "references": [
+          "component-guide.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "audio-engineering-patterns",
+      "description": "Audio production concepts, DSP fundamentals, mixing/mastering techniques, and DAW workflows. Bridges modular synthesis philosophy with practical audio engineering. Triggers on audio production, mixing, sound design, DSP, or music technology requests.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/audio-engineering-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "frequency-chart.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "backend-implementation-patterns",
+      "description": "Production-ready backend API implementation patterns including REST, GraphQL, authentication, error handling, and data validation",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/backend-implementation-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "middleware-patterns.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "blockchain-integration-builder",
+      "description": "Design and implement blockchain integrations across chains and frameworks with emphasis on patterns over specific technologies. Use when building Web3 applications, smart contract systems, token mechanics, decentralized identity, or blockchain-verified data. Triggers on blockchain architecture, smart contract design, Web3 integration, token systems, or decentralized application development. Framework-agnostic\u2014applies to Ethereum, Solana, or emerging chains.",
+      "category": "specialized",
+      "collection": "example",
+      "path": "skills/specialized/blockchain-integration-builder",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "contract-patterns.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/brand-guidelines",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "brand-asset-checklist.md",
+          "color-accessibility-guide.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/canvas-design",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": "core",
+      "prerequisites": [],
+      "tags": [
+        "design",
+        "art",
+        "visual",
+        "canvas",
+        "pdf",
+        "png"
+      ],
+      "inputs": [
+        "design-brief",
+        "creative-direction"
+      ],
+      "outputs": [
+        "png-image",
+        "pdf-document",
+        "design-philosophy"
+      ],
+      "side_effects": [
+        "creates-files"
+      ],
+      "triggers": [
+        "user-asks-about-design",
+        "user-asks-about-poster",
+        "user-asks-about-art",
+        "context:visual-design"
+      ],
+      "complements": [
+        "algorithmic-art",
+        "theme-factory"
+      ],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "color-harmony.md",
+          "composition-principles.md",
+          "workflow-integration.md"
+        ],
+        "assets": [
+          "templates"
+        ]
+      }
+    },
+    {
+      "name": "claude-project-manifest",
+      "description": "Creates annotated bibliography-style manifests for Claude projects, tracking files, conversation threads, and relationships with unique IDs and annotations. Use when documenting project contents, creating file inventories, tracking conversation history, or building navigable knowledge maps.",
+      "category": "knowledge",
+      "collection": "example",
+      "path": "skills/knowledge/claude-project-manifest",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "prerequisites": [],
+      "tags": [
+        "documentation",
+        "inventory",
+        "annotation",
+        "bibliography",
+        "knowledge-management"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "annotation-guidelines.md",
+          "id-systems.md",
+          "manifest-schema.md",
+          "workflow-integration.md"
+        ],
+        "assets": [
+          "templates"
+        ]
+      }
+    },
+    {
+      "name": "code-refactoring-patterns",
+      "description": "Systematic approach to refactoring code for improved maintainability, performance, and clarity while preserving functionality",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/code-refactoring-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "refactoring-catalog.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "coding-standards-enforcer",
+      "description": "Automated code style enforcement with linters, formatters, and pre-commit hooks for consistent codebases",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/coding-standards-enforcer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "style-guide-template.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "content-distribution",
+      "description": "Promote creative and technical work through strategic content distribution. Covers platform selection, audience building, content repurposing, and engagement strategies without becoming a full-time marketer. Triggers on promotion, audience building, social media strategy, or content marketing requests.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/content-distribution",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "content-calendar-template.md",
+          "platform-guides.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "continuous-learning-agent",
+      "description": "Self-improvement patterns for AI agents to learn from feedback, errors, and successful patterns across sessions",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/continuous-learning-agent",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "learning-resources.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "contract-risk-analyzer",
+      "description": "Analyzes freelance contracts and Statements of Work (SOW) to identify potential risks, scope creep, and unfavorable terms, providing plain-language explanations.",
+      "category": "security",
+      "collection": "example",
+      "path": "skills/security/contract-risk-analyzer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "negotiation-templates.md",
+          "red-flag-checklist.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "creative-writing-craft",
+      "description": "Craft compelling fiction and creative nonfiction with attention to structure, voice, prose style, and revision. Supports short stories, novel chapters, essays, and hybrid forms. Triggers on creative writing, fiction writing, story craft, prose style, or literary technique requests.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/creative-writing-craft",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "revision-checklist.md",
+          "story-structures.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "cv-resume-builder",
+      "description": "Optimize resumes and CVs for impact, ATS compatibility, and audience targeting. Supports multiple formats (chronological, functional, hybrid), accomplishment framing (STAR/XYZ), and tailoring for specific roles. Triggers on resume review, CV update, job application prep, or career document requests.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/cv-resume-builder",
+      "license": "MIT",
+      "complexity": "beginner",
+      "time_to_learn": "30min",
+      "tier": null,
+      "prerequisites": [],
+      "tags": [
+        "resume",
+        "cv",
+        "career",
+        "job-search",
+        "ats",
+        "professional"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "action-verbs.md",
+          "formats.md",
+          "industry-keywords.md",
+          "workflow-integration.md"
+        ],
+        "assets": [
+          "templates"
+        ]
+      }
+    },
+    {
+      "name": "data-pipeline-architect",
+      "description": "Designs ETL/ELT data pipelines with proper extraction, transformation, and loading patterns, including orchestration, error handling, and data quality validation.",
+      "category": "data",
+      "collection": "example",
+      "path": "skills/data/data-pipeline-architect",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "data-quality-checks.md",
+          "orchestration-patterns.md",
+          "pipeline-templates.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "data-storytelling-analyst",
+      "description": "Transforms raw data into compelling visual narratives using Python or R, focusing on clarity, insight, and aesthetic presentation.",
+      "category": "data",
+      "collection": "example",
+      "path": "skills/data/data-storytelling-analyst",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "chart-selection-guide.md",
+          "color-accessibility-guide.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "defi-trading-systems",
+      "description": "Designs DeFi trading systems for perpetual futures, liquidity provision, and automated strategies with risk management and MEV protection.",
+      "category": "specialized",
+      "collection": "example",
+      "path": "skills/specialized/defi-trading-systems",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "amm-formulas.md",
+          "mev-protection.md",
+          "perpetual-mechanics.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "deployment-cicd",
+      "description": "Deploy applications with confidence using CI/CD pipelines, containerization, and infrastructure as code. Covers GitHub Actions, Docker, Vercel, and cloud deployment patterns. Triggers on deployment, CI/CD, Docker, GitHub Actions, or DevOps requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/deployment-cicd",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "pipeline-templates.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+      "category": "documentation",
+      "collection": "example",
+      "path": "skills/documentation/doc-coauthoring",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "document-templates.md",
+          "reader-testing-prompts.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "dotfile-systems-architect",
+      "description": "Guides the creation of a \"Minimal Root\" home directory using the XDG Base Directory specification and a Bare Git Repository. Manages config separation, secrets, and cross-platform syncing.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/dotfile-systems-architect",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "1hour",
+      "tier": null,
+      "prerequisites": [],
+      "tags": [
+        "dotfiles",
+        "xdg",
+        "git",
+        "configuration",
+        "cross-platform"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "app-configurations.md",
+          "bare-git-setup.md",
+          "chezmoi-integration.md",
+          "cross-platform.md",
+          "dotfile-patterns.md",
+          "migration-guide.md",
+          "secrets-management.md",
+          "shell-bootstrap.md",
+          "xdg-specification.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "enc1101-curriculum-designer",
+      "description": "Design and generate curriculum materials for college composition courses (ENC1101 and similar). Use when creating syllabi, assignment prompts, rubrics, lesson plans, scaffolded writing sequences, peer review guides, or D2L/LMS-formatted content. Triggers on requests for composition pedagogy, writing assignment design, grading criteria, or freshman writing course materials.",
+      "category": "education",
+      "collection": "example",
+      "path": "skills/education/enc1101-curriculum-designer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "peer-review-guides.md",
+          "rubric-templates.md",
+          "wpa-outcomes.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "evaluation-to-growth",
+      "description": "Systematic content evaluation framework progressing through Critique \u2192 Reinforcement \u2192 Risk Analysis \u2192 Growth. Use when reviewing writing, arguments, proposals, code documentation, or any content requiring rigorous multi-dimensional assessment. Supports interactive guided mode or autonomous full-report mode, with output as markdown report, structured checklist, or inline revision suggestions. Triggers on requests to evaluate, critique, improve, strengthen, or review content quality.",
+      "category": "education",
+      "collection": "example",
+      "path": "skills/education/evaluation-to-growth",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "checklist-template.md",
+          "inline-template.md",
+          "report-template.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "feature-workflow-orchestrator",
+      "description": "End-to-end feature development orchestration from planning through deployment with quality gates",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/feature-workflow-orchestrator",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "workflow-templates.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "feedback-pedagogy",
+      "description": "Give effective feedback that promotes learning and growth. Covers written feedback on student work, rubric design, peer review facilitation, and constructive critique techniques. Triggers on grading, feedback, rubrics, peer review, or critique requests.",
+      "category": "education",
+      "collection": "example",
+      "path": "skills/education/feedback-pedagogy",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "comment-bank.md",
+          "rubric-templates.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "freelance-client-ops",
+      "description": "Manage freelance and client work professionally\u2014proposals, contracts, scope management, invoicing, and client communication. Covers the business side of creative work. Triggers on freelance, client work, proposals, contracts, pricing, or project scope requests.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/freelance-client-ops",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "contract-template.md",
+          "email-templates.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "frontend-design-systems",
+      "description": "Systematic approach to building consistent, maintainable frontend UI components with design systems and component libraries",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/frontend-design-systems",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "component-patterns.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "fullstack-starter-pack",
+      "description": "Curated bundle of essential skills for fullstack web development. Installs API design, testing, deployment, backend patterns, frontend architecture, and code quality skills together. Use when starting a new fullstack project or onboarding onto a codebase.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/fullstack-starter-pack",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "5min",
+      "tier": "core",
+      "prerequisites": [],
+      "tags": [
+        "bundle",
+        "fullstack",
+        "web-development",
+        "starter-kit"
+      ],
+      "inputs": [
+        "project-requirements"
+      ],
+      "outputs": [
+        "skill-bundle"
+      ],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [
+        "api-design-patterns",
+        "testing-patterns",
+        "tdd-workflow",
+        "backend-implementation-patterns",
+        "deployment-cicd",
+        "nextjs-fullstack-patterns"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "game-mechanics-designer",
+      "description": "Designs engaging gameplay loops, economies, and progression systems, balancing challenge and reward for interactive experiences.",
+      "category": "specialized",
+      "collection": "example",
+      "path": "skills/specialized/game-mechanics-designer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "balancing-formulas.md",
+          "mda-framework.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "gcp-resource-optimizer",
+      "description": "Optimize Google Cloud Platform resource allocation and manage cloud credits efficiently. Use when planning GCP deployments, analyzing cloud spend, maximizing value from expiring credits, right-sizing instances, or designing cost-effective architectures. Triggers on GCP cost optimization, credit management, resource allocation planning, or cloud budget concerns.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/gcp-resource-optimizer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "cost-queries.md",
+          "pricing-cheatsheet.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "gdpr-compliance-check",
+      "description": "Audits web applications and architectures for compliance with GDPR, CCPA, and other privacy regulations, focusing on consent, data minimization, and user rights.",
+      "category": "security",
+      "collection": "example",
+      "path": "skills/security/gdpr-compliance-check",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "compliance-checklist.md",
+          "privacy-by-design.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "generative-art-algorithms",
+      "description": "Create algorithmic and generative art using mathematical patterns, noise functions, particle systems, and procedural generation. Covers flow fields, L-systems, fractals, and creative coding foundations. Triggers on generative art, algorithmic art, creative coding, procedural generation, or mathematical visualization requests.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/generative-art-algorithms",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "color-palettes.md",
+          "noise-recipes.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "generative-music-composer",
+      "description": "Creates algorithmic music composition systems using procedural generation, Markov chains, L-systems, and neural approaches for ambient, adaptive, and experimental music.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/generative-music-composer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "markov-music.md",
+          "midi-reference.md",
+          "music-theory-primer.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "github-profile-architect",
+      "description": "Architects high-impact GitHub Profile READMEs using the \"Special Repository\" mechanism. optimizing for recruitment signaling, visual semiotics, and dynamic automation (Actions, WakaTime).",
+      "category": "documentation",
+      "collection": "example",
+      "path": "skills/documentation/github-profile-architect",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "gamification-mechanics.md",
+          "persona-strategies.md",
+          "profile-components.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "github-repo-curator",
+      "description": "Organize GitHub repositories for professional presentation and maintainability. README templates, documentation standards, repo organization patterns, and profile optimization. Triggers on GitHub cleanup, repo organization, README writing, or open source presentation requests.",
+      "category": "documentation",
+      "collection": "example",
+      "path": "skills/documentation/github-repo-curator",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "readme-template.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "github-repository-standards",
+      "description": "Enforces the \"Minimal Root\" philosophy for repository organization and implements \"World-Class README\" standards. Moves config clutter to `.config/` and creates high-conversion documentation.",
+      "category": "documentation",
+      "collection": "example",
+      "path": "skills/documentation/github-repository-standards",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "config-migration-recipes.md",
+          "readme-anatomy.md",
+          "root-hygiene-checklist.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "github-roadmap-strategist",
+      "description": "operationalizes GitHub Projects (V2) as a dynamic roadmap system. Defines field taxonomy, \"Triage\" protocols, and synchronizes Strategy (Roadmap) with Execution (Issues).",
+      "category": "project-management",
+      "collection": "example",
+      "path": "skills/project-management/github-roadmap-strategist",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "case-studies.md",
+          "field-taxonomy.md",
+          "governance-protocols.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "grant-proposal-writer",
+      "description": "Write compelling grant proposals for academic research, creative projects, and nonprofit initiatives. Covers federal (NSF, NEA, NEH), foundation, and institutional grants with attention to narrative, budget justification, and review criteria. Triggers on grant writing, funding proposals, research funding, or fellowship applications.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/grant-proposal-writer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "budget-templates.md",
+          "funder-profiles.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "incident-response-commander",
+      "description": "Guides teams through IT outages and security incidents, providing structured workflows for detection, containment, eradication, and post-mortem analysis.",
+      "category": "security",
+      "collection": "example",
+      "path": "skills/security/incident-response-commander",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "postmortem-template.md",
+          "runbook-templates.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "interactive-theatre-designer",
+      "description": "Designs interactive theatrical experiences with branching narratives, audience participation systems, and immersive environmental storytelling.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/interactive-theatre-designer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "choice-architecture.md",
+          "immersive-case-studies.md",
+          "live-systems-tech.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "interfaith-sacred-geometry",
+      "description": "Generate sacred geometry patterns with interfaith symbolism for spiritual visualizations and art. Use when creating visual representations that honor multiple religious traditions, designing meditation aids, building soul journey visualizations, or producing art that bridges sacred traditions through geometric harmony. Triggers on sacred geometry requests, interfaith symbol design, spiritual visualization projects, or multi-tradition sacred art.",
+      "category": "specialized",
+      "collection": "example",
+      "path": "skills/specialized/interfaith-sacred-geometry",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "sacred-math.md",
+          "symbol-guide.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/internal-comms",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "communication-templates.md",
+          "tone-guide.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "interview-preparation",
+      "description": "Prepare for job interviews across formats\u2014behavioral, technical, portfolio reviews, and negotiations. STAR/CAR frameworks for stories, common question patterns, research strategies, and follow-up templates. Triggers on interview prep, job interviews, behavioral questions, or salary negotiation requests.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/interview-preparation",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "question-bank.md",
+          "story-bank-template.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "iterative-code-exploration",
+      "description": "Progressive context retrieval pattern for understanding unfamiliar codebases through iterative refinement",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/iterative-code-exploration",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "exploration-strategies.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "knowledge-architecture",
+      "description": "Design knowledge systems using ontological principles\u2014organizing by what things ARE rather than arbitrary hierarchies. Use when structuring personal knowledge bases, designing documentation systems, creating cross-domain linking patterns, building the {OS.me} ecosystem, or architecting information that reveals rather than obscures essential nature. Triggers on knowledge management, documentation architecture, information ontology, or systematic organization of complex domains.",
+      "category": "knowledge",
+      "collection": "example",
+      "path": "skills/knowledge/knowledge-architecture",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "implementation-patterns.md",
+          "ontological-terms.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "knowledge-graph-builder",
+      "description": "Designs and builds knowledge graphs to represent entities, relationships, and semantic connections, with query patterns for Neo4j, RDF, and property graphs.",
+      "category": "knowledge",
+      "collection": "example",
+      "path": "skills/knowledge/knowledge-graph-builder",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "cypher-patterns.md",
+          "graph-algorithms.md",
+          "graph-modeling.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "local-llm-fine-tuning",
+      "description": "Guides users through the process of preparing datasets and fine-tuning local Large Language Models (LLMs) using techniques like LoRA and QLoRA.",
+      "category": "specialized",
+      "collection": "example",
+      "path": "skills/specialized/local-llm-fine-tuning",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "dataset-formats.md",
+          "hyperparameter-guide.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "location-ar-experience",
+      "description": "Designs location-based augmented reality experiences with geospatial anchoring, GPS integration, and real-world interactive overlays.",
+      "category": "specialized",
+      "collection": "example",
+      "path": "skills/specialized/location-ar-experience",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "arcore-geospatial.md",
+          "arkit-location.md",
+          "coordinate-systems.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/mcp-builder",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": "intermediate",
+      "time_to_learn": "1hour",
+      "tier": "core",
+      "prerequisites": [
+        "backend-implementation-patterns"
+      ],
+      "tags": [
+        "mcp",
+        "model-context-protocol",
+        "llm-tools",
+        "api-integration",
+        "python",
+        "typescript"
+      ],
+      "inputs": [
+        "api-documentation",
+        "service-requirements"
+      ],
+      "outputs": [
+        "mcp-server-code",
+        "tool-definitions"
+      ],
+      "side_effects": [
+        "creates-files",
+        "runs-commands"
+      ],
+      "triggers": [
+        "user-asks-about-mcp",
+        "user-asks-about-model-context-protocol",
+        "context:mcp-server"
+      ],
+      "complements": [
+        "api-design-patterns"
+      ],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "connections.py",
+          "evaluation.py",
+          "example_evaluation.xml",
+          "requirements.txt"
+        ],
+        "references": [
+          "mcp-protocol-guide.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "mcp-integration-patterns",
+      "description": "Builds MCP (Model Context Protocol) servers and clients for extending AI assistants with custom tools, resources, and prompts.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/mcp-integration-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "deployment-patterns.md",
+          "mcp-specification.md",
+          "server-examples.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "mcp-server-orchestrator",
+      "description": "Configure, deploy, and troubleshoot Model Context Protocol (MCP) servers for AI agent workflows. Use when setting up MCP servers, debugging connection issues, managing multi-server configurations, integrating with Claude Desktop/Code/Cowork, or designing custom tool servers. Triggers on MCP configuration, tool server development, Claude integration issues, or agent infrastructure setup.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/mcp-server-orchestrator",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "debugging-guide.md",
+          "server-templates.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "ml-experiment-tracker",
+      "description": "Guides ML experiment logging, versioning, and reproducibility using tools like MLflow, Weights & Biases, and DVC for systematic model development.",
+      "category": "data",
+      "collection": "example",
+      "path": "skills/data/ml-experiment-tracker",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "mlflow-setup.md",
+          "reproducibility-checklist.md",
+          "wandb-patterns.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "mobile-platform-architect",
+      "description": "Architects cross-platform and native mobile applications, providing guidance on state management, navigation, and platform-specific best practices for React Native, Flutter, iOS, and Android.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/mobile-platform-architect",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "platform-patterns.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "modular-synthesis-philosophy",
+      "description": "Apply modular synthesis principles to system design, workflow architecture, and conceptual frameworks. Use when designing modular systems, creating architecture diagrams using synthesis metaphors, applying signal flow thinking to data pipelines, or translating between audio engineering and software concepts. Triggers on modular architecture design, signal flow diagrams, synthesis-inspired system thinking, or \"oscillator/patch\" metaphors.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/modular-synthesis-philosophy",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "module-mappings.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "movement-notation-systems",
+      "description": "Designs systems for encoding, scoring, and generating choreographic movement using Laban notation, computational geometry, and procedural animation principles.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/movement-notation-systems",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "labanotation-symbols.md",
+          "lma-glossary.md",
+          "motion-capture-formats.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "multi-agent-workforce-planner",
+      "description": "Designs parallel agent workstreams for large feature sets by analyzing dependencies, assigning specialized agent types (Explore, Plan, Bash, Edit), maximizing parallelization, and creating execution plans with progress tracking and failure recovery. Use when breaking down large features into parallel agent work.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/multi-agent-workforce-planner",
+      "license": "MIT",
+      "complexity": "advanced",
+      "time_to_learn": "1hour",
+      "tier": null,
+      "prerequisites": [
+        "product-requirements-designer"
+      ],
+      "tags": [
+        "multi-agent",
+        "parallel",
+        "planning",
+        "workstream",
+        "task-decomposition"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "agent-type-catalog.md",
+          "dependency-analysis.md",
+          "failure-recovery-patterns.md",
+          "parallelization-strategies.md",
+          "workflow-integration.md"
+        ],
+        "assets": [
+          "templates"
+        ]
+      }
+    },
+    {
+      "name": "narratological-algorithms",
+      "description": "Distill artist/theorist narrative principles into formal, implementable algorithmic frameworks. Use when asked to extract, formalize, or systematize narrative techniques from any storytelling source\u2014filmmakers, writers, theorists, game designers, showrunners. Triggers on requests involving narrative principle extraction, story structure analysis, craft methodology formalization, or creating implementable storytelling protocols.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/narratological-algorithms",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "formalization-patterns.md",
+          "output-template.md",
+          "theoretical-correspondences.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "networking-outreach",
+      "description": "Build professional relationships through strategic outreach\u2014cold emails, LinkedIn engagement, informational interviews, and follow-up sequences. Authentic connection over transactional networking. Triggers on networking, cold outreach, LinkedIn strategy, or informational interview requests.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/networking-outreach",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "email-templates.md",
+          "tracking-template.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "nextjs-fullstack-patterns",
+      "description": "Build production Next.js applications with App Router patterns, server components, data fetching strategies, authentication, and deployment. Covers the full stack from database to UI. Triggers on Next.js development, React server components, App Router, or full-stack TypeScript requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/nextjs-fullstack-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "nextjs-patterns.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "oauth-flow-architect",
+      "description": "Implements OAuth 2.0 and OpenID Connect authentication flows with proper security, token management, and common provider integrations.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/oauth-flow-architect",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "oauth-security.md",
+          "provider-configs.md",
+          "token-patterns.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "ontological-renamer",
+      "description": "Renames projects and content with dense, meaningful ontological titles that describe essence and function. Combines 3-4 words using separator conventions (- for compound/close words, -- for distant concepts). Provides translations to Latin and Greek. Use when naming projects, repositories, systems, or concepts.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/ontological-renamer",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "prerequisites": [],
+      "tags": [
+        "naming",
+        "ontology",
+        "taxonomy",
+        "branding",
+        "translation"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "naming-patterns.md",
+          "separator-conventions.md",
+          "translation-guide.md",
+          "workflow-integration.md"
+        ],
+        "assets": [
+          "word-roots.md"
+        ]
+      }
+    },
+    {
+      "name": "portfolio-presentation",
+      "description": "Curate and present creative/technical work for maximum impact. Structure case studies, craft project narratives, optimize for different audiences (hiring managers, clients, collaborators). Supports portfolio websites, PDF decks, and presentation formats. Triggers on portfolio review, case study writing, project showcase, or work presentation requests.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/portfolio-presentation",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "case-study-template.md",
+          "deck-structure.md",
+          "pdf-portfolio.md",
+          "website-structure.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "postgres-advanced-patterns",
+      "description": "Advanced PostgreSQL patterns for performance optimization, complex queries, indexing strategies, and database design",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/postgres-advanced-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "query-patterns.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "product-requirements-designer",
+      "description": "Comprehensive product requirements documentation from problem definition through launch planning. Supports both enterprise PRD (full specs, cross-functional alignment) and lean/startup style (hypothesis-driven one-pagers). Framework-agnostic with templates for Agile, Jobs-to-Be-Done, and hybrid approaches. Scaffolds related artifacts including user stories, acceptance criteria, wireframes brief, and technical handoff specs. Triggers on PRD creation, product specs, feature requirements, or product design documentation.",
+      "category": "project-management",
+      "collection": "example",
+      "path": "skills/project-management/product-requirements-designer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "acceptance-criteria-template.md",
+          "agile-templates.md",
+          "jtbd-templates.md",
+          "odi-templates.md",
+          "technical-handoff-template.md",
+          "user-stories-template.md",
+          "wireframes-brief-template.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "project-alchemy-orchestrator",
+      "description": "A strategic guide for managing complex creative portfolios as a system of \"organs\" (Art, Commerce, Tools), diagnosing lifecycle stages (Nigredo, Albedo, Rubedo), and balancing the \"Four Fields\" of creative labor.",
+      "category": "project-management",
+      "collection": "example",
+      "path": "skills/project-management/project-alchemy-orchestrator",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "alchemical-diagnostics.md",
+          "portfolio-assessment.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "project-orchestration",
+      "description": "Personal multi-project coordination for creative practitioners managing many concurrent initiatives. Not PM methodology\u2014practical systems for tracking progress, managing energy, and moving projects forward. Triggers on project management, multi-project coordination, progress tracking, or overwhelm with concurrent work.",
+      "category": "project-management",
+      "collection": "example",
+      "path": "skills/project-management/project-orchestration",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "review-templates.md",
+          "stuck-interventions.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "reality-tv-narrative-analyzer",
+      "description": "Analyze narrative structures, character arcs, and genre conventions in reality television for academic research and content analysis. Use when studying reality TV editing patterns, mapping contestant storylines, analyzing producer manipulation techniques, comparing show formats, or writing about unscripted television. Triggers on reality TV analysis, unscripted television research, character arc mapping, or genre convention studies.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/reality-tv-narrative-analyzer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "analytical-terms.md",
+          "show-formats.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "recursive-systems-architect",
+      "description": "Designs self-referential and recursive systems that examine, modify, or generate themselves, including metacognitive architectures and strange loops.",
+      "category": "knowledge",
+      "collection": "example",
+      "path": "skills/knowledge/recursive-systems-architect",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "fixed-point-theory.md",
+          "metacognitive-patterns.md",
+          "strange-loops.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "research-synthesis-workflow",
+      "description": "Systematic methodology for gathering, analyzing, and synthesizing research from multiple sources into coherent insights and actionable knowledge.",
+      "category": "knowledge",
+      "collection": "example",
+      "path": "skills/knowledge/research-synthesis-workflow",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "artifact-templates.md",
+          "evaluation-rubrics.md",
+          "synthesis-methods.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "responsive-design-patterns",
+      "description": "Mobile-first responsive design patterns with breakpoints, fluid layouts, and adaptive components",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/responsive-design-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "breakpoint-patterns.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "rust-systems-design",
+      "description": "Provides expert guidance on Rust programming, focusing on memory safety, concurrency patterns, and idiomatic architectural choices for systems software.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/rust-systems-design",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "rust-patterns.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "second-brain-librarian",
+      "description": "Helps users organize knowledge, categorize notes, and discover connections within their personal knowledge management systems (e.g., Obsidian, Notion).",
+      "category": "knowledge",
+      "collection": "example",
+      "path": "skills/knowledge/second-brain-librarian",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "note-templates.md",
+          "pkm-methodologies.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "security-essentials-pack",
+      "description": "Curated bundle of essential security skills for building secure applications. Includes threat modeling, hardening guides, audit checklists, compliance frameworks, and contract analysis. Use when establishing security practices for a project.",
+      "category": "security",
+      "collection": "example",
+      "path": "skills/security/security-essentials-pack",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "5min",
+      "tier": "core",
+      "prerequisites": [],
+      "tags": [
+        "bundle",
+        "security",
+        "compliance",
+        "audit"
+      ],
+      "inputs": [
+        "project-architecture"
+      ],
+      "outputs": [
+        "skill-bundle"
+      ],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [
+        "security-threat-modeler",
+        "security-implementation-guide",
+        "gdpr-compliance-check",
+        "incident-response-commander",
+        "contract-risk-analyzer"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "security-implementation-guide",
+      "description": "Comprehensive security patterns for authentication, authorization, input validation, and common vulnerability prevention",
+      "category": "security",
+      "collection": "example",
+      "path": "skills/security/security-implementation-guide",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "owasp-top-10.md",
+          "security-checklist.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "security-threat-modeler",
+      "description": "Conducts systematic security analyses using methodologies like STRIDE to identify vulnerabilities in software architectures and propose mitigations.",
+      "category": "security",
+      "collection": "example",
+      "path": "skills/security/security-threat-modeler",
+      "license": "MIT",
+      "complexity": "advanced",
+      "time_to_learn": "1hour",
+      "tier": "core",
+      "prerequisites": [],
+      "tags": [
+        "security",
+        "threat-modeling",
+        "stride",
+        "risk-assessment",
+        "architecture"
+      ],
+      "inputs": [
+        "system-architecture",
+        "data-flow-diagram"
+      ],
+      "outputs": [
+        "threat-model-report",
+        "risk-assessment",
+        "mitigation-plan"
+      ],
+      "side_effects": [
+        "creates-files"
+      ],
+      "triggers": [
+        "user-asks-about-security",
+        "user-asks-about-threat-modeling",
+        "user-asks-about-stride",
+        "context:security-review"
+      ],
+      "complements": [
+        "security-implementation-guide",
+        "incident-response-commander"
+      ],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "attack-tree-patterns.md",
+          "stride-methodology.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "skill-chain-prompts",
+      "description": "Orchestrate multi-skill workflows with prompt-based skill chaining. Define sequential or parallel skill invocations using YAML chain definitions, track progress through chains, and use pre-built chains for development, documentation, and career workflows. Use when coordinating multiple skills for complex tasks.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/skill-chain-prompts",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "prerequisites": [],
+      "tags": [
+        "orchestration",
+        "workflow",
+        "chaining",
+        "multi-skill",
+        "automation",
+        "meta"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "built-in-chains.md",
+          "chain-format.md",
+          "execution-model.md",
+          "state-tracking.md"
+        ],
+        "assets": [
+          "chains"
+        ]
+      }
+    },
+    {
+      "name": "skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/skill-creator",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "init_skill.py",
+          "package_skill.py",
+          "quick_validate.py"
+        ],
+        "references": [
+          "skill-design-patterns.md",
+          "skill-quality-checklist.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "slack-gif-creator",
+      "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and composable animation primitives. This skill applies when users request animated GIFs or emoji animations for Slack from descriptions like \"make me a GIF for Slack of X doing Y\".",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/slack-gif-creator",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "animation-patterns.md",
+          "optimization-checklist.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "socratic-tutor",
+      "description": "A pedagogical aid that uses the Socratic method to guide users to answers through questioning, rather than providing direct solutions, to deepen understanding.",
+      "category": "education",
+      "collection": "example",
+      "path": "skills/education/socratic-tutor",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "question-bank.md",
+          "scaffolding-strategies.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "speckit",
+      "description": "Specification-Driven Development (SDD) toolkit. Transforms ideas into executable specifications, implementation plans, and task lists. Use for feature planning, PRD creation, or when user invokes /speckit.specify, /speckit.plan, /speckit.tasks commands.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/speckit",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "commands",
+          "constitution-template.md",
+          "methodology.md",
+          "plan-template.md",
+          "spec-template.md",
+          "tasks-template.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "specstory-guard",
+      "description": "Install a pre-commit hook that scans .specstory/history for secrets before commits. Run when user says \"set up secret scanning\", \"install specstory guard\", \"protect my history\", or \"check for secrets\".",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/specstory-guard",
+      "license": "Apache-2.0",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "guard.py",
+          "patterns.py",
+          "scan.py",
+          "setup.py"
+        ],
+        "references": [
+          "remediation-guide.md",
+          "secret-patterns.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "specstory-link-trail",
+      "description": "Track all URLs fetched during SpecStory AI coding sessions. Run when user says \"show my link trail\", \"what URLs did I visit\", \"list fetched links\", or \"show web fetches\".",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/specstory-link-trail",
+      "license": "Apache-2.0",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "url-categorization.md",
+          "webfetch-parsing.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "specstory-organize",
+      "description": "Organize SpecStory AI coding sessions in .specstory/history into year/month folders. Run when user says \"organize my history\", \"clean up specstory\", \"sort my sessions\", or \"organize specstory files\".",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/specstory-organize",
+      "license": "Apache-2.0",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "organize.py"
+        ],
+        "references": [
+          "organization-patterns.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "specstory-project-stats",
+      "description": "Fetch project statistics from SpecStory Cloud. Run when user says \"get project stats\", \"show SpecStory stats\", \"project statistics\", \"how many sessions\", or \"SpecStory metrics\".",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/specstory-project-stats",
+      "license": "Apache-2.0",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "get-stats.js"
+        ],
+        "references": [
+          "api-reference.md",
+          "metrics-guide.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "specstory-session-summary",
+      "description": "Summarize recent SpecStory AI coding sessions in standup format. Use when the user wants to review sessions from .specstory/history, prepare for standups, track work progress, or understand what was accomplished.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/specstory-session-summary",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "session-parsing.md",
+          "standup-formats.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "specstory-yak",
+      "description": "Analyze your SpecStory AI coding sessions in .specstory/history for yak shaving - when your initial goal got derailed into rabbit holes. Run when user says \"analyze my yak shaving\", \"check for rabbit holes\", \"how distracted was I\", or \"yak shave score\".",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/specstory-yak",
+      "license": "Apache-2.0",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "analyze.py",
+          "lib"
+        ],
+        "references": [
+          "analysis-patterns.md",
+          "scoring-methodology.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "sql-query-optimizer",
+      "description": "Analyzes complex SQL queries to improve performance, suggesting indexing strategies, schema refactoring, and query rewrites.",
+      "category": "data",
+      "collection": "example",
+      "path": "skills/data/sql-query-optimizer",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "index-strategy-guide.md",
+          "query-antipatterns.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "systemic-product-analyst",
+      "description": "A rigorous protocol for auditing projects (\"The Thing\") and their market fit (\"The World\"). Uses parallel analysis lanes, friction mapping, and outcome testing to create actionable 30/60/90 day plans.",
+      "category": "data",
+      "collection": "example",
+      "path": "skills/data/systemic-product-analyst",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "audit-templates.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "tdd-workflow",
+      "description": "Test-driven development workflow with comprehensive coverage requirements including unit, integration, and E2E tests",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/tdd-workflow",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": "core",
+      "prerequisites": [
+        "testing-patterns"
+      ],
+      "tags": [
+        "tdd",
+        "test-driven-development",
+        "red-green-refactor",
+        "coverage",
+        "quality"
+      ],
+      "inputs": [
+        "feature-requirements",
+        "source-code"
+      ],
+      "outputs": [
+        "test-suite",
+        "implementation-code"
+      ],
+      "side_effects": [
+        "creates-files",
+        "runs-commands"
+      ],
+      "triggers": [
+        "user-asks-about-tdd",
+        "user-asks-about-testing",
+        "file-type:*.test.ts",
+        "file-type:*.spec.py"
+      ],
+      "complements": [
+        "testing-patterns",
+        "verification-loop"
+      ],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "tdd-patterns.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "testing-patterns",
+      "description": "Write effective tests across the stack\u2014unit, integration, E2E, and visual regression. Covers testing philosophy, framework selection, mocking strategies, and CI integration. Triggers on testing, test coverage, TDD, or quality assurance requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/testing-patterns",
+      "license": "MIT",
+      "complexity": "beginner",
+      "time_to_learn": "30min",
+      "tier": null,
+      "prerequisites": [],
+      "tags": [
+        "testing",
+        "unit-tests",
+        "integration-tests",
+        "e2e",
+        "vitest",
+        "playwright",
+        "mocking"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "testing-strategies.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/theme-factory",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "font-pairing-guide.md",
+          "theme-template.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "three-js-interactive-builder",
+      "description": "Scaffold and build interactive 3D visualizations using Three.js with emphasis on algorithmic art, sacred geometry, temporal animations, and modular architecture. Use when creating WebGL visualizations, generative art pieces, interactive 3D experiences, particle systems, flow fields, or projects like gravitational spirals, temporal perspective pieces, or illuminated visual narratives. Triggers on requests for Three.js projects, 3D web graphics, algorithmic visualizations, or sacred geometry renders.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/three-js-interactive-builder",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "sacred_geometry.py"
+        ],
+        "references": [
+          "glsl-patterns.md",
+          "sacred-geometry-math.md",
+          "workflow-integration.md"
+        ],
+        "assets": [
+          "threejs-boilerplate"
+        ]
+      }
+    },
+    {
+      "name": "time-series-analyst",
+      "description": "Analyzes time-series data for patterns, trends, seasonality, and anomalies, with forecasting using statistical and machine learning methods.",
+      "category": "data",
+      "collection": "example",
+      "path": "skills/data/time-series-analyst",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "anomaly-patterns.md",
+          "arima-guide.md",
+          "prophet-tuning.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "verification-loop",
+      "description": "Comprehensive quality verification system for code changes with build, type, lint, test, and security checks",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/verification-loop",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "verification-checklist.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/web-artifacts-builder",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "bundle-artifact.sh",
+          "init-artifact.sh",
+          "shadcn-components.tar.gz"
+        ],
+        "references": [
+          "artifact-patterns.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/webapp-testing",
+      "license": "Complete terms in LICENSE.txt",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "with_server.py"
+        ],
+        "references": [
+          "e2e-testing-guide.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "webhook-integration-patterns",
+      "description": "Designs reliable webhook systems with proper delivery guarantees, retry logic, signature verification, and idempotent processing for event-driven integrations.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/webhook-integration-patterns",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "provider-examples.md",
+          "testing-webhooks.md",
+          "webhook-security.md",
+          "workflow-integration.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "workshop-presentation-design",
+      "description": "Design engaging workshops, conference talks, and educational presentations. Covers learning objectives, activity design, slide craft, and facilitation techniques. Triggers on workshop design, presentation prep, talk structure, or training session requests.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/workshop-presentation-design",
+      "license": "MIT",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "activity-library.md",
+          "facilitation-scripts.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "docx",
+      "description": "\"Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks\"",
+      "category": "uncategorized",
+      "collection": "document",
+      "path": "document-skills/docx",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "__init__.py",
+          "document.py",
+          "templates",
+          "utilities.py"
+        ],
+        "references": [
+          "common-use-cases.md",
+          "troubleshooting.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "pdf",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
+      "category": "uncategorized",
+      "collection": "document",
+      "path": "document-skills/pdf",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "check_bounding_boxes.py",
+          "check_bounding_boxes_test.py",
+          "check_fillable_fields.py",
+          "convert_pdf_to_images.py",
+          "create_validation_image.py",
+          "extract_form_field_info.py",
+          "fill_fillable_fields.py",
+          "fill_pdf_form_with_annotations.py"
+        ],
+        "references": [
+          "common-use-cases.md",
+          "troubleshooting.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "pptx",
+      "description": "\"Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks\"",
+      "category": "uncategorized",
+      "collection": "document",
+      "path": "document-skills/pptx",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [
+          "html2pptx.js",
+          "inventory.py",
+          "rearrange.py",
+          "replace.py",
+          "thumbnail.py"
+        ],
+        "references": [
+          "common-use-cases.md",
+          "troubleshooting.md"
+        ],
+        "assets": []
+      }
+    },
+    {
+      "name": "xlsx",
+      "description": "\"Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas\"",
+      "category": "uncategorized",
+      "collection": "document",
+      "path": "document-skills/xlsx",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [],
+      "complements": [],
+      "includes": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "common-use-cases.md",
+          "troubleshooting.md"
+        ],
+        "assets": []
+      }
+    }
+  ],
+  "categories": {
+    "development": {
+      "count": 26,
+      "skills": [
+        "accessibility-patterns",
+        "api-design-patterns",
+        "artifacts-builder",
+        "backend-implementation-patterns",
+        "code-refactoring-patterns",
+        "coding-standards-enforcer",
+        "continuous-learning-agent",
+        "deployment-cicd",
+        "dotfile-systems-architect",
+        "feature-workflow-orchestrator",
+        "frontend-design-systems",
+        "fullstack-starter-pack",
+        "gcp-resource-optimizer",
+        "iterative-code-exploration",
+        "mcp-builder",
+        "mcp-server-orchestrator",
+        "mobile-platform-architect",
+        "nextjs-fullstack-patterns",
+        "postgres-advanced-patterns",
+        "responsive-design-patterns",
+        "rust-systems-design",
+        "tdd-workflow",
+        "testing-patterns",
+        "verification-loop",
+        "web-artifacts-builder",
+        "webapp-testing"
+      ]
+    },
+    "tools": {
+      "count": 6,
+      "skills": [
+        "agent-swarm-orchestrator",
+        "multi-agent-workforce-planner",
+        "ontological-renamer",
+        "skill-chain-prompts",
+        "skill-creator",
+        "speckit"
+      ]
+    },
+    "creative": {
+      "count": 13,
+      "skills": [
+        "algorithmic-art",
+        "audio-engineering-patterns",
+        "canvas-design",
+        "creative-writing-craft",
+        "generative-art-algorithms",
+        "generative-music-composer",
+        "interactive-theatre-designer",
+        "modular-synthesis-philosophy",
+        "movement-notation-systems",
+        "narratological-algorithms",
+        "reality-tv-narrative-analyzer",
+        "theme-factory",
+        "three-js-interactive-builder"
+      ]
+    },
+    "specialized": {
+      "count": 6,
+      "skills": [
+        "blockchain-integration-builder",
+        "defi-trading-systems",
+        "game-mechanics-designer",
+        "interfaith-sacred-geometry",
+        "local-llm-fine-tuning",
+        "location-ar-experience"
+      ]
+    },
+    "professional": {
+      "count": 11,
+      "skills": [
+        "brand-guidelines",
+        "content-distribution",
+        "cv-resume-builder",
+        "freelance-client-ops",
+        "grant-proposal-writer",
+        "internal-comms",
+        "interview-preparation",
+        "networking-outreach",
+        "portfolio-presentation",
+        "slack-gif-creator",
+        "workshop-presentation-design"
+      ]
+    },
+    "knowledge": {
+      "count": 6,
+      "skills": [
+        "claude-project-manifest",
+        "knowledge-architecture",
+        "knowledge-graph-builder",
+        "recursive-systems-architect",
+        "research-synthesis-workflow",
+        "second-brain-librarian"
+      ]
+    },
+    "security": {
+      "count": 6,
+      "skills": [
+        "contract-risk-analyzer",
+        "gdpr-compliance-check",
+        "incident-response-commander",
+        "security-essentials-pack",
+        "security-implementation-guide",
+        "security-threat-modeler"
+      ]
+    },
+    "data": {
+      "count": 6,
+      "skills": [
+        "data-pipeline-architect",
+        "data-storytelling-analyst",
+        "ml-experiment-tracker",
+        "sql-query-optimizer",
+        "systemic-product-analyst",
+        "time-series-analyst"
+      ]
+    },
+    "documentation": {
+      "count": 4,
+      "skills": [
+        "doc-coauthoring",
+        "github-profile-architect",
+        "github-repo-curator",
+        "github-repository-standards"
+      ]
+    },
+    "education": {
+      "count": 4,
+      "skills": [
+        "enc1101-curriculum-designer",
+        "evaluation-to-growth",
+        "feedback-pedagogy",
+        "socratic-tutor"
+      ]
+    },
+    "project-management": {
+      "count": 4,
+      "skills": [
+        "github-roadmap-strategist",
+        "product-requirements-designer",
+        "project-alchemy-orchestrator",
+        "project-orchestration"
+      ]
+    },
+    "integrations": {
+      "count": 9,
+      "skills": [
+        "mcp-integration-patterns",
+        "oauth-flow-architect",
+        "specstory-guard",
+        "specstory-link-trail",
+        "specstory-organize",
+        "specstory-project-stats",
+        "specstory-session-summary",
+        "specstory-yak",
+        "webhook-integration-patterns"
+      ]
+    },
+    "uncategorized": {
+      "count": 4,
+      "skills": [
+        "docx",
+        "pdf",
+        "pptx",
+        "xlsx"
+      ]
+    }
+  },
+  "bundles": [
+    {
+      "name": "fullstack-starter-pack",
+      "includes": [
+        "api-design-patterns",
+        "testing-patterns",
+        "tdd-workflow",
+        "backend-implementation-patterns",
+        "deployment-cicd",
+        "nextjs-fullstack-patterns"
+      ]
+    },
+    {
+      "name": "security-essentials-pack",
+      "includes": [
+        "security-threat-modeler",
+        "security-implementation-guide",
+        "gdpr-compliance-check",
+        "incident-response-commander",
+        "contract-risk-analyzer"
+      ]
+    }
+  ]
+}

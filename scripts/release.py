@@ -5,6 +5,8 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import re
+import shutil
 import subprocess
 from pathlib import Path
 
@@ -109,6 +111,9 @@ def main() -> int:
     parser.add_argument("--notes", help="Explicit release notes to pass to gh release create/edit.")
     args = parser.parse_args()
 
+    if not re.match(r"^\d+\.\d+\.\d+$", args.version):
+        parser.error(f"invalid version '{args.version}': must be semver (e.g., 1.2.0)")
+
     date_str = args.date or dt.date.today().isoformat()
 
     _update_versions(args.version)
@@ -137,6 +142,8 @@ def main() -> int:
             _run(["git", "push", args.remote, "HEAD"])
 
     if args.release:
+        if not shutil.which("gh"):
+            raise SystemExit("ERROR: 'gh' CLI not found. Install from https://cli.github.com/")
         notes = args.notes
         if args.notes_from_changelog:
             notes = _extract_changelog_section(args.version)

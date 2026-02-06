@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "generated_at": "2026-02-06T12:30:46.299198+00:00",
+  "generated_at": "2026-02-06T12:52:20.548514+00:00",
   "repository": "anthropic-agent-skills",
   "skills": [
     {
@@ -24,6 +24,8 @@
       "resources": {
         "scripts": [],
         "references": [
+          "aria-patterns.md",
+          "testing-tools.md",
           "wcag-checklist.md",
           "workflow-integration.md"
         ],
@@ -139,7 +141,9 @@
       "resources": {
         "scripts": [],
         "references": [
-          "error-codes.md"
+          "error-codes.md",
+          "openapi-template.md",
+          "sdk-patterns.md"
         ],
         "assets": []
       }
@@ -195,7 +199,9 @@
       "resources": {
         "scripts": [],
         "references": [
-          "frequency-chart.md"
+          "daw-shortcuts.md",
+          "frequency-chart.md",
+          "plugin-chains.md"
         ],
         "assets": []
       }
@@ -247,6 +253,7 @@
       "resources": {
         "scripts": [],
         "references": [
+          "chain-comparison.md",
           "contract-patterns.md"
         ],
         "assets": []
@@ -445,7 +452,8 @@
         "scripts": [],
         "references": [
           "content-calendar-template.md",
-          "platform-guides.md"
+          "platform-guides.md",
+          "tools-stack.md"
         ],
         "assets": []
       }
@@ -524,6 +532,7 @@
       "resources": {
         "scripts": [],
         "references": [
+          "genre-conventions.md",
           "revision-checklist.md",
           "story-structures.md"
         ],
@@ -674,6 +683,9 @@
       "resources": {
         "scripts": [],
         "references": [
+          "docker-patterns.md",
+          "github-actions-recipes.md",
+          "monitoring-setup.md",
           "pipeline-templates.md"
         ],
         "assets": []
@@ -850,6 +862,7 @@
         "scripts": [],
         "references": [
           "comment-bank.md",
+          "peer-review-protocols.md",
           "rubric-templates.md"
         ],
         "assets": []
@@ -877,7 +890,8 @@
         "scripts": [],
         "references": [
           "contract-template.md",
-          "email-templates.md"
+          "email-templates.md",
+          "proposal-template.md"
         ],
         "assets": []
       }
@@ -1053,6 +1067,7 @@
         "references": [
           "color-palettes.md",
           "noise-recipes.md",
+          "shader-patterns.md",
           "workflow-integration.md"
         ],
         "assets": []
@@ -1137,6 +1152,8 @@
       "resources": {
         "scripts": [],
         "references": [
+          "github-actions.md",
+          "license-guide.md",
           "readme-template.md",
           "workflow-integration.md"
         ],
@@ -1222,6 +1239,7 @@
       "resources": {
         "scripts": [],
         "references": [
+          "boilerplate-library.md",
           "budget-templates.md",
           "funder-profiles.md"
         ],
@@ -1358,6 +1376,7 @@
       "resources": {
         "scripts": [],
         "references": [
+          "follow-up-templates.md",
           "question-bank.md",
           "story-bank-template.md",
           "workflow-integration.md"
@@ -1693,6 +1712,7 @@
         "scripts": [],
         "references": [
           "module-mappings.md",
+          "patch-diagrams.md",
           "workflow-integration.md"
         ],
         "assets": []
@@ -1817,6 +1837,7 @@
         "scripts": [],
         "references": [
           "email-templates.md",
+          "linkedin-scripts.md",
           "tracking-template.md",
           "workflow-integration.md"
         ],
@@ -1844,7 +1865,10 @@
       "resources": {
         "scripts": [],
         "references": [
+          "deployment-checklist.md",
           "nextjs-patterns.md",
+          "performance-patterns.md",
+          "testing-patterns.md",
           "workflow-integration.md"
         ],
         "assets": []
@@ -2802,7 +2826,10 @@
       "resources": {
         "scripts": [],
         "references": [
-          "testing-strategies.md"
+          "mock-examples.md",
+          "playwright-patterns.md",
+          "testing-strategies.md",
+          "vitest-patterns.md"
         ],
         "assets": []
       }
@@ -3031,7 +3058,8 @@
         "scripts": [],
         "references": [
           "activity-library.md",
-          "facilitation-scripts.md"
+          "facilitation-scripts.md",
+          "slide-templates.md"
         ],
         "assets": []
       }

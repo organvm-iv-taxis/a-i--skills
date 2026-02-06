@@ -122,14 +122,14 @@ MIT
 
 ### Standard README
 
-```markdown
+````markdown
 # Project Name
 
-![Build Status](badge-url)
-![License](badge-url)
-![Version](badge-url)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-orange)
 
-One-paragraph description of the project: what it does, who it's for, 
+One-paragraph description of the project: what it does, who it's for,
 and why it exists.
 
 ## Features
@@ -169,13 +169,13 @@ npm start
 
 ## License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE).
+This project is licensed under the MIT License - see the LICENSE file.
 
 ## Acknowledgments
 
 - [Credit 1]
 - [Credit 2]
-```
+````
 
 ### Comprehensive README
 

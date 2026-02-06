@@ -292,5 +292,5 @@ One blog post becomes:
 ## References
 
 - `references/platform-guides.md` - Platform-specific tactics
-- `references/content-calendar.md` - Planning templates
+- `references/content-calendar-template.md` - Planning templates
 - `references/tools-stack.md` - Scheduling and analytics tools

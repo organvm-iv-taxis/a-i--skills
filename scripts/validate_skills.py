@@ -30,10 +30,22 @@ INTERNAL_LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
 REFERENCE_RE = re.compile(r'`(references/[^`]+)`')
 
 
+FENCED_CODE_RE = re.compile(r'```.*?```', re.DOTALL)
+
+
+def _strip_code_blocks(text: str) -> str:
+    """Remove fenced code blocks to avoid false positives in link checking."""
+    return FENCED_CODE_RE.sub('', text)
+
+
 def _find_broken_links(skill_dir: Path, text: str) -> Iterator[str]:
     """Find broken internal links in skill content."""
+    # Strip fenced code blocks to avoid false positives from code like
+    # dict['key'](arg) which parses as markdown links.
+    prose = _strip_code_blocks(text)
+
     # Check markdown links to local files
-    for match in INTERNAL_LINK_RE.finditer(text):
+    for match in INTERNAL_LINK_RE.finditer(prose):
         link_text, link_target = match.groups()
         # Skip external URLs and anchors
         if link_target.startswith(('http://', 'https://', '#', 'mailto:')):
@@ -44,7 +56,7 @@ def _find_broken_links(skill_dir: Path, text: str) -> Iterator[str]:
             yield f"broken link: [{link_text}]({link_target})"
 
     # Check backtick references to files
-    for match in REFERENCE_RE.finditer(text):
+    for match in REFERENCE_RE.finditer(prose):
         ref_path = match.group(1)
         target_path = skill_dir / ref_path
         if not target_path.exists():

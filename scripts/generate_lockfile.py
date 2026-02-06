@@ -4,9 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
-import subprocess
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 from skill_lib import find_skill_dirs
@@ -35,26 +33,12 @@ def _sha256_tree(directory: Path) -> str:
     return h.hexdigest()
 
 
-def _git_head() -> str:
-    """Return the current HEAD commit hash."""
-    result = subprocess.run(
-        ["git", "rev-parse", "HEAD"],
-        capture_output=True,
-        text=True,
-        cwd=ROOT,
-        check=True,
-    )
-    return result.stdout.strip()
-
-
 def main() -> int:
     skill_dirs = find_skill_dirs(SKILLS_DIR) + find_skill_dirs(DOC_SKILLS_DIR)
 
     if not skill_dirs:
         print("ERROR: no skills found", file=sys.stderr)
         return 1
-
-    git_commit = _git_head()
 
     skills = []
     for skill_dir in skill_dirs:
@@ -66,8 +50,6 @@ def main() -> int:
 
     lockfile = {
         "version": "1.2",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "git_commit": git_commit,
         "skills": skills,
     }
 

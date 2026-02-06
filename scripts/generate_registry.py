@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timezone
 from pathlib import Path
 
 from skill_lib import extract_frontmatter, find_skill_dirs, parse_list_field
@@ -113,7 +112,6 @@ def main() -> int:
 
     registry = {
         "version": "1.1",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
         "repository": "anthropic-agent-skills",
         "skills": skills,
         "categories": _build_categories(skills),

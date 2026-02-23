@@ -2,6 +2,40 @@
 name: speckit
 description: Specification-Driven Development (SDD) toolkit. Transforms ideas into executable specifications, implementation plans, and task lists. Use for feature planning, PRD creation, or when user invokes /speckit.specify, /speckit.plan, /speckit.tasks commands.
 license: MIT
+complexity: intermediate
+time_to_learn: 30min
+tags:
+  - specification
+  - sdd
+  - planning
+  - requirements
+  - prd
+  - feature-spec
+inputs:
+  - feature-description
+  - project-context
+outputs:
+  - feature-specification
+  - implementation-plan
+  - task-list
+  - data-model
+  - api-contracts
+side_effects:
+  - creates-files
+triggers:
+  - user-asks-about-specifications
+  - user-asks-about-planning
+  - user-asks-about-prd
+  - user-invokes-speckit
+complements:
+  - tdd-workflow
+  - verification-loop
+  - product-requirements-designer
+  - skill-chain-prompts
+  - api-design-patterns
+  - backend-implementation-patterns
+  - testing-patterns
+tier: core
 ---
 
 # Spec Kit: Specification-Driven Development
@@ -45,7 +79,7 @@ Creates a comprehensive feature specification from a natural language descriptio
 - Limit `[NEEDS CLARIFICATION]` markers to 3 maximum
 - Every requirement must be testable
 
-For detailed template: read `references/spec-template.md`
+For detailed template: read `assets/templates/spec-template.md`
 For command details: read `references/commands/specify.md`
 
 ---
@@ -78,7 +112,7 @@ Creates an implementation plan from an existing specification.
 - Anti-Abstraction Gate: Using framework directly?
 - Integration-First Gate: Contracts defined?
 
-For detailed template: read `references/plan-template.md`
+For detailed template: read `assets/templates/plan-template.md`
 For command details: read `references/commands/plan.md`
 
 ---
@@ -110,7 +144,7 @@ Generates an executable task list from the implementation plan.
 - `[P]` = Can run in parallel (different files, no dependencies)
 - `[Story]` = Which user story (US1, US2, US3)
 
-For detailed template: read `references/tasks-template.md`
+For detailed template: read `assets/templates/tasks-template.md`
 For command details: read `references/commands/tasks.md`
 
 ---
@@ -148,7 +182,7 @@ A constitution defines immutable architectural principles for a project. When pr
 - Simplicity: Maximum 3 projects, YAGNI
 - Integration-First: Real databases over mocks
 
-For constitution template: read `references/constitution-template.md`
+For constitution template: read `assets/templates/constitution-template.md`
 
 ## Key Concepts
 
@@ -182,9 +216,15 @@ When working in a project:
 
 ## Reference Files
 
-- `references/spec-template.md` - Feature specification template
-- `references/plan-template.md` - Implementation plan template
-- `references/tasks-template.md` - Task list template
-- `references/constitution-template.md` - Project constitution template
+- `assets/templates/spec-template.md` - Feature specification template
+- `assets/templates/plan-template.md` - Implementation plan template
+- `assets/templates/tasks-template.md` - Task list template
+- `assets/templates/constitution-template.md` - Project constitution template
 - `references/methodology.md` - Full SDD philosophy document
+- `references/workflow-integration.md` - Ecosystem integration patterns
 - `references/commands/` - Detailed command definitions
+
+## Helper Scripts
+
+- `scripts/init_spec_dir.py` - Scaffold a new feature spec directory
+- `scripts/validate_spec.py` - Validate specification completeness

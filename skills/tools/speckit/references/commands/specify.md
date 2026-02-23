@@ -32,7 +32,7 @@ specs/{feature-name}/
 
 ### 2. Load Template
 
-Read the spec template from `references/spec-template.md` to understand required sections.
+Read the spec template from `assets/templates/spec-template.md` to understand required sections.
 
 ### 3. Generate Specification
 

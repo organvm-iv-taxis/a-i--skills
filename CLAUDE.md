@@ -139,3 +139,21 @@ These are committed artifacts; include refreshed outputs in PRs that change skil
 - No repo-wide test suite; run per-skill tests when they exist (e.g., `python3 document-skills/pdf/scripts/check_bounding_boxes_test.py`)
 - Update `docs/THIRD_PARTY_NOTICES.md` when adding external assets
 - CI includes secret detection for patterns like `sk-`, `ghp_`, `AKIA` in new files
+
+<!-- ORGANVM:AUTO:START -->
+## System Context (auto-generated — do not edit)
+
+**Organ:** ORGAN-IV (Orchestration) | **Tier:** standard | **Status:** LOCAL
+**Org:** `unknown` | **Repo:** `a-i--skills`
+
+### Edges
+- **Consumes** ← `organvm-iv-taxis/agent--claude-smith`: unknown
+
+### Siblings in Orchestration
+`orchestration-start-here`, `petasum-super-petasum`, `universal-node-network`, `.github`, `agentic-titan`, `agent--claude-smith`
+
+### Governance
+- *Standard ORGANVM governance applies*
+
+*Last synced: 2026-02-24T01:01:15Z*
+<!-- ORGANVM:AUTO:END -->

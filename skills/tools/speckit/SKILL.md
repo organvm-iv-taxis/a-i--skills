@@ -2,40 +2,6 @@
 name: speckit
 description: Specification-Driven Development (SDD) toolkit. Transforms ideas into executable specifications, implementation plans, and task lists. Use for feature planning, PRD creation, or when user invokes /speckit.specify, /speckit.plan, /speckit.tasks commands.
 license: MIT
-complexity: intermediate
-time_to_learn: 30min
-tags:
-  - specification
-  - sdd
-  - planning
-  - requirements
-  - prd
-  - feature-spec
-inputs:
-  - feature-description
-  - project-context
-outputs:
-  - feature-specification
-  - implementation-plan
-  - task-list
-  - data-model
-  - api-contracts
-side_effects:
-  - creates-files
-triggers:
-  - user-asks-about-specifications
-  - user-asks-about-planning
-  - user-asks-about-prd
-  - user-invokes-speckit
-complements:
-  - tdd-workflow
-  - verification-loop
-  - product-requirements-designer
-  - skill-chain-prompts
-  - api-design-patterns
-  - backend-implementation-patterns
-  - testing-patterns
-tier: core
 ---
 
 # Spec Kit: Specification-Driven Development
@@ -216,15 +182,16 @@ When working in a project:
 
 ## Reference Files
 
+### Templates (fill-in artifacts for output)
+
 - `assets/templates/spec-template.md` - Feature specification template
 - `assets/templates/plan-template.md` - Implementation plan template
 - `assets/templates/tasks-template.md` - Task list template
 - `assets/templates/constitution-template.md` - Project constitution template
+
+### Documentation (methodology and command details)
+
 - `references/methodology.md` - Full SDD philosophy document
-- `references/workflow-integration.md` - Ecosystem integration patterns
-- `references/commands/` - Detailed command definitions
-
-## Helper Scripts
-
-- `scripts/init_spec_dir.py` - Scaffold a new feature spec directory
-- `scripts/validate_spec.py` - Validate specification completeness
+- `references/commands/specify.md` - `/speckit.specify` command definition
+- `references/commands/plan.md` - `/speckit.plan` command definition
+- `references/commands/tasks.md` - `/speckit.tasks` command definition

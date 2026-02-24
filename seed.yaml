@@ -20,7 +20,7 @@ metadata:
 agents:
   - name: ci
     trigger: on_push
-    workflow: .github/workflows/ci-python.yml
+    workflow: .github/workflows/ci.yml
     description: "Continuous integration pipeline"
 
 consumes:

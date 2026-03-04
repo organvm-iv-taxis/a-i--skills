@@ -16,15 +16,20 @@ DOC_SKILLS_DIR = ROOT / "document-skills"
 LOCK_FILE = BUILD_DIR / "skills-lock.json"
 
 
+_IGNORED_NAMES = frozenset({".DS_Store", "__pycache__", ".pyc"})
+
+
 def _sha256_tree(directory: Path) -> str:
     """Return hex SHA-256 digest of all files in a directory.
 
     Hashes are computed over sorted relative paths and their contents
     for deterministic output regardless of filesystem ordering.
+    Skips OS-generated and cache files for cross-platform consistency.
     """
     h = hashlib.sha256()
     files = sorted(
-        p for p in directory.rglob("*") if p.is_file()
+        p for p in directory.rglob("*")
+        if p.is_file() and p.name not in _IGNORED_NAMES
     )
     for filepath in files:
         rel = filepath.relative_to(directory)

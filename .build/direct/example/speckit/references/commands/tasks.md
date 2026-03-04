@@ -172,7 +172,7 @@ Each user story gets its own phase:
 
 ### 7. Write tasks.md
 
-Use `references/tasks-template.md` as structure.
+Use `assets/templates/tasks-template.md` as structure.
 
 Output to `specs/{feature-name}/tasks.md`.
 

@@ -2505,16 +2505,18 @@
       "complements": [],
       "includes": [],
       "resources": {
-        "scripts": [],
+        "scripts": [
+          "init_spec_dir.py",
+          "validate_spec.py"
+        ],
         "references": [
           "commands",
-          "constitution-template.md",
           "methodology.md",
-          "plan-template.md",
-          "spec-template.md",
-          "tasks-template.md"
+          "workflow-integration.md"
         ],
-        "assets": []
+        "assets": [
+          "templates"
+        ]
       }
     },
     {

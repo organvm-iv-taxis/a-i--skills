@@ -414,7 +414,7 @@
     {
       "name": "speckit",
       "path": "skills/tools/speckit",
-      "sha256": "6b99186f492f33dea00e18421a582fab7eff70e9977b7983d26401d892d230a8"
+      "sha256": "343315e3fb7a4678a7d70437b530ad2edf709c8197b65be4342a9b9be567246d"
     },
     {
       "name": "specstory-guard",

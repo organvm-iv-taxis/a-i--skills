@@ -140,6 +140,17 @@ These are committed artifacts; include refreshed outputs in PRs that change skil
 - Update `docs/THIRD_PARTY_NOTICES.md` when adding external assets
 - CI includes secret detection for patterns like `sk-`, `ghp_`, `AKIA` in new files
 
+## GitHub MCP Usage Policy
+
+**IMPORTANT:** This repo exists locally. ALWAYS use local filesystem tools (Read, Grep, Glob) to read files — NEVER use `mcp__github__get_file_contents` or similar GitHub MCP tools for content that exists on disk. GitHub MCP tools trigger API content filtering errors on repos with security-domain content (security skills contain terms like STRIDE, XSS, SQL injection that trip the output filter).
+
+Use GitHub MCP tools ONLY for operations that require the GitHub API:
+- Setting repo description/topics (`update_pull_request`, etc.)
+- Creating/managing issues and PRs
+- Managing labels, releases, branches
+
+For these API-only operations, always set `minimal_output: true` where the parameter is available.
+
 <!-- ORGANVM:AUTO:START -->
 ## System Context (auto-generated — do not edit)
 

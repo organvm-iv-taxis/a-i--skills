@@ -43,7 +43,7 @@ specs/{feature-name}/
 
 1. Read the feature specification (`spec.md`)
 2. Load project constitution (`memory/constitution.md`) if exists
-3. Load the plan template from `references/plan-template.md`
+3. Load the plan template from `assets/templates/plan-template.md`
 
 ### 3. Fill Technical Context
 

@@ -2,6 +2,9 @@
 name: creative-writing-craft
 description: Craft compelling fiction and creative nonfiction with attention to structure, voice, prose style, and revision. Supports short stories, novel chapters, essays, and hybrid forms. Triggers on creative writing, fiction writing, story craft, prose style, or literary technique requests.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-ii, organ-v]
+triggers: [user-asks-about-writing, user-asks-about-fiction, user-asks-about-prose, context:creative-writing]
 ---
 
 # Creative Writing Craft

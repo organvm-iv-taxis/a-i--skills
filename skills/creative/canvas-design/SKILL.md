@@ -25,10 +25,12 @@ triggers:
   - user-asks-about-poster
   - user-asks-about-art
   - context:visual-design
-complements:
   - algorithmic-art
   - theme-factory
 tier: core
+governance_phases: [build]
+organ_affinity: [organ-ii, organ-v, organ-vii]
+complements: [algorithmic-art, generative-art-algorithms, three-js-interactive-builder]
 ---
 
 These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.

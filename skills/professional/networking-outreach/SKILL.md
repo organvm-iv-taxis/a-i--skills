@@ -2,6 +2,9 @@
 name: networking-outreach
 description: Build professional relationships through strategic outreach—cold emails, LinkedIn engagement, informational interviews, and follow-up sequences. Authentic connection over transactional networking. Triggers on networking, cold outreach, LinkedIn strategy, or informational interview requests.
 license: MIT
+governance_phases: [ship]
+triggers: [user-asks-about-networking, user-asks-about-outreach, user-asks-about-linkedin]
+complements: [content-distribution, portfolio-presentation, github-profile-architect]
 ---
 
 # Networking Outreach

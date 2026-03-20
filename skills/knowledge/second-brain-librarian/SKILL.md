@@ -2,6 +2,9 @@
 name: second-brain-librarian
 description: Helps users organize knowledge, categorize notes, and discover connections within their personal knowledge management systems (e.g., Obsidian, Notion).
 license: MIT
+governance_phases: [frame]
+organ_affinity: [organ-i, organ-vi]
+triggers: [user-asks-about-knowledge-base, user-asks-about-obsidian, user-asks-about-notion, context:note-taking]
 ---
 
 # Second Brain Librarian

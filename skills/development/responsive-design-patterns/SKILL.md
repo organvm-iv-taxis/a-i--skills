@@ -5,6 +5,10 @@ license: MIT
 metadata:
   adapted-by: ai-skills
   category: frontend-development
+governance_phases: [build]
+organ_affinity: [organ-iii, organ-ii]
+triggers: [user-asks-about-responsive, user-asks-about-mobile-first, context:frontend]
+complements: [frontend-design-systems, accessibility-patterns]
 ---
 
 # Responsive Design Patterns

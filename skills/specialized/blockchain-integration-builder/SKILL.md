@@ -2,6 +2,9 @@
 name: blockchain-integration-builder
 description: Design and implement blockchain integrations across chains and frameworks with emphasis on patterns over specific technologies. Use when building Web3 applications, smart contract systems, token mechanics, decentralized identity, or blockchain-verified data. Triggers on blockchain architecture, smart contract design, Web3 integration, token systems, or decentralized application development. Framework-agnostic—applies to Ethereum, Solana, or emerging chains.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-blockchain, user-asks-about-web3, user-asks-about-smart-contracts]
 ---
 
 # Blockchain Integration Builder

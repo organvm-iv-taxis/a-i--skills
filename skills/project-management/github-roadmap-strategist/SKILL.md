@@ -2,6 +2,10 @@
 name: github-roadmap-strategist
 description: operationalizes GitHub Projects (V2) as a dynamic roadmap system. Defines field taxonomy, "Triage" protocols, and synchronizes Strategy (Roadmap) with Execution (Issues).
 license: MIT
+governance_phases: [shape]
+governance_norm_group: documentation-standard
+organ_affinity: [meta, organ-iv]
+triggers: [user-asks-about-roadmap, user-asks-about-github-projects, context:planning]
 ---
 
 # GitHub Roadmap Strategist

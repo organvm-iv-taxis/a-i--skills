@@ -2,6 +2,12 @@
 name: github-repository-standards
 description: Enforces the "Minimal Root" philosophy for repository organization and implements "World-Class README" standards. Moves config clutter to `.config/` and creates high-conversion documentation.
 license: MIT
+governance_phases: [shape, prove]
+governance_norm_group: repo-hygiene
+governance_auto_activate: true
+organ_affinity: [all]
+triggers: [context:repo-setup, context:promotion, command:repo-standards]
+complements: [github-repo-curator, coding-standards-enforcer, dotfile-systems-architect]
 ---
 
 # GitHub Repository Standards Architect

@@ -2,6 +2,9 @@
 name: feedback-pedagogy
 description: Give effective feedback that promotes learning and growth. Covers written feedback on student work, rubric design, peer review facilitation, and constructive critique techniques. Triggers on grading, feedback, rubrics, peer review, or critique requests.
 license: MIT
+governance_phases: [prove]
+organ_affinity: [organ-vi]
+triggers: [user-asks-about-feedback, user-asks-about-rubrics, context:education]
 ---
 
 # Feedback Pedagogy

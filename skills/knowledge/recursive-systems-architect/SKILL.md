@@ -2,6 +2,9 @@
 name: recursive-systems-architect
 description: Designs self-referential and recursive systems that examine, modify, or generate themselves, including metacognitive architectures and strange loops.
 license: MIT
+governance_phases: [shape]
+organ_affinity: [organ-i, organ-iv]
+triggers: [user-asks-about-recursive-systems, user-asks-about-strange-loops, context:meta-design]
 ---
 
 # Recursive Systems Architect

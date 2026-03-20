@@ -2,6 +2,9 @@
 name: data-pipeline-architect
 description: Designs ETL/ELT data pipelines with proper extraction, transformation, and loading patterns, including orchestration, error handling, and data quality validation.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-iii, organ-i, organ-vi, meta]
+triggers: [user-asks-about-etl, user-asks-about-data-pipeline, context:data-engineering]
 ---
 
 # Data Pipeline Architect

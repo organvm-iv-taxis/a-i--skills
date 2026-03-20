@@ -2,6 +2,9 @@
 name: webhook-integration-patterns
 description: Designs reliable webhook systems with proper delivery guarantees, retry logic, signature verification, and idempotent processing for event-driven integrations.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iii, organ-iv, organ-vii]
+triggers: [user-asks-about-webhooks, user-asks-about-event-driven, context:integration]
 ---
 
 # Webhook Integration Patterns

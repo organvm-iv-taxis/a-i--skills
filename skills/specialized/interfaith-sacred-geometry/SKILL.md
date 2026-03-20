@@ -2,6 +2,9 @@
 name: interfaith-sacred-geometry
 description: Generate sacred geometry patterns with interfaith symbolism for spiritual visualizations and art. Use when creating visual representations that honor multiple religious traditions, designing meditation aids, building soul journey visualizations, or producing art that bridges sacred traditions through geometric harmony. Triggers on sacred geometry requests, interfaith symbol design, spiritual visualization projects, or multi-tradition sacred art.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-ii]
+triggers: [user-asks-about-sacred-geometry, user-asks-about-interfaith, context:spiritual-art]
 ---
 
 # Interfaith Sacred Geometry

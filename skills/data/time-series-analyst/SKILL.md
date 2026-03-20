@@ -2,6 +2,9 @@
 name: time-series-analyst
 description: Analyzes time-series data for patterns, trends, seasonality, and anomalies, with forecasting using statistical and machine learning methods.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iii, organ-i]
+triggers: [user-asks-about-time-series, user-asks-about-forecasting, context:data-analysis]
 ---
 
 # Time Series Analyst

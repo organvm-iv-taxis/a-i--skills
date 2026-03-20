@@ -2,6 +2,9 @@
 name: project-orchestration
 description: Personal multi-project coordination for creative practitioners managing many concurrent initiatives. Not PM methodology—practical systems for tracking progress, managing energy, and moving projects forward. Triggers on project management, multi-project coordination, progress tracking, or overwhelm with concurrent work.
 license: MIT
+governance_phases: [frame, shape]
+organ_affinity: [meta, organ-iv]
+triggers: [user-asks-about-project-management, user-asks-about-coordination, context:multi-project]
 ---
 
 # Project Orchestration

@@ -2,6 +2,11 @@
 name: github-profile-architect
 description: Architects high-impact GitHub Profile READMEs using the "Special Repository" mechanism. optimizing for recruitment signaling, visual semiotics, and dynamic automation (Actions, WakaTime).
 license: MIT
+governance_phases: [ship]
+governance_norm_group: documentation-standard
+organ_affinity: [organ-v, meta]
+triggers: [user-asks-about-github-profile, context:github-setup]
+complements: [content-distribution, portfolio-presentation, networking-outreach]
 ---
 
 # GitHub Profile Architect

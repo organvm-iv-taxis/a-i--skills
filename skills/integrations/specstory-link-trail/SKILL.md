@@ -7,6 +7,9 @@ metadata:
   version: "1.0.0"
   argument-hint: "[history-file-or-pattern]"
 allowed-tools: Bash, Read
+governance_phases: [prove]
+organ_affinity: [organ-iv]
+triggers: [command:link-trail, user-asks-about-fetched-urls]
 ---
 
 # SpecStory Link Trail

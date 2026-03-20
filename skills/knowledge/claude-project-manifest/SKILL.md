@@ -5,6 +5,9 @@ license: MIT
 complexity: intermediate
 time_to_learn: 30min
 tags: [documentation, inventory, annotation, bibliography, knowledge-management]
+governance_phases: [frame, prove]
+organ_affinity: [organ-i, meta]
+triggers: [user-asks-about-project-manifest, user-asks-about-file-inventory, context:project-documentation]
 ---
 
 # Claude Project Manifest

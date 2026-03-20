@@ -2,6 +2,9 @@
 name: contract-risk-analyzer
 description: Analyzes freelance contracts and Statements of Work (SOW) to identify potential risks, scope creep, and unfavorable terms, providing plain-language explanations.
 license: MIT
+governance_phases: [frame]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-contract-risk, user-asks-about-sow, context:legal-review]
 ---
 
 # Contract Risk Analyzer

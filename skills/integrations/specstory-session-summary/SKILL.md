@@ -5,6 +5,9 @@ license: MIT
 metadata:
   author: SpecStory
   version: "1.0"
+governance_phases: [prove]
+organ_affinity: [organ-iv]
+triggers: [command:session-summary, user-asks-about-sessions]
 ---
 
 ## Context

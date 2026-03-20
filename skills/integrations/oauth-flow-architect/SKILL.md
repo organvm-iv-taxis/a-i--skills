@@ -2,6 +2,9 @@
 name: oauth-flow-architect
 description: Implements OAuth 2.0 and OpenID Connect authentication flows with proper security, token management, and common provider integrations.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-oauth, user-asks-about-authentication, context:auth]
 ---
 
 # OAuth Flow Architect

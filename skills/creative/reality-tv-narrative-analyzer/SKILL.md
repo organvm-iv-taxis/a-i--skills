@@ -2,6 +2,9 @@
 name: reality-tv-narrative-analyzer
 description: Analyze narrative structures, character arcs, and genre conventions in reality television for academic research and content analysis. Use when studying reality TV editing patterns, mapping contestant storylines, analyzing producer manipulation techniques, comparing show formats, or writing about unscripted television. Triggers on reality TV analysis, unscripted television research, character arc mapping, or genre convention studies.
 license: MIT
+governance_phases: [frame]
+organ_affinity: [organ-i, organ-ii]
+triggers: [user-asks-about-reality-tv, context:media-analysis]
 ---
 
 # Reality TV Narrative Analyzer

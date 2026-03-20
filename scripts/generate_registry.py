@@ -20,6 +20,7 @@ NAME_RE = re.compile(r"^[a-z0-9-]+$")
 LIST_FIELDS = (
     "prerequisites", "tags", "inputs", "outputs", "side_effects",
     "triggers", "complements", "includes",
+    "governance_phases", "organ_affinity",
 )
 
 
@@ -57,6 +58,8 @@ def _build_skill_entry(skill_dir: Path, base_dir: Path, collection: str) -> dict
         "complexity": fm.get("complexity"),
         "time_to_learn": fm.get("time_to_learn"),
         "tier": fm.get("tier"),
+        "governance_norm_group": fm.get("governance_norm_group"),
+        "governance_auto_activate": fm.get("governance_auto_activate") == "true",
     }
 
     # Parse list fields
@@ -111,7 +114,7 @@ def main() -> int:
             skills.append(entry)
 
     registry = {
-        "version": "1.1",
+        "version": "1.2",
         "repository": "anthropic-agent-skills",
         "skills": skills,
         "categories": _build_categories(skills),

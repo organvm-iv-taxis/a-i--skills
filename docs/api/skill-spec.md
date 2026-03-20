@@ -61,6 +61,10 @@ license: MIT
 | `complements` | list | Skills that pair well with this one (list of skill names) |
 | `includes` | list | Bundle: skills to install together (list of skill names; must exist) |
 | `tier` | string | Quality tier: `core` (curated, reviewed) or `community` |
+| `governance_phases` | list | Lifecycle phases where this skill is relevant: `frame`, `shape`, `build`, `prove`, `ship` |
+| `governance_norm_group` | string | Governance norm group: `repo-hygiene`, `quality-gate`, `security-baseline`, `documentation-standard`, `distribution-readiness` |
+| `governance_auto_activate` | boolean | Whether this skill fires automatically at governance gates (default: false) |
+| `organ_affinity` | list | Which ORGANVM organs this skill serves: `all`, `organ-i` through `organ-vii`, `meta` |
 
 ### Field Constraints
 
@@ -189,6 +193,26 @@ license: MIT
 - `core`: Curated, reviewed skills maintained by the repository team
 - `community`: Community-contributed skills with standard validation
 - See [Core vs Community](../guides/core-vs-community.md) for promotion criteria
+
+**governance_phases** (optional)
+- List of lifecycle phases: `frame`, `shape`, `build`, `prove`, `ship`
+- Maps to ORGANVM session lifecycle (FRAME→SHAPE→BUILD→PROVE→DONE)
+- `ship` corresponds to the DONE/deployment phase
+
+**governance_norm_group** (optional)
+- One of: `repo-hygiene`, `quality-gate`, `security-baseline`, `documentation-standard`, `distribution-readiness`
+- Skills with a norm group function as governance standards
+- Not all skills are norms — most will not have this field
+
+**governance_auto_activate** (optional)
+- Boolean: `true` or `false` (default: `false` if omitted)
+- When `true`, the skill fires automatically at matching governance gates
+
+**organ_affinity** (optional)
+- List of ORGANVM organ identifiers
+- Valid values: `all`, `organ-i`, `organ-ii`, `organ-iii`, `organ-iv`, `organ-v`, `organ-vi`, `organ-vii`, `meta`
+- Answers "which organ's repos would actually use this skill"
+- Map by engineering reality (tech stacks), not conceptual domain names
 
 ### Markdown Content
 

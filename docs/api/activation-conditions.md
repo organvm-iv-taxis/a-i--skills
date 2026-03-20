@@ -335,6 +335,31 @@ Triggers are advisory. They are intended to improve skill discovery but do not c
 
 Skill authors should write triggers that are specific enough to be useful but should not rely on triggers as the sole discovery mechanism. The `description` and `tags` fields remain the primary means of skill discovery.
 
+## Governance-Aware Activation
+
+In addition to the five trigger types, skills may declare governance metadata that enables phase-aware and norm-based activation.
+
+### Governance Fields
+
+Skills can declare three governance-related frontmatter fields:
+
+- `governance_phases`: lifecycle phases where the skill is relevant (`frame`, `shape`, `build`, `prove`, `ship`)
+- `governance_norm_group`: which governance norm cluster the skill belongs to
+- `governance_auto_activate`: whether the skill fires automatically at governance gates
+
+### Activation Behavior
+
+When `governance_auto_activate` is `true`, the activation engine should fire the skill when:
+
+1. The session enters a lifecycle phase matching `governance_phases`, OR
+2. A promotion gate is reached and the skill's `governance_norm_group` applies
+
+The `context:promotion` keyword is a recognized context trigger that fires when a promotion state transition is being evaluated.
+
+### Organ Routing
+
+The `organ_affinity` field enables conductor routing: when working within a specific organ's repository, skills with matching organ affinity are ranked higher for activation. This field answers "which organ's repos would actually use this skill" based on engineering reality (tech stacks), not conceptual domain names.
+
 ## Implementation Guidance
 
 ### For consuming tools

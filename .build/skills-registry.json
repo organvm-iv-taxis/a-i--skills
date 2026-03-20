@@ -50,6 +50,59 @@
       }
     },
     {
+      "name": "agent-development-pack",
+      "description": "Curated bundle for building, testing, and coordinating AI agent systems. Includes multi-agent orchestration, agent testing, cross-agent handoff, MCP server building, and prompt engineering. Use when developing AI agent workflows or multi-agent systems.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/agent-development-pack",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "5min",
+      "tier": "core",
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "bundle",
+        "agents",
+        "multi-agent",
+        "testing",
+        "orchestration"
+      ],
+      "inputs": [
+        "agent-requirements"
+      ],
+      "outputs": [
+        "skill-bundle"
+      ],
+      "side_effects": [],
+      "triggers": [
+        "context:agent-development",
+        "context:multi-agent",
+        "context:mcp-server"
+      ],
+      "complements": [],
+      "includes": [
+        "agent-swarm-orchestrator",
+        "agent-testing-patterns",
+        "cross-agent-handoff",
+        "mcp-builder",
+        "prompt-engineering-patterns"
+      ],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "agent-swarm-orchestrator",
       "description": "Designs multi-agent systems with coordinated agent swarms, task distribution, inter-agent communication, and emergent collective behavior.",
       "category": "tools",
@@ -90,6 +143,54 @@
           "emergent-patterns.md",
           "swarm-topologies.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "agent-testing-patterns",
+      "description": "Test AI agent systems including tool use, multi-turn conversations, error recovery, and non-deterministic outputs. Covers mock strategies, evaluation metrics, and regression testing for agent workflows. Triggers on AI agent testing, LLM evaluation, or agent quality assurance requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/agent-testing-patterns",
+      "license": "MIT",
+      "complexity": "advanced",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "quality-gate",
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "agent-testing",
+        "llm-evaluation",
+        "tool-use-testing",
+        "non-deterministic",
+        "mocking"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-agent-testing",
+        "context:llm-testing",
+        "context:agent-evaluation",
+        "context:tool-use-testing"
+      ],
+      "complements": [
+        "testing-patterns",
+        "tdd-workflow",
+        "verification-loop",
+        "agent-swarm-orchestrator"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -418,6 +519,53 @@
       }
     },
     {
+      "name": "browser-extension-patterns",
+      "description": "Build browser extensions with Manifest V3 for Chrome, Firefox, and cross-browser compatibility. Covers content scripts, background workers, popup UI, storage APIs, and extension messaging. Triggers on browser extension development, Manifest V3, or Chrome extension requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/browser-extension-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "browser-extension",
+        "manifest-v3",
+        "chrome-extension",
+        "content-scripts",
+        "web-extension"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-browser-extension",
+        "context:chrome-extension",
+        "context:manifest-v3",
+        "project-has-manifest-json"
+      ],
+      "complements": [
+        "frontend-design-systems",
+        "testing-patterns",
+        "deployment-cicd"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "canvas-design",
       "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
       "category": "creative",
@@ -536,6 +684,57 @@
       }
     },
     {
+      "name": "cli-tool-design",
+      "description": "Design command-line interfaces with clear argument parsing, subcommands, help text, output formatting, and exit codes. Covers Click, Typer, argparse, and shell completion. Triggers on CLI tool development, argument parsing, or terminal UX design requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/cli-tool-design",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "cli",
+        "command-line",
+        "argparse",
+        "click",
+        "typer",
+        "terminal"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-cli-design",
+        "project-has-cli-entry-point",
+        "context:building-cli-tool",
+        "file-type:*cli*"
+      ],
+      "complements": [
+        "python-packaging-patterns",
+        "configuration-management",
+        "error-handling-logging-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "organ-vi",
+        "organ-vii",
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "code-refactoring-patterns",
       "description": "Systematic approach to refactoring code for improved maintainability, performance, and clarity while preserving functionality",
       "category": "development",
@@ -613,6 +812,102 @@
         "references": [
           "style-guide-template.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "community-platform-patterns",
+      "description": "Build community platforms with user profiles, discussion forums, event management, and moderation tools. Covers real-time features, content moderation, and community engagement patterns. Triggers on community platform development, forum design, or social feature requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/community-platform-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "community",
+        "forums",
+        "social-features",
+        "moderation",
+        "user-profiles"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-community-platform",
+        "context:forum-design",
+        "context:community-features",
+        "context:discussion-platform"
+      ],
+      "complements": [
+        "realtime-websocket-patterns",
+        "backend-implementation-patterns",
+        "accessibility-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-vi"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "configuration-management",
+      "description": "Manage application configuration across environments with layered config loading, environment variables, secrets management, and validation. Covers 12-factor app patterns and config file formats. Triggers on configuration management, environment variables, or settings architecture requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/configuration-management",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "configuration",
+        "environment-variables",
+        "secrets",
+        "twelve-factor",
+        "settings"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-config",
+        "context:environment-variables",
+        "context:settings",
+        "project-has-dotenv",
+        "file-type:.env*"
+      ],
+      "complements": [
+        "python-packaging-patterns",
+        "cli-tool-design",
+        "docker-containerization"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -737,6 +1032,53 @@
       }
     },
     {
+      "name": "conversation-content-pipeline",
+      "description": "Transform AI conversations and chat transcripts into publishable content including blog posts, documentation, tutorials, and knowledge base entries. Covers extraction, restructuring, and editorial refinement. Triggers on conversation-to-content, transcript processing, or chat-to-doc requests.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/conversation-content-pipeline",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "content-pipeline",
+        "conversation",
+        "transcript",
+        "publishing",
+        "knowledge-extraction"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-conversation-content",
+        "context:transcript-to-content",
+        "context:chat-to-doc",
+        "context:session-to-article"
+      ],
+      "complements": [
+        "essay-publishing-pipeline",
+        "creative-writing-craft",
+        "doc-coauthoring"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "creative-writing-craft",
       "description": "Craft compelling fiction and creative nonfiction with attention to structure, voice, prose style, and revision. Supports short stories, novel chapters, essays, and hybrid forms. Triggers on creative writing, fiction writing, story craft, prose style, or literary technique requests.",
       "category": "creative",
@@ -775,6 +1117,53 @@
           "revision-checklist.md",
           "story-structures.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "cross-agent-handoff",
+      "description": "Transfer context between AI agent sessions with structured handoff protocols, state serialization, and decision log preservation. Covers multi-agent coordination, context compression, and continuity patterns. Triggers on agent handoff, session transfer, or multi-agent continuity requests.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/cross-agent-handoff",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "agent-handoff",
+        "context-transfer",
+        "multi-agent",
+        "session-continuity",
+        "coordination"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-agent-handoff",
+        "context:session-transfer",
+        "context:multi-agent",
+        "context:agent-continuity"
+      ],
+      "complements": [
+        "session-lifecycle-patterns",
+        "agent-swarm-orchestrator",
+        "prompt-engineering-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -824,6 +1213,101 @@
         "assets": [
           "templates"
         ]
+      }
+    },
+    {
+      "name": "data-backup-patterns",
+      "description": "Implement reliable data backup and recovery strategies with automated scheduling, encryption, rotation policies, and disaster recovery testing. Covers database backups, file system snapshots, and cloud storage patterns. Triggers on backup strategy, disaster recovery, or data protection requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/data-backup-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "security-baseline",
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "backup",
+        "disaster-recovery",
+        "data-protection",
+        "automation",
+        "encryption"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-backup",
+        "context:disaster-recovery",
+        "context:data-protection",
+        "context:backup-strategy"
+      ],
+      "complements": [
+        "docker-containerization",
+        "configuration-management",
+        "deployment-cicd"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "data-ingestion-pipeline",
+      "description": "Build data ingestion pipelines for batch and streaming data from multiple sources. Covers extraction strategies, format normalization, deduplication, validation gates, and staging patterns. Triggers on data ingestion, ETL pipeline, or data import architecture requests.",
+      "category": "data",
+      "collection": "example",
+      "path": "skills/data/data-ingestion-pipeline",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "data-ingestion",
+        "etl",
+        "data-pipeline",
+        "batch-processing",
+        "streaming"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-data-ingestion",
+        "context:etl",
+        "context:data-import",
+        "context:data-pipeline"
+      ],
+      "complements": [
+        "data-pipeline-architect",
+        "data-backup-patterns",
+        "configuration-management"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
       }
     },
     {
@@ -910,6 +1394,56 @@
           "color-accessibility-guide.md",
           "workflow-integration.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "database-migration-patterns",
+      "description": "Manage database schema changes safely with migration tools, zero-downtime strategies, and rollback procedures. Covers Alembic, SQL migrations, data migrations, and testing strategies. Triggers on database migration, schema changes, or Alembic configuration requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/database-migration-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "database",
+        "migrations",
+        "alembic",
+        "schema",
+        "zero-downtime"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-migrations",
+        "context:database-schema",
+        "context:alembic",
+        "project-has-alembic-ini"
+      ],
+      "complements": [
+        "python-packaging-patterns",
+        "postgres-advanced-patterns",
+        "fastapi-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-vi",
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -1039,6 +1573,105 @@
       }
     },
     {
+      "name": "docker-containerization",
+      "description": "Containerize applications with multi-stage Dockerfiles, Docker Compose orchestration, image optimization, and container security. Covers Python, Node.js, and multi-service architectures. Triggers on Docker, containerization, or container orchestration requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/docker-containerization",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "distribution-readiness",
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "docker",
+        "containers",
+        "docker-compose",
+        "multi-stage-build",
+        "devops"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-docker",
+        "project-has-dockerfile",
+        "project-has-docker-compose",
+        "context:containerization",
+        "context:deployment"
+      ],
+      "complements": [
+        "deployment-cicd",
+        "python-packaging-patterns",
+        "resilience-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii",
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "document-audit-extraction",
+      "description": "Audit document collections to extract features, identify patterns, assess quality, and build structured inventories. Covers metadata extraction, content classification, gap analysis, and coverage mapping. Triggers on document audit, content inventory, or document feature extraction requests.",
+      "category": "documentation",
+      "collection": "example",
+      "path": "skills/documentation/document-audit-extraction",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "documentation-standard",
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "document-audit",
+        "content-inventory",
+        "metadata-extraction",
+        "gap-analysis",
+        "quality-assessment"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-document-audit",
+        "context:content-inventory",
+        "context:doc-quality",
+        "context:document-review"
+      ],
+      "complements": [
+        "stranger-test-protocol",
+        "doc-coauthoring",
+        "knowledge-architecture"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "dotfile-systems-architect",
       "description": "Guides the creation of a \"Minimal Root\" home directory using the XDG Base Directory specification and a Bare Git Repository. Manages config separation, secrets, and cross-platform syncing.",
       "category": "development",
@@ -1135,6 +1768,155 @@
       }
     },
     {
+      "name": "error-handling-logging-patterns",
+      "description": "Implement structured logging, error hierarchies, and observability patterns for production systems. Covers structured JSON logging, error classification, correlation IDs, and alerting integration. Triggers on logging architecture, error handling strategy, or observability requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/error-handling-logging-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "logging",
+        "error-handling",
+        "observability",
+        "structured-logging",
+        "monitoring"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-logging",
+        "user-asks-about-error-handling",
+        "context:observability",
+        "context:debugging",
+        "context:monitoring"
+      ],
+      "complements": [
+        "resilience-patterns",
+        "backend-implementation-patterns",
+        "configuration-management"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "essay-publishing-pipeline",
+      "description": "Publish essays and long-form content through a structured pipeline from draft to distribution. Covers markdown-to-HTML conversion, metadata management, cross-posting strategies, and RSS/Atom feed generation. Triggers on essay publishing, content pipeline, or blog deployment requests.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/essay-publishing-pipeline",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "publishing",
+        "essays",
+        "content-pipeline",
+        "markdown",
+        "rss"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-publishing",
+        "context:essay-publishing",
+        "context:blog-deployment",
+        "context:content-pipeline"
+      ],
+      "complements": [
+        "creative-writing-craft",
+        "content-distribution",
+        "technical-analytical-writing"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-v"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "essay-to-distribution-pack",
+      "description": "Curated bundle for the full essay lifecycle from writing through multi-platform distribution. Includes publishing pipeline, creative writing craft, content distribution strategy, and POSSE architecture. Use when building an end-to-end content publishing workflow.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/essay-to-distribution-pack",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "5min",
+      "tier": "core",
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "bundle",
+        "publishing",
+        "essays",
+        "distribution",
+        "content"
+      ],
+      "inputs": [
+        "essay-draft"
+      ],
+      "outputs": [
+        "skill-bundle"
+      ],
+      "side_effects": [],
+      "triggers": [
+        "context:essay-publishing",
+        "context:content-pipeline",
+        "context:posse"
+      ],
+      "complements": [],
+      "includes": [
+        "essay-publishing-pipeline",
+        "creative-writing-craft",
+        "content-distribution",
+        "posse-distribution-architecture"
+      ],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-v",
+        "organ-vii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "evaluation-to-growth",
       "description": "Systematic content evaluation framework progressing through Critique \u2192 Reinforcement \u2192 Risk Analysis \u2192 Growth. Use when reviewing writing, arguments, proposals, code documentation, or any content requiring rigorous multi-dimensional assessment. Supports interactive guided mode or autonomous full-report mode, with output as markdown report, structured checklist, or inline revision suggestions. Triggers on requests to evaluate, critique, improve, strengthen, or review content quality.",
       "category": "education",
@@ -1173,6 +1955,56 @@
           "inline-template.md",
           "report-template.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "fastapi-patterns",
+      "description": "Build production FastAPI applications with dependency injection, middleware, background tasks, and structured project layouts. Covers async patterns, Pydantic models, OpenAPI customization, and testing strategies. Triggers on FastAPI development, Python API, or async web framework requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/fastapi-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "fastapi",
+        "python",
+        "async",
+        "api",
+        "pydantic"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-fastapi",
+        "project-has-fastapi",
+        "context:python-api",
+        "file-type:*app.py"
+      ],
+      "complements": [
+        "python-packaging-patterns",
+        "api-design-patterns",
+        "backend-implementation-patterns",
+        "redis-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iv",
+        "organ-vi",
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -1561,6 +2393,55 @@
       }
     },
     {
+      "name": "generative-art-deployment",
+      "description": "Deploy generative art projects for exhibition, web galleries, and print production. Covers rendering pipelines, resolution management, gallery hosting, and archival strategies for algorithmic artworks. Triggers on generative art deployment, art exhibition setup, or digital art publishing requests.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/generative-art-deployment",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "generative-art",
+        "deployment",
+        "gallery",
+        "exhibition",
+        "archival"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-art-deployment",
+        "context:generative-art-exhibition",
+        "context:art-gallery",
+        "context:art-publishing"
+      ],
+      "complements": [
+        "generative-art-algorithms",
+        "three-js-interactive-builder",
+        "algorithmic-art",
+        "deployment-cicd"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "generative-music-composer",
       "description": "Creates algorithmic music composition systems using procedural generation, Markov chains, L-systems, and neural approaches for ambient, adaptive, and experimental music.",
       "category": "creative",
@@ -1823,6 +2704,52 @@
       }
     },
     {
+      "name": "htmx-interaction-patterns",
+      "description": "Build dynamic web interfaces with htmx using hypermedia-driven patterns for partial page updates, lazy loading, infinite scroll, and server-sent events without writing JavaScript. Triggers on htmx usage, hypermedia architecture, or progressive enhancement requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/htmx-interaction-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "htmx",
+        "hypermedia",
+        "progressive-enhancement",
+        "server-side-rendering"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-htmx",
+        "project-has-htmx",
+        "context:hypermedia",
+        "context:progressive-enhancement"
+      ],
+      "complements": [
+        "fastapi-patterns",
+        "backend-implementation-patterns",
+        "responsive-design-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "incident-response-commander",
       "description": "Guides teams through IT outages and security incidents, providing structured workflows for detection, containment, eradication, and post-mortem analysis.",
       "category": "security",
@@ -2062,6 +2989,52 @@
       }
     },
     {
+      "name": "json-schema-design",
+      "description": "Design and validate JSON Schemas for API contracts, configuration files, and data exchange formats. Covers schema composition, conditional validation, and code generation from schemas. Triggers on JSON Schema creation, data validation, or API contract design requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/json-schema-design",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "json-schema",
+        "validation",
+        "api-contracts",
+        "data-modeling"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-json-schema",
+        "context:data-validation",
+        "context:api-contract",
+        "file-type:*.schema.json"
+      ],
+      "complements": [
+        "api-design-patterns",
+        "configuration-management"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "knowledge-architecture",
       "description": "Design knowledge systems using ontological principles\u2014organizing by what things ARE rather than arbitrary hierarchies. Use when structuring personal knowledge bases, designing documentation systems, creating cross-domain linking patterns, building the {OS.me} ecosystem, or architecting information that reveals rather than obscures essential nature. Triggers on knowledge management, documentation architecture, information ontology, or systematic organization of complex domains.",
       "category": "knowledge",
@@ -2230,6 +3203,53 @@
           "arkit-location.md",
           "coordinate-systems.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "market-gap-analysis",
+      "description": "Analyze market positioning, identify underserved segments, and map competitive gaps using systematic frameworks. Covers SWOT analysis, competitive landscape mapping, opportunity scoring, and positioning strategy. Triggers on market analysis, competitive research, or gap identification requests.",
+      "category": "data",
+      "collection": "example",
+      "path": "skills/data/market-gap-analysis",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "market-analysis",
+        "competitive-research",
+        "gap-analysis",
+        "positioning",
+        "strategy"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-market-analysis",
+        "context:competitive-research",
+        "context:market-positioning",
+        "context:gap-analysis"
+      ],
+      "complements": [
+        "systemic-product-analyst",
+        "product-requirements-designer",
+        "research-synthesis-workflow"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -2510,6 +3530,108 @@
           "patch-diagrams.md",
           "workflow-integration.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "monorepo-devops-pack",
+      "description": "Curated bundle for managing monorepos with containerized deployment pipelines. Includes monorepo management, Docker containerization, CI/CD deployment, and coding standards. Use when setting up or improving multi-package repository infrastructure.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/monorepo-devops-pack",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "5min",
+      "tier": "core",
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "bundle",
+        "monorepo",
+        "devops",
+        "docker",
+        "ci-cd"
+      ],
+      "inputs": [
+        "project-requirements"
+      ],
+      "outputs": [
+        "skill-bundle"
+      ],
+      "side_effects": [],
+      "triggers": [
+        "context:monorepo-setup",
+        "context:devops-pipeline",
+        "context:multi-package"
+      ],
+      "complements": [],
+      "includes": [
+        "monorepo-management",
+        "docker-containerization",
+        "deployment-cicd",
+        "coding-standards-enforcer"
+      ],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "monorepo-management",
+      "description": "Manage monorepos and multi-package repositories with workspace tools, dependency management, selective builds, and change detection. Covers npm/pnpm workspaces, Turborepo, and Python monorepo patterns. Triggers on monorepo setup, workspace management, or multi-package repository requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/monorepo-management",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "monorepo",
+        "workspaces",
+        "turborepo",
+        "multi-package",
+        "build-system"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-monorepo",
+        "context:workspace-management",
+        "project-has-turbo-json",
+        "project-has-pnpm-workspace"
+      ],
+      "complements": [
+        "python-packaging-patterns",
+        "deployment-cicd",
+        "coding-standards-enforcer"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -2830,6 +3952,107 @@
       }
     },
     {
+      "name": "organvm-governance-pack",
+      "description": "Curated bundle of governance and quality skills for ORGANVM ecosystem management. Includes promotion readiness, onboarding flows, stranger testing, repository standards, verification, and coding standards. Use when establishing or auditing governance practices for repositories.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/organvm-governance-pack",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "5min",
+      "tier": "core",
+      "governance_norm_group": "quality-gate",
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "bundle",
+        "governance",
+        "quality",
+        "onboarding",
+        "promotion"
+      ],
+      "inputs": [
+        "repository-to-assess"
+      ],
+      "outputs": [
+        "skill-bundle"
+      ],
+      "side_effects": [],
+      "triggers": [
+        "context:new-repository",
+        "context:promotion-readiness",
+        "context:governance-review"
+      ],
+      "complements": [],
+      "includes": [
+        "promotion-readiness-checklist",
+        "repo-onboarding-flow",
+        "stranger-test-protocol",
+        "github-repository-standards",
+        "verification-loop",
+        "coding-standards-enforcer"
+      ],
+      "governance_phases": [
+        "shape",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "pitch-deck-patterns",
+      "description": "Create compelling pitch decks for startups, projects, and internal proposals. Covers narrative structure, slide design principles, data visualization, and audience-specific adaptation. Triggers on pitch deck creation, presentation design, or fundraising deck requests.",
+      "category": "professional",
+      "collection": "example",
+      "path": "skills/professional/pitch-deck-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "pitch-deck",
+        "presentations",
+        "storytelling",
+        "fundraising",
+        "proposals"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-pitch-deck",
+        "context:presentation",
+        "context:fundraising",
+        "context:proposal"
+      ],
+      "complements": [
+        "portfolio-presentation",
+        "workshop-presentation-design",
+        "content-distribution"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "portfolio-presentation",
       "description": "Curate and present creative/technical work for maximum impact. Structure case studies, craft project narratives, optimize for different audiences (hiring managers, clients, collaborators). Supports portfolio websites, PDF decks, and presentation formats. Triggers on portfolio review, case study writing, project showcase, or work presentation requests.",
       "category": "professional",
@@ -2872,6 +4095,54 @@
           "website-structure.md",
           "workflow-integration.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "posse-distribution-architecture",
+      "description": "Implement POSSE (Publish on Own Site, Syndicate Elsewhere) content distribution with canonical URLs, cross-platform syndication, backfeed collection, and resilient delivery. Covers multi-platform publishing automation and IndieWeb patterns. Triggers on POSSE implementation, content syndication architecture, or IndieWeb publishing requests.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/posse-distribution-architecture",
+      "license": "MIT",
+      "complexity": "advanced",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "posse",
+        "syndication",
+        "indieweb",
+        "content-distribution",
+        "cross-platform"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-posse",
+        "context:content-syndication",
+        "context:indieweb",
+        "context:cross-platform-publishing"
+      ],
+      "complements": [
+        "resilience-patterns",
+        "social-media-api-integration",
+        "essay-publishing-pipeline",
+        "content-distribution"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-vii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -3043,6 +4314,256 @@
       }
     },
     {
+      "name": "promotion-readiness-checklist",
+      "description": "Assess repository readiness for promotion through governance states (LOCAL, CANDIDATE, PUBLIC_PROCESS, GRADUATED) with structured checklists, quality gates, and evidence requirements. Triggers on promotion assessment, readiness review, or governance state transition requests.",
+      "category": "project-management",
+      "collection": "example",
+      "path": "skills/project-management/promotion-readiness-checklist",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "quality-gate",
+      "governance_auto_activate": true,
+      "prerequisites": [],
+      "tags": [
+        "promotion",
+        "governance",
+        "quality-gates",
+        "readiness",
+        "state-machine"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-promotion",
+        "context:promotion-readiness",
+        "context:governance-state",
+        "context:quality-gate"
+      ],
+      "complements": [
+        "stranger-test-protocol",
+        "repo-onboarding-flow",
+        "verification-loop",
+        "coding-standards-enforcer"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "prompt-engineering-patterns",
+      "description": "Design effective prompts for LLM agents with structured input/output formats, chain-of-thought reasoning, few-shot examples, and system prompt architecture. Covers Claude-specific patterns and multi-turn conversation design. Triggers on prompt design, LLM interaction patterns, or system prompt architecture requests.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/prompt-engineering-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "prompt-engineering",
+        "llm",
+        "system-prompts",
+        "chain-of-thought",
+        "few-shot"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-prompts",
+        "context:prompt-design",
+        "context:llm-interaction",
+        "context:system-prompt"
+      ],
+      "complements": [
+        "agent-swarm-orchestrator",
+        "session-lifecycle-patterns",
+        "cross-agent-handoff"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "python-backend-pack",
+      "description": "Curated bundle of essential Python backend development skills. Includes FastAPI patterns, packaging, database migrations, CLI design, and Redis caching. Use when building Python API services or backend systems.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/python-backend-pack",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "5min",
+      "tier": "core",
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "bundle",
+        "python",
+        "backend",
+        "api",
+        "infrastructure"
+      ],
+      "inputs": [
+        "project-requirements"
+      ],
+      "outputs": [
+        "skill-bundle"
+      ],
+      "side_effects": [],
+      "triggers": [
+        "context:python-backend",
+        "context:python-api",
+        "context:new-python-project"
+      ],
+      "complements": [],
+      "includes": [
+        "fastapi-patterns",
+        "python-packaging-patterns",
+        "database-migration-patterns",
+        "cli-tool-design",
+        "redis-patterns"
+      ],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-iv",
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "python-packaging-patterns",
+      "description": "Structure Python projects for distribution with pyproject.toml, src layouts, dependency management, and publishing workflows. Covers packaging tools (hatch, setuptools, flit, poetry), versioning strategies, and editable installs. Triggers on Python project setup, packaging configuration, or dependency management requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/python-packaging-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "repo-hygiene",
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "python",
+        "packaging",
+        "pyproject",
+        "dependencies",
+        "distribution"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-python-packaging",
+        "project-has-pyproject-toml",
+        "project-has-setup-py",
+        "context:new-python-project",
+        "file-type:pyproject.toml"
+      ],
+      "complements": [
+        "deployment-cicd",
+        "testing-patterns",
+        "coding-standards-enforcer"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "organ-iv",
+        "organ-v",
+        "organ-vi",
+        "organ-vii",
+        "meta"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "react-three-fiber-patterns",
+      "description": "Build interactive 3D experiences in React using react-three-fiber (R3F), drei helpers, and shader integration. Covers scene composition, performance optimization, and animation patterns. Triggers on R3F development, React + Three.js, or declarative 3D scene requests.",
+      "category": "creative",
+      "collection": "example",
+      "path": "skills/creative/react-three-fiber-patterns",
+      "license": "MIT",
+      "complexity": "advanced",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "react-three-fiber",
+        "threejs",
+        "3d",
+        "webgl",
+        "react"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-r3f",
+        "context:react-threejs",
+        "context:react-3d",
+        "project-has-react-three-fiber"
+      ],
+      "complements": [
+        "three-js-interactive-builder",
+        "generative-art-algorithms",
+        "frontend-design-systems"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "reality-tv-narrative-analyzer",
       "description": "Analyze narrative structures, character arcs, and genre conventions in reality television for academic research and content analysis. Use when studying reality TV editing patterns, mapping contestant storylines, analyzing producer manipulation techniques, comparing show formats, or writing about unscripted television. Triggers on reality TV analysis, unscripted television research, character arc mapping, or genre convention studies.",
       "category": "creative",
@@ -3078,6 +4599,55 @@
           "analytical-terms.md",
           "show-formats.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "realtime-websocket-patterns",
+      "description": "Implement real-time features with WebSockets, Server-Sent Events, and long polling. Covers connection management, room-based messaging, presence tracking, and scaling strategies. Triggers on WebSocket implementation, real-time communication, or live update feature requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/realtime-websocket-patterns",
+      "license": "MIT",
+      "complexity": "advanced",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "websocket",
+        "real-time",
+        "sse",
+        "live-updates",
+        "pub-sub"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-websockets",
+        "context:real-time",
+        "context:live-updates",
+        "context:websocket",
+        "context:sse"
+      ],
+      "complements": [
+        "redis-patterns",
+        "backend-implementation-patterns",
+        "community-platform-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -3124,6 +4694,104 @@
       }
     },
     {
+      "name": "redis-patterns",
+      "description": "Use Redis effectively for caching, pub/sub messaging, rate limiting, distributed locks, and session storage. Covers data structure selection, expiration strategies, and cluster patterns. Triggers on Redis usage, caching architecture, or pub/sub messaging requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/redis-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "redis",
+        "caching",
+        "pub-sub",
+        "distributed-systems",
+        "rate-limiting"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-redis",
+        "project-has-redis-config",
+        "context:caching",
+        "context:pub-sub",
+        "context:rate-limiting"
+      ],
+      "complements": [
+        "resilience-patterns",
+        "backend-implementation-patterns",
+        "fastapi-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-iv"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
+      "name": "repo-onboarding-flow",
+      "description": "Onboard new repositories into a managed ecosystem with seed.yaml contracts, CI/CD setup, documentation standards, and governance integration. Covers the full lifecycle from repo creation through promotion readiness. Triggers on new repository setup, repo onboarding, or ecosystem integration requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/repo-onboarding-flow",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "repo-hygiene",
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "onboarding",
+        "repository",
+        "governance",
+        "ci-cd",
+        "ecosystem"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-repo-onboarding",
+        "context:new-repository",
+        "context:repo-setup",
+        "context:ecosystem-integration"
+      ],
+      "complements": [
+        "python-packaging-patterns",
+        "docker-containerization",
+        "stranger-test-protocol",
+        "github-repository-standards",
+        "coding-standards-enforcer"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "research-synthesis-workflow",
       "description": "Systematic methodology for gathering, analyzing, and synthesizing research from multiple sources into coherent insights and actionable knowledge.",
       "category": "knowledge",
@@ -3165,6 +4833,55 @@
           "synthesis-methods.md",
           "workflow-integration.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "resilience-patterns",
+      "description": "Build fault-tolerant systems with circuit breakers, retries with backoff, bulkheads, timeouts, and graceful degradation. Covers distributed system failure modes and recovery strategies. Triggers on reliability engineering, fault tolerance, or distributed system resilience requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/resilience-patterns",
+      "license": "MIT",
+      "complexity": "advanced",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "resilience",
+        "fault-tolerance",
+        "circuit-breaker",
+        "retry",
+        "distributed-systems"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-resilience",
+        "context:distributed-systems",
+        "context:fault-tolerance",
+        "context:reliability",
+        "context:error-recovery"
+      ],
+      "complements": [
+        "redis-patterns",
+        "backend-implementation-patterns",
+        "error-handling-logging-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-vii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -3448,6 +5165,54 @@
       }
     },
     {
+      "name": "session-lifecycle-patterns",
+      "description": "Manage AI agent session lifecycles with structured phases (FRAME, SHAPE, BUILD, PROVE), context preservation across sessions, handoff protocols, and session metadata tracking. Triggers on session management, agent lifecycle, or multi-session workflow requests.",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/session-lifecycle-patterns",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "session-management",
+        "agent-lifecycle",
+        "context-preservation",
+        "workflow-phases"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-session-management",
+        "context:agent-sessions",
+        "context:workflow-phases",
+        "context:session-handoff"
+      ],
+      "complements": [
+        "cross-agent-handoff",
+        "prompt-engineering-patterns",
+        "agent-swarm-orchestrator"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape",
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "skill-chain-prompts",
       "description": "Orchestrate multi-skill workflows with prompt-based skill chaining. Define sequential or parallel skill invocations using YAML chain definitions, track progress through chains, and use pre-built chains for development, documentation, and career workflows. Use when coordinating multiple skills for complex tasks.",
       "category": "tools",
@@ -3582,6 +5347,54 @@
       }
     },
     {
+      "name": "social-media-api-integration",
+      "description": "Integrate with social media platform APIs for automated posting, scheduling, analytics retrieval, and content syndication. Covers OAuth flows, rate limiting, and multi-platform strategies. Triggers on social media API integration, automated posting, or platform API requests.",
+      "category": "integrations",
+      "collection": "example",
+      "path": "skills/integrations/social-media-api-integration",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "social-media",
+        "api-integration",
+        "automation",
+        "oauth",
+        "content-syndication"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-social-media-api",
+        "context:social-posting",
+        "context:content-syndication",
+        "context:social-automation"
+      ],
+      "complements": [
+        "oauth-flow-architect",
+        "content-distribution",
+        "essay-publishing-pipeline",
+        "webhook-integration-patterns"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-vii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "socratic-tutor",
       "description": "A pedagogical aid that uses the Socratic method to guide users to answers through questioning, rather than providing direct solutions, to deepen understanding.",
       "category": "education",
@@ -3618,6 +5431,53 @@
           "question-bank.md",
           "scaffolding-strategies.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "source-evaluation-bibliography",
+      "description": "Evaluate source quality, build annotated bibliographies, and maintain curated reference collections. Covers the CRAAP test, source classification, citation management, and research documentation patterns. Triggers on source evaluation, bibliography creation, or research documentation requests.",
+      "category": "knowledge",
+      "collection": "example",
+      "path": "skills/knowledge/source-evaluation-bibliography",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "bibliography",
+        "source-evaluation",
+        "research",
+        "citations",
+        "curation"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-source-evaluation",
+        "context:research",
+        "context:bibliography",
+        "context:citations"
+      ],
+      "complements": [
+        "research-synthesis-workflow",
+        "technical-analytical-writing",
+        "second-brain-librarian"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -3948,6 +5808,54 @@
       }
     },
     {
+      "name": "stranger-test-protocol",
+      "description": "Validate that documentation, READMEs, and onboarding guides are comprehensible to someone with zero prior context. Systematic approach to testing docs from a stranger's perspective with actionable feedback. Triggers on documentation review, onboarding validation, or README quality assessment requests.",
+      "category": "documentation",
+      "collection": "example",
+      "path": "skills/documentation/stranger-test-protocol",
+      "license": "MIT",
+      "complexity": "beginner",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "documentation-standard",
+      "governance_auto_activate": true,
+      "prerequisites": [],
+      "tags": [
+        "documentation",
+        "onboarding",
+        "review",
+        "readability",
+        "stranger-test"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-doc-review",
+        "context:documentation-quality",
+        "context:onboarding-review",
+        "context:readme-review",
+        "context:stranger-test"
+      ],
+      "complements": [
+        "github-repository-standards",
+        "doc-coauthoring",
+        "repo-onboarding-flow"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
+        "assets": []
+      }
+    },
+    {
       "name": "systemic-product-analyst",
       "description": "A rigorous protocol for auditing projects (\"The Thing\") and their market fit (\"The World\"). Uses parallel analysis lanes, friction mapping, and outcome testing to create actionable 30/60/90 day plans.",
       "category": "data",
@@ -4047,6 +5955,55 @@
         "references": [
           "tdd-patterns.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "technical-analytical-writing",
+      "description": "Write clear technical analysis, system architecture documents, decision records, and research synthesis. Covers argument structure, evidence-based reasoning, and technical communication patterns. Triggers on technical writing, architecture documentation, ADR creation, or analytical essay requests.",
+      "category": "documentation",
+      "collection": "example",
+      "path": "skills/documentation/technical-analytical-writing",
+      "license": "MIT",
+      "complexity": "intermediate",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": "documentation-standard",
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "technical-writing",
+        "architecture-docs",
+        "adr",
+        "analysis",
+        "documentation"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-technical-writing",
+        "context:architecture-docs",
+        "context:adr",
+        "context:technical-analysis",
+        "context:decision-record"
+      ],
+      "complements": [
+        "doc-coauthoring",
+        "stranger-test-protocol",
+        "research-synthesis-workflow"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "shape",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-v"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -4234,6 +6191,57 @@
           "prophet-tuning.md",
           "workflow-integration.md"
         ],
+        "assets": []
+      }
+    },
+    {
+      "name": "vector-search-patterns",
+      "description": "Implement vector similarity search with embedding generation, index selection, and hybrid retrieval strategies. Covers ChromaDB, pgvector, FAISS, and RAG pipeline design. Triggers on vector search, embeddings, semantic search, or RAG architecture requests.",
+      "category": "development",
+      "collection": "example",
+      "path": "skills/development/vector-search-patterns",
+      "license": "MIT",
+      "complexity": "advanced",
+      "time_to_learn": "30min",
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [
+        "vector-search",
+        "embeddings",
+        "semantic-search",
+        "rag",
+        "chromadb",
+        "pgvector"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "user-asks-about-vector-search",
+        "context:semantic-search",
+        "context:rag",
+        "context:embeddings",
+        "project-has-chromadb",
+        "project-has-pgvector"
+      ],
+      "complements": [
+        "postgres-advanced-patterns",
+        "data-pipeline-architect",
+        "knowledge-graph-builder"
+      ],
+      "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "organ-iii"
+      ],
+      "resources": {
+        "scripts": [],
+        "references": [],
         "assets": []
       }
     },
@@ -4625,60 +6633,88 @@
   ],
   "categories": {
     "development": {
-      "count": 26,
+      "count": 47,
       "skills": [
         "accessibility-patterns",
+        "agent-testing-patterns",
         "api-design-patterns",
         "artifacts-builder",
         "backend-implementation-patterns",
+        "browser-extension-patterns",
+        "cli-tool-design",
         "code-refactoring-patterns",
         "coding-standards-enforcer",
+        "community-platform-patterns",
+        "configuration-management",
         "continuous-learning-agent",
+        "data-backup-patterns",
+        "database-migration-patterns",
         "deployment-cicd",
+        "docker-containerization",
         "dotfile-systems-architect",
+        "error-handling-logging-patterns",
+        "fastapi-patterns",
         "feature-workflow-orchestrator",
         "frontend-design-systems",
         "fullstack-starter-pack",
         "gcp-resource-optimizer",
+        "htmx-interaction-patterns",
         "iterative-code-exploration",
+        "json-schema-design",
         "mcp-builder",
         "mcp-server-orchestrator",
         "mobile-platform-architect",
+        "monorepo-devops-pack",
+        "monorepo-management",
         "nextjs-fullstack-patterns",
         "postgres-advanced-patterns",
+        "python-backend-pack",
+        "python-packaging-patterns",
+        "realtime-websocket-patterns",
+        "redis-patterns",
+        "repo-onboarding-flow",
+        "resilience-patterns",
         "responsive-design-patterns",
         "rust-systems-design",
         "tdd-workflow",
         "testing-patterns",
+        "vector-search-patterns",
         "verification-loop",
         "web-artifacts-builder",
         "webapp-testing"
       ]
     },
     "tools": {
-      "count": 6,
+      "count": 11,
       "skills": [
+        "agent-development-pack",
         "agent-swarm-orchestrator",
+        "cross-agent-handoff",
         "multi-agent-workforce-planner",
         "ontological-renamer",
+        "organvm-governance-pack",
+        "prompt-engineering-patterns",
+        "session-lifecycle-patterns",
         "skill-chain-prompts",
         "skill-creator",
         "speckit"
       ]
     },
     "creative": {
-      "count": 13,
+      "count": 15,
       "skills": [
         "algorithmic-art",
         "audio-engineering-patterns",
         "canvas-design",
         "creative-writing-craft",
         "generative-art-algorithms",
+        "generative-art-deployment",
         "generative-music-composer",
         "interactive-theatre-designer",
         "modular-synthesis-philosophy",
         "movement-notation-systems",
         "narratological-algorithms",
+        "react-three-fiber-patterns",
         "reality-tv-narrative-analyzer",
         "theme-factory",
         "three-js-interactive-builder"
@@ -4696,7 +6732,7 @@
       ]
     },
     "professional": {
-      "count": 11,
+      "count": 12,
       "skills": [
         "brand-guidelines",
         "content-distribution",
@@ -4706,20 +6742,22 @@
         "internal-comms",
         "interview-preparation",
         "networking-outreach",
+        "pitch-deck-patterns",
         "portfolio-presentation",
         "slack-gif-creator",
         "workshop-presentation-design"
       ]
     },
     "knowledge": {
-      "count": 6,
+      "count": 7,
       "skills": [
         "claude-project-manifest",
         "knowledge-architecture",
         "knowledge-graph-builder",
         "recursive-systems-architect",
         "research-synthesis-workflow",
-        "second-brain-librarian"
+        "second-brain-librarian",
+        "source-evaluation-bibliography"
       ]
     },
     "security": {
@@ -4733,11 +6771,32 @@
         "security-threat-modeler"
       ]
     },
-    "data": {
-      "count": 6,
+    "integrations": {
+      "count": 14,
       "skills": [
+        "conversation-content-pipeline",
+        "essay-publishing-pipeline",
+        "essay-to-distribution-pack",
+        "mcp-integration-patterns",
+        "oauth-flow-architect",
+        "posse-distribution-architecture",
+        "social-media-api-integration",
+        "specstory-guard",
+        "specstory-link-trail",
+        "specstory-organize",
+        "specstory-project-stats",
+        "specstory-session-summary",
+        "specstory-yak",
+        "webhook-integration-patterns"
+      ]
+    },
+    "data": {
+      "count": 8,
+      "skills": [
+        "data-ingestion-pipeline",
         "data-pipeline-architect",
         "data-storytelling-analyst",
+        "market-gap-analysis",
         "ml-experiment-tracker",
         "sql-query-optimizer",
         "systemic-product-analyst",
@@ -4745,12 +6804,15 @@
       ]
     },
     "documentation": {
-      "count": 4,
+      "count": 7,
       "skills": [
         "doc-coauthoring",
+        "document-audit-extraction",
         "github-profile-architect",
         "github-repo-curator",
-        "github-repository-standards"
+        "github-repository-standards",
+        "stranger-test-protocol",
+        "technical-analytical-writing"
       ]
     },
     "education": {
@@ -4763,26 +6825,13 @@
       ]
     },
     "project-management": {
-      "count": 4,
+      "count": 5,
       "skills": [
         "github-roadmap-strategist",
         "product-requirements-designer",
         "project-alchemy-orchestrator",
-        "project-orchestration"
-      ]
-    },
-    "integrations": {
-      "count": 9,
-      "skills": [
-        "mcp-integration-patterns",
-        "oauth-flow-architect",
-        "specstory-guard",
-        "specstory-link-trail",
-        "specstory-organize",
-        "specstory-project-stats",
-        "specstory-session-summary",
-        "specstory-yak",
-        "webhook-integration-patterns"
+        "project-orchestration",
+        "promotion-readiness-checklist"
       ]
     },
     "uncategorized": {
@@ -4797,6 +6846,25 @@
   },
   "bundles": [
     {
+      "name": "agent-development-pack",
+      "includes": [
+        "agent-swarm-orchestrator",
+        "agent-testing-patterns",
+        "cross-agent-handoff",
+        "mcp-builder",
+        "prompt-engineering-patterns"
+      ]
+    },
+    {
+      "name": "essay-to-distribution-pack",
+      "includes": [
+        "essay-publishing-pipeline",
+        "creative-writing-craft",
+        "content-distribution",
+        "posse-distribution-architecture"
+      ]
+    },
+    {
       "name": "fullstack-starter-pack",
       "includes": [
         "api-design-patterns",
@@ -4805,6 +6873,36 @@
         "backend-implementation-patterns",
         "deployment-cicd",
         "nextjs-fullstack-patterns"
+      ]
+    },
+    {
+      "name": "monorepo-devops-pack",
+      "includes": [
+        "monorepo-management",
+        "docker-containerization",
+        "deployment-cicd",
+        "coding-standards-enforcer"
+      ]
+    },
+    {
+      "name": "organvm-governance-pack",
+      "includes": [
+        "promotion-readiness-checklist",
+        "repo-onboarding-flow",
+        "stranger-test-protocol",
+        "github-repository-standards",
+        "verification-loop",
+        "coding-standards-enforcer"
+      ]
+    },
+    {
+      "name": "python-backend-pack",
+      "includes": [
+        "fastapi-patterns",
+        "python-packaging-patterns",
+        "database-migration-patterns",
+        "cli-tool-design",
+        "redis-patterns"
       ]
     },
     {

@@ -1,7 +1,12 @@
+skills/tools/agent-development-pack
 skills/development/api-design-patterns
 skills/creative/canvas-design
+skills/integrations/essay-to-distribution-pack
 skills/development/fullstack-starter-pack
 skills/development/mcp-builder
+skills/development/monorepo-devops-pack
+skills/tools/organvm-governance-pack
+skills/development/python-backend-pack
 skills/security/security-essentials-pack
 skills/security/security-threat-modeler
 skills/development/tdd-workflow

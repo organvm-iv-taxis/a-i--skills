@@ -2,6 +2,8 @@ skills/development/coding-standards-enforcer
 skills/documentation/github-repo-curator
 skills/documentation/github-repository-standards
 skills/project-management/product-requirements-designer
+skills/project-management/promotion-readiness-checklist
 skills/security/security-threat-modeler
+skills/documentation/stranger-test-protocol
 skills/development/tdd-workflow
 skills/development/verification-loop

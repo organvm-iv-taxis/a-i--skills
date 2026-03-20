@@ -7,9 +7,19 @@
       "sha256": "2ed660a8d6d89f8d92314a99d9f58e1e1072216ce8ac1cfd2729f6bcf4f78ee6"
     },
     {
+      "name": "agent-development-pack",
+      "path": "skills/tools/agent-development-pack",
+      "sha256": "5051857269d055378031fa2e0e8c146f2de436a2d701081e7e1973b0159ed148"
+    },
+    {
       "name": "agent-swarm-orchestrator",
       "path": "skills/tools/agent-swarm-orchestrator",
       "sha256": "5e3f5211c864feb04b3353e3c5d8fd86dbd957004de0e075778773a5802c857d"
+    },
+    {
+      "name": "agent-testing-patterns",
+      "path": "skills/development/agent-testing-patterns",
+      "sha256": "db5b432a96519afd730c1c508351dcdc769fa30444cd6ea3e036760adbb59c82"
     },
     {
       "name": "algorithmic-art",
@@ -47,6 +57,11 @@
       "sha256": "4962647e7e0a270029e4e6397341f4c2fd3a7852a4cbaa3f42a419cfb4f7d821"
     },
     {
+      "name": "browser-extension-patterns",
+      "path": "skills/development/browser-extension-patterns",
+      "sha256": "93fc0d414c886cc9b87951b8a26ec971d5a137b142c316861cf749a1f56cb5a5"
+    },
+    {
       "name": "canvas-design",
       "path": "skills/creative/canvas-design",
       "sha256": "237d840141673f17e4dbf069bfc6efb0daaa427874af78b35116858fb74ec8f7"
@@ -57,6 +72,11 @@
       "sha256": "c63634f803cc9cf49ef642f334fb373f05e19847a50f73607b70e02645ac9eb2"
     },
     {
+      "name": "cli-tool-design",
+      "path": "skills/development/cli-tool-design",
+      "sha256": "f5081e96959f9387839105a093a365ba9df67ba08809a0ae1cdb2bf1dbe1753e"
+    },
+    {
       "name": "code-refactoring-patterns",
       "path": "skills/development/code-refactoring-patterns",
       "sha256": "76ec2a0311afc85109deb606d6984297b37c86f6bbc4e3b0b4ce09b5847c750c"
@@ -65,6 +85,16 @@
       "name": "coding-standards-enforcer",
       "path": "skills/development/coding-standards-enforcer",
       "sha256": "4b4521c801e26ddac87ddab0996db4f1958bbeb507febdd17df10abd149e9371"
+    },
+    {
+      "name": "community-platform-patterns",
+      "path": "skills/development/community-platform-patterns",
+      "sha256": "380ebc1f83575c7a1ff55efe0b0c4999cb4b6c1169850e9b8403907647c714d4"
+    },
+    {
+      "name": "configuration-management",
+      "path": "skills/development/configuration-management",
+      "sha256": "ed168711a8bb63258bc970fddc76d8bc838b96f8545d7ddfea5c29c2d3c9630a"
     },
     {
       "name": "content-distribution",
@@ -82,14 +112,34 @@
       "sha256": "8bcb95eccfb8053e0ab0949c6f78450df02b744bcc057800f977605b3712caac"
     },
     {
+      "name": "conversation-content-pipeline",
+      "path": "skills/integrations/conversation-content-pipeline",
+      "sha256": "3b684b25fd26acdb04c6586c52297c8dab4466d94f94300d4e5142cbc1c025f8"
+    },
+    {
       "name": "creative-writing-craft",
       "path": "skills/creative/creative-writing-craft",
       "sha256": "2dded3492f5c2fe3197dfba2c47288749e54bce8e4e1d09b8069a3a6b7334de1"
     },
     {
+      "name": "cross-agent-handoff",
+      "path": "skills/tools/cross-agent-handoff",
+      "sha256": "46aff1f4986a9154649ec651c11d7d4fe68f55ae22c31b00e7e3da5b1ca9538e"
+    },
+    {
       "name": "cv-resume-builder",
       "path": "skills/professional/cv-resume-builder",
       "sha256": "712c8c1438cf2031a28435c378fa00d8f7891f6c23320fca06361d2c439dc631"
+    },
+    {
+      "name": "data-backup-patterns",
+      "path": "skills/development/data-backup-patterns",
+      "sha256": "95a3af003ab02233ba39360e6783f20afc6fec03947dcc7820d3ca1bb8e6b0ef"
+    },
+    {
+      "name": "data-ingestion-pipeline",
+      "path": "skills/data/data-ingestion-pipeline",
+      "sha256": "258f885b9a4103f3b3e4db29d225182f53a44911c92cee05562d451c5f84c427"
     },
     {
       "name": "data-pipeline-architect",
@@ -100,6 +150,11 @@
       "name": "data-storytelling-analyst",
       "path": "skills/data/data-storytelling-analyst",
       "sha256": "70da120dbb21bf11e2a8ca34ec63ef60a68fc8156dc1baaca391d0bf15e22157"
+    },
+    {
+      "name": "database-migration-patterns",
+      "path": "skills/development/database-migration-patterns",
+      "sha256": "a328844ee8e2d5174b33dbd1f5797105142ff2042e514c129711abd30a846372"
     },
     {
       "name": "defi-trading-systems",
@@ -117,6 +172,16 @@
       "sha256": "600869e442ab32bb8964afe176cb990241428244beafc0a63f39d1586f1d60fd"
     },
     {
+      "name": "docker-containerization",
+      "path": "skills/development/docker-containerization",
+      "sha256": "2cd50cfe82171eccfa0915f641a4e7c1b8f163e8979d1ef9bee0f13a50991166"
+    },
+    {
+      "name": "document-audit-extraction",
+      "path": "skills/documentation/document-audit-extraction",
+      "sha256": "9986b0bc079c9ddbf33ffb3abdd5d1b1dec449d9350541e9276cba8b8c93074d"
+    },
+    {
       "name": "dotfile-systems-architect",
       "path": "skills/development/dotfile-systems-architect",
       "sha256": "aa2f3e18115b68e3b1f1a88744766e9eb30b79682fc9fa41b5f1c6fea353557e"
@@ -127,9 +192,29 @@
       "sha256": "130a28a0cb4b21818993cf56ba4f4f42e15ce9c6d48b2f4b25de5495a63dd2e2"
     },
     {
+      "name": "error-handling-logging-patterns",
+      "path": "skills/development/error-handling-logging-patterns",
+      "sha256": "510486f66cb0c9e0ca065c1334a2f6cb5a9407f0350c50e9fbbf53dca83ea295"
+    },
+    {
+      "name": "essay-publishing-pipeline",
+      "path": "skills/integrations/essay-publishing-pipeline",
+      "sha256": "5735cd68f6b455eb99ad088ccffc9eaa258ee1f3084d9610f34f7c0921213636"
+    },
+    {
+      "name": "essay-to-distribution-pack",
+      "path": "skills/integrations/essay-to-distribution-pack",
+      "sha256": "01d963aa127f603d4a6426d47f512b44c7ad3cda027ace05b5b051ea81e14960"
+    },
+    {
       "name": "evaluation-to-growth",
       "path": "skills/education/evaluation-to-growth",
       "sha256": "e4d9135e981055d8dc0f9ea9e1b5ad12a76052b4c959cfb680dfef48ea8aaae9"
+    },
+    {
+      "name": "fastapi-patterns",
+      "path": "skills/development/fastapi-patterns",
+      "sha256": "8692b903ee812a93f0335041f2890a6581451d3322998dea3338ffc429914338"
     },
     {
       "name": "feature-workflow-orchestrator",
@@ -177,6 +262,11 @@
       "sha256": "8a9039524e4f762b0e0c149aae3e050122dc9738de5809de81d7c1cfa7409028"
     },
     {
+      "name": "generative-art-deployment",
+      "path": "skills/creative/generative-art-deployment",
+      "sha256": "950bce510b1684341bb28534e0f565550781fcb814ba46cff7de89f3477fa0d1"
+    },
+    {
       "name": "generative-music-composer",
       "path": "skills/creative/generative-music-composer",
       "sha256": "2589f2b5b9c4f5b560ef9873149b0173e04ffa991ad4f507096a6667b4123487"
@@ -205,6 +295,11 @@
       "name": "grant-proposal-writer",
       "path": "skills/professional/grant-proposal-writer",
       "sha256": "92c0148b7664b5e0fe2951bfb77f0b656906bceeacd4dd7c965c7912df12a919"
+    },
+    {
+      "name": "htmx-interaction-patterns",
+      "path": "skills/development/htmx-interaction-patterns",
+      "sha256": "aaf463a2703e2998963eec0b96e5355fd142f8407852556b85c0a4f0cc6f0bea"
     },
     {
       "name": "incident-response-commander",
@@ -237,6 +332,11 @@
       "sha256": "5487db7179034b5b44b78a0ed4f898f206b3c782e831e4a2b9d39102ddf707cc"
     },
     {
+      "name": "json-schema-design",
+      "path": "skills/development/json-schema-design",
+      "sha256": "c21210de8a3fdfac75071033be742c94d72dffd4c9f105eb316bf0497fd9bb36"
+    },
+    {
       "name": "knowledge-architecture",
       "path": "skills/knowledge/knowledge-architecture",
       "sha256": "bf0fa2b473a4f524879a6edc8e75f07279b79e0d043ccaf3cce5a001f93f3921"
@@ -255,6 +355,11 @@
       "name": "location-ar-experience",
       "path": "skills/specialized/location-ar-experience",
       "sha256": "aa48f7379db7b417d84b66e7d850131decc5dfacbb8690aa1005db75da6b4ad2"
+    },
+    {
+      "name": "market-gap-analysis",
+      "path": "skills/data/market-gap-analysis",
+      "sha256": "7b36cf47b9a3317aebe3394ce1ebcbad4332081ffeee8ce359a64328fb571135"
     },
     {
       "name": "mcp-builder",
@@ -285,6 +390,16 @@
       "name": "modular-synthesis-philosophy",
       "path": "skills/creative/modular-synthesis-philosophy",
       "sha256": "8aaab47452dbea48f8ea72b9a49882830e4631b59786432987c291402a98bb5c"
+    },
+    {
+      "name": "monorepo-devops-pack",
+      "path": "skills/development/monorepo-devops-pack",
+      "sha256": "611ac99f254beeee8751043480c1b1eb4c5c024c41cc9a3c992db7511255dd97"
+    },
+    {
+      "name": "monorepo-management",
+      "path": "skills/development/monorepo-management",
+      "sha256": "43b7969d906794a596f777e866d52e11fb501718b30641dd91cc650e9066da9e"
     },
     {
       "name": "movement-notation-systems",
@@ -322,9 +437,24 @@
       "sha256": "b031004752b2fcca2579ea8f19089a8720b8da7f0b5ad537c02f7178126b405c"
     },
     {
+      "name": "organvm-governance-pack",
+      "path": "skills/tools/organvm-governance-pack",
+      "sha256": "c1dbcfc870aa389e2b747ab54be990dca89a19ad91e554cd2d19d3ac77ab2206"
+    },
+    {
+      "name": "pitch-deck-patterns",
+      "path": "skills/professional/pitch-deck-patterns",
+      "sha256": "c482ecb7438dfa34e86a27611e41fd832bbfae84cefb3c2f081e535af5ccbbde"
+    },
+    {
       "name": "portfolio-presentation",
       "path": "skills/professional/portfolio-presentation",
       "sha256": "12e10169464f91fc0d89515cb656069830627595f4609c435077bae70bf29804"
+    },
+    {
+      "name": "posse-distribution-architecture",
+      "path": "skills/integrations/posse-distribution-architecture",
+      "sha256": "01fb5be30a0756aaebca633233d20112fa13cd931f3af45dc65a32c15580932d"
     },
     {
       "name": "postgres-advanced-patterns",
@@ -347,9 +477,39 @@
       "sha256": "608a4a55c667e3d1b94feda4626913946558fce6851bfe510cef6a4dd901ba9e"
     },
     {
+      "name": "promotion-readiness-checklist",
+      "path": "skills/project-management/promotion-readiness-checklist",
+      "sha256": "c90c3e60a0c34ea5baa6e8aca0664d07786c2d9e75398301679ef7b79ec278c2"
+    },
+    {
+      "name": "prompt-engineering-patterns",
+      "path": "skills/tools/prompt-engineering-patterns",
+      "sha256": "598a628521adfbf8d41d9b425df975ddb58e1f524bfff947224d6bfd8de94bb7"
+    },
+    {
+      "name": "python-backend-pack",
+      "path": "skills/development/python-backend-pack",
+      "sha256": "0d17afdb06fc25d54a696c821ee92d4e5a640e9575cdec52125652cefce83a3c"
+    },
+    {
+      "name": "python-packaging-patterns",
+      "path": "skills/development/python-packaging-patterns",
+      "sha256": "0e1be405822ca22b51cb0f1441a6331c6bbfb0c8020cf32a88223d1f6a4c122f"
+    },
+    {
+      "name": "react-three-fiber-patterns",
+      "path": "skills/creative/react-three-fiber-patterns",
+      "sha256": "78b8d7185c869a1f99657057517a4af3668224a805d51f78599e0d51f5e39272"
+    },
+    {
       "name": "reality-tv-narrative-analyzer",
       "path": "skills/creative/reality-tv-narrative-analyzer",
       "sha256": "6a3fc0161d7f434683db026fa7030dec4bc678351af2977e6621834621c7648e"
+    },
+    {
+      "name": "realtime-websocket-patterns",
+      "path": "skills/development/realtime-websocket-patterns",
+      "sha256": "23b266ce2596c03afa7de36fd0a244683a5f4fd6fc224adafe581aaaa981d877"
     },
     {
       "name": "recursive-systems-architect",
@@ -357,9 +517,24 @@
       "sha256": "8fb0aa37a1c4b8bbb1c7ed281e93b91cb11774021deb413d83bf3bcbfbc70b58"
     },
     {
+      "name": "redis-patterns",
+      "path": "skills/development/redis-patterns",
+      "sha256": "221d4d6e5b2e17acb51a8557b921f8e6e368e380a15bb65f9ca623c1989bcdd7"
+    },
+    {
+      "name": "repo-onboarding-flow",
+      "path": "skills/development/repo-onboarding-flow",
+      "sha256": "357029ffbd0d941443da2b8c13433eb8df9235be0dbc169fd7a6cd0a463d4c70"
+    },
+    {
       "name": "research-synthesis-workflow",
       "path": "skills/knowledge/research-synthesis-workflow",
       "sha256": "fb8a8ff39baf1028ab0a0c61b13c6f86573ef53b7ea743e80019d68200951b97"
+    },
+    {
+      "name": "resilience-patterns",
+      "path": "skills/development/resilience-patterns",
+      "sha256": "af4b783ce6c8961109645fec23f1ae01fcca9f72dd5e61203b24184ae098bee3"
     },
     {
       "name": "responsive-design-patterns",
@@ -392,6 +567,11 @@
       "sha256": "3155113919990bbbdf7648e3fa2efdcf26232c2f31de6674e9ce108f337d3cf5"
     },
     {
+      "name": "session-lifecycle-patterns",
+      "path": "skills/tools/session-lifecycle-patterns",
+      "sha256": "98159cef0f06b5d5a3e571c1d90d9542fb3f1fc4e5d490fc521b4553e7b198e2"
+    },
+    {
       "name": "skill-chain-prompts",
       "path": "skills/tools/skill-chain-prompts",
       "sha256": "efc57b84e4ef2cca17cd49542cb9427c6b956dd8e0a5660ddb7df7d39d844bc0"
@@ -407,9 +587,19 @@
       "sha256": "6ffe7035237583f7502c2dc10a9d843c4721342f52664a2b2965573f4857fc00"
     },
     {
+      "name": "social-media-api-integration",
+      "path": "skills/integrations/social-media-api-integration",
+      "sha256": "10f729800f7d2483ccf2a12030e5c608e3aeec420c54c508883a0e1cae2bfa72"
+    },
+    {
       "name": "socratic-tutor",
       "path": "skills/education/socratic-tutor",
       "sha256": "7747996e8edc26382c6cc9b73b51c5084f0e705c0badd764e0fcdb931a880897"
+    },
+    {
+      "name": "source-evaluation-bibliography",
+      "path": "skills/knowledge/source-evaluation-bibliography",
+      "sha256": "bb460c8bd41daa032703c5ad515919f902a8ca57f4d139ebf903afb74e8c3abe"
     },
     {
       "name": "speckit",
@@ -452,6 +642,11 @@
       "sha256": "974ac412dcbbe407bf4cdf93e8c9e2e4e98de44a8810f4f725b163a37e23fbfa"
     },
     {
+      "name": "stranger-test-protocol",
+      "path": "skills/documentation/stranger-test-protocol",
+      "sha256": "60540099e1d8bc4847deeba9dd338cf9ed85c9644d2503757eeaee104d08c5ff"
+    },
+    {
       "name": "systemic-product-analyst",
       "path": "skills/data/systemic-product-analyst",
       "sha256": "5af869af2428f17c359dd1202ef9c8b6ca8c62046956302faad0ed4be33f4ff9"
@@ -460,6 +655,11 @@
       "name": "tdd-workflow",
       "path": "skills/development/tdd-workflow",
       "sha256": "fe0e6e2aa52fe7c54388eb190cf382d245fbbe64b4123476e2d9ad1e42853fba"
+    },
+    {
+      "name": "technical-analytical-writing",
+      "path": "skills/documentation/technical-analytical-writing",
+      "sha256": "1f2523e12ee341b9a905fb0d59d2a8aee39ad8cbfd3d699b8987255713e02bd6"
     },
     {
       "name": "testing-patterns",
@@ -480,6 +680,11 @@
       "name": "time-series-analyst",
       "path": "skills/data/time-series-analyst",
       "sha256": "d59bb1f1c7e8a4315fa97b2a8762a6dd47f2bea49b7ede4a2aed1e6bf899ec26"
+    },
+    {
+      "name": "vector-search-patterns",
+      "path": "skills/development/vector-search-patterns",
+      "sha256": "c01ed9d3b5ffff00460ee8d58e6280d62825a9f3a914799ae88c65c08414483e"
     },
     {
       "name": "verification-loop",

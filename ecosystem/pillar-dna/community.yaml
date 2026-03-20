@@ -1,0 +1,33 @@
+schema_version: '1.0'
+pillar: community
+product_type: saas
+lifecycle_stage: conception
+research:
+  scan_scope:
+  - discord
+  - github_discussions
+  - forum
+  competitors: []
+  cadence: monthly
+artifacts:
+- name: community-health
+  cadence: monthly
+  staleness_days: 45
+gen_prompts: []
+crit_prompts: []
+gates:
+  research_to_planning:
+  - At least one landscape snapshot exists
+  - 3+ competitors profiled
+  planning_to_building:
+  - Channel strategy artifact exists
+  - Priority arms identified with next_actions
+  building_to_live:
+  - 'At least one arm has status: live'
+signals:
+  emits:
+  - signal:pillar-stage-change
+  - signal:new-competitor-found
+  listens:
+  - signal:ecosystem-arm-live
+  - signal:market-shift-detected

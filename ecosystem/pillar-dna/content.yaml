@@ -1,0 +1,38 @@
+schema_version: '1.0'
+pillar: content
+product_type: saas
+lifecycle_stage: planning
+research:
+  scan_scope:
+  - blog
+  - docs_site
+  - tutorials
+  - case_studies
+  - newsletter
+  competitors: []
+  cadence: monthly
+artifacts:
+- name: content-calendar
+  cadence: monthly
+  staleness_days: 45
+- name: seo-audit
+  cadence: quarterly
+  staleness_days: 120
+gen_prompts: []
+crit_prompts: []
+gates:
+  research_to_planning:
+  - At least one landscape snapshot exists
+  - 3+ competitors profiled
+  planning_to_building:
+  - Channel strategy artifact exists
+  - Priority arms identified with next_actions
+  building_to_live:
+  - 'At least one arm has status: live'
+signals:
+  emits:
+  - signal:pillar-stage-change
+  - signal:new-competitor-found
+  listens:
+  - signal:ecosystem-arm-live
+  - signal:market-shift-detected

@@ -1,8 +1,35 @@
 schema_version: '1.0'
 repo: a-i--skills
 organ: IV
-display_name: 'Public repository of AI agent skills: specialized capabilities and
-  workflows across 12 categories'
+display_name: "Public repository of AI agent skills: specialized capabilities across 12 categories"
+
 delivery:
-- platform: web_app
+- platform: skill_library
+  status: live
+  priority: critical
+  notes: "130+ skills across 12 categories, consumed by Claude Code sessions"
+  next_action: "Maintain skill quality and add new skills as needed"
+- platform: cli_tool
+  status: planned
+  priority: medium
+  notes: "Skill discovery and installation CLI"
+  next_action: "Design skill search and install workflow"
+
+content:
+- platform: docs_site
+  status: planned
+  priority: high
+  notes: "Skill catalog with usage guides, category index, contribution guidelines"
+  next_action: "Generate catalog from skill SKILL.md files"
+- platform: blog
   status: not_started
+  priority: low
+  notes: "Skill authoring tutorials and best practices"
+  next_action: "Write skill creation guide"
+
+community:
+- platform: github_discussions
+  status: not_started
+  priority: medium
+  notes: "Skill requests, feedback, and community contributions"
+  next_action: "Enable GitHub Discussions on the repo"

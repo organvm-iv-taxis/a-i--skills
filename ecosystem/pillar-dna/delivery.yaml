@@ -1,0 +1,40 @@
+schema_version: '1.0'
+pillar: delivery
+product_type: saas
+lifecycle_stage: live
+research:
+  scan_scope:
+  - web_app
+  - api
+  - mobile
+  competitors: []
+  cadence: monthly
+artifacts:
+- name: uptime-monitoring
+  cadence: weekly
+  staleness_days: 14
+- name: deployment-pipeline
+  cadence: quarterly
+  staleness_days: 120
+gen_prompts:
+- id: platform_coverage
+  trigger: quarterly
+  prompt: Audit delivery platforms for {product_type}. Compare our presence against
+    top competitors.
+crit_prompts: []
+gates:
+  research_to_planning:
+  - At least one landscape snapshot exists
+  - 3+ competitors profiled
+  planning_to_building:
+  - Channel strategy artifact exists
+  - Priority arms identified with next_actions
+  building_to_live:
+  - 'At least one arm has status: live'
+signals:
+  emits:
+  - signal:pillar-stage-change
+  - signal:new-competitor-found
+  listens:
+  - signal:ecosystem-arm-live
+  - signal:market-shift-detected

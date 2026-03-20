@@ -22,6 +22,15 @@ VALID_SIDE_EFFECTS = {
     "network-access", "installs-packages", "reads-filesystem",
 }
 VALID_TIERS = {"core", "community"}
+VALID_GOVERNANCE_PHASES = {"frame", "shape", "build", "prove", "ship"}
+VALID_NORM_GROUPS = {
+    "repo-hygiene", "quality-gate", "security-baseline",
+    "documentation-standard", "distribution-readiness",
+}
+VALID_ORGAN_AFFINITY = {
+    "all", "organ-i", "organ-ii", "organ-iii", "organ-iv",
+    "organ-v", "organ-vi", "organ-vii", "meta",
+}
 MIN_DESCRIPTION_LENGTH = 20
 MAX_DESCRIPTION_LENGTH = 600
 
@@ -161,6 +170,41 @@ def _validate_skill(skill_dir: Path, check_links: bool = False) -> list[str]:
             triggers_raw = data.get("triggers")
             if not triggers_raw or not parse_list_field(triggers_raw):
                 errors.append(f"{skill_dir}: core skill missing 'triggers'")
+
+    # Validate governance fields
+    gov_phases_raw = data.get("governance_phases")
+    if gov_phases_raw:
+        gov_phases = parse_list_field(gov_phases_raw)
+        for phase in gov_phases:
+            if phase not in VALID_GOVERNANCE_PHASES:
+                errors.append(
+                    f"{skill_dir}: invalid governance_phases '{phase}', "
+                    f"must be one of: {', '.join(sorted(VALID_GOVERNANCE_PHASES))}"
+                )
+
+    gov_norm = data.get("governance_norm_group")
+    if gov_norm and gov_norm not in VALID_NORM_GROUPS:
+        errors.append(
+            f"{skill_dir}: invalid governance_norm_group '{gov_norm}', "
+            f"must be one of: {', '.join(sorted(VALID_NORM_GROUPS))}"
+        )
+
+    gov_auto = data.get("governance_auto_activate")
+    if gov_auto and gov_auto not in ("true", "false"):
+        errors.append(
+            f"{skill_dir}: governance_auto_activate must be 'true' or 'false', "
+            f"got '{gov_auto}'"
+        )
+
+    organ_raw = data.get("organ_affinity")
+    if organ_raw:
+        organs = parse_list_field(organ_raw)
+        for organ in organs:
+            if organ not in VALID_ORGAN_AFFINITY:
+                errors.append(
+                    f"{skill_dir}: invalid organ_affinity '{organ}', "
+                    f"must be one of: {', '.join(sorted(VALID_ORGAN_AFFINITY))}"
+                )
 
     # Check for broken links if requested
     if check_links:

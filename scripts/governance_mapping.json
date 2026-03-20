@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "spec": "docs/superpowers/specs/2026-03-20-governance-aware-skill-taxonomy-design.md",
+    "version": "v3",
+    "description": "Governance metadata mapping for all 105 skills. Source of truth for apply_governance_metadata.py."
+  },
+  "verification-loop": {
+    "governance_phases": ["prove"],
+    "governance_norm_group": "quality-gate",
+    "governance_auto_activate": true,
+    "organ_affinity": ["all"],
+    "triggers": ["context:pre-commit", "context:code-review", "context:promotion"],
+    "complements": ["testing-patterns", "tdd-workflow", "webapp-testing"]
+  },
+  "github-repository-standards": {
+    "governance_phases": ["shape", "prove"],
+    "governance_norm_group": "repo-hygiene",
+    "governance_auto_activate": true,
+    "organ_affinity": ["all"],
+    "triggers": ["context:repo-setup", "context:promotion", "command:repo-standards"],
+    "complements": ["github-repo-curator", "coding-standards-enforcer", "dotfile-systems-architect"]
+  },
+  "algorithmic-art": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii"],
+    "triggers": ["user-asks-about-generative-art", "user-asks-about-p5js", "context:creative-coding"],
+    "complements": ["generative-art-algorithms", "three-js-interactive-builder", "canvas-design"]
+  }
+}

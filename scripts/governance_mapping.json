@@ -4,13 +4,287 @@
     "version": "v3",
     "description": "Governance metadata mapping for all 105 skills. Source of truth for apply_governance_metadata.py."
   },
+
+  "algorithmic-art": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii"],
+    "triggers": ["user-asks-about-generative-art", "user-asks-about-p5js", "context:creative-coding"],
+    "complements": ["generative-art-algorithms", "three-js-interactive-builder", "canvas-design"]
+  },
+  "audio-engineering-patterns": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii"],
+    "triggers": ["user-asks-about-audio", "user-asks-about-dsp", "user-asks-about-mixing", "context:audio-production"]
+  },
+  "canvas-design": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii", "organ-v", "organ-vii"],
+    "triggers_mode": "merge",
+    "complements": ["algorithmic-art", "generative-art-algorithms", "three-js-interactive-builder"],
+    "complements_mode": "merge"
+  },
+  "creative-writing-craft": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii", "organ-v"],
+    "triggers": ["user-asks-about-writing", "user-asks-about-fiction", "user-asks-about-prose", "context:creative-writing"]
+  },
+  "generative-art-algorithms": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii"],
+    "triggers": ["user-asks-about-generative-art", "user-asks-about-fractals", "user-asks-about-noise-functions", "context:creative-coding"],
+    "complements": ["algorithmic-art", "three-js-interactive-builder", "canvas-design"]
+  },
+  "generative-music-composer": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii"],
+    "triggers": ["user-asks-about-algorithmic-music", "user-asks-about-composition", "context:music-generation"]
+  },
+  "interactive-theatre-designer": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-ii"],
+    "triggers": ["user-asks-about-theatre", "user-asks-about-interactive-narrative", "context:performance"]
+  },
+  "modular-synthesis-philosophy": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["organ-ii", "organ-iv"],
+    "triggers": ["user-asks-about-modular-systems", "user-asks-about-synthesis", "context:system-architecture"]
+  },
+  "movement-notation-systems": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-ii"],
+    "triggers": ["user-asks-about-choreography", "user-asks-about-movement", "user-asks-about-laban"]
+  },
+  "narratological-algorithms": {
+    "governance_phases": ["frame", "shape"],
+    "organ_affinity": ["organ-i", "organ-ii"],
+    "triggers": ["user-asks-about-narrative", "user-asks-about-story-structure", "context:narrative-analysis"]
+  },
+  "reality-tv-narrative-analyzer": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["organ-i", "organ-ii"],
+    "triggers": ["user-asks-about-reality-tv", "context:media-analysis"]
+  },
+  "theme-factory": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii", "organ-v", "organ-vii"],
+    "triggers": ["user-asks-about-theming", "user-asks-about-styling", "context:visual-design"]
+  },
+  "three-js-interactive-builder": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii", "organ-iii"],
+    "triggers": ["user-asks-about-threejs", "user-asks-about-3d", "user-asks-about-webgl", "context:webgl"],
+    "complements": ["algorithmic-art", "generative-art-algorithms", "canvas-design"]
+  },
+
+  "data-pipeline-architect": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-iii", "organ-i", "organ-vi", "meta"],
+    "triggers": ["user-asks-about-etl", "user-asks-about-data-pipeline", "context:data-engineering"]
+  },
+  "data-storytelling-analyst": {
+    "governance_phases": ["build", "prove"],
+    "organ_affinity": ["organ-iii", "organ-v"],
+    "triggers": ["user-asks-about-data-visualization", "user-asks-about-data-narrative", "context:data-analysis"]
+  },
+  "ml-experiment-tracker": {
+    "governance_phases": ["build", "prove"],
+    "organ_affinity": ["organ-iii", "organ-i"],
+    "triggers": ["user-asks-about-ml-experiments", "user-asks-about-mlflow", "context:machine-learning"]
+  },
+  "sql-query-optimizer": {
+    "governance_phases": ["prove"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-sql-performance", "file-type:*.sql", "context:database"]
+  },
+  "systemic-product-analyst": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["meta", "organ-iii"],
+    "triggers": ["user-asks-about-product-analysis", "user-asks-about-market-fit", "context:strategic-analysis"]
+  },
+  "time-series-analyst": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii", "organ-i"],
+    "triggers": ["user-asks-about-time-series", "user-asks-about-forecasting", "context:data-analysis"]
+  },
+
+  "accessibility-patterns": {
+    "governance_phases": ["build", "prove"],
+    "governance_norm_group": "quality-gate",
+    "organ_affinity": ["organ-iii", "organ-ii"],
+    "triggers": ["user-asks-about-accessibility", "user-asks-about-wcag", "file-type:*.html", "context:frontend"],
+    "complements": ["frontend-design-systems", "responsive-design-patterns"]
+  },
+  "api-design-patterns": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["organ-iii", "organ-iv", "organ-vii", "meta"],
+    "triggers_mode": "merge",
+    "complements": ["product-requirements-designer", "backend-implementation-patterns"],
+    "complements_mode": "merge"
+  },
+  "artifacts-builder": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii", "organ-iii"],
+    "triggers": ["user-asks-about-artifacts", "context:claude-ai"]
+  },
+  "backend-implementation-patterns": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii", "organ-vi", "organ-vii", "meta"],
+    "triggers": ["user-asks-about-backend", "user-asks-about-api-implementation", "context:backend"],
+    "complements": ["api-design-patterns", "tdd-workflow"]
+  },
+  "code-refactoring-patterns": {
+    "governance_phases": ["build", "prove"],
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-refactoring", "context:code-review", "context:technical-debt"]
+  },
+  "coding-standards-enforcer": {
+    "governance_phases": ["build"],
+    "governance_norm_group": "repo-hygiene",
+    "governance_auto_activate": true,
+    "organ_affinity": ["all"],
+    "triggers": ["context:new-project", "project-has-package-json", "project-has-pyproject-toml"],
+    "complements": ["github-repository-standards", "github-repo-curator", "dotfile-systems-architect"]
+  },
+  "continuous-learning-agent": {
+    "governance_phases": ["prove"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["user-asks-about-agent-learning", "context:ai-agents"]
+  },
+  "deployment-cicd": {
+    "governance_phases": ["ship"],
+    "governance_norm_group": "distribution-readiness",
+    "organ_affinity": ["organ-iii", "organ-iv"],
+    "triggers": ["user-asks-about-deployment", "user-asks-about-cicd", "file-type:.github/workflows/*.yml", "project-has-dockerfile"],
+    "complements": ["verification-loop"]
+  },
+  "dotfile-systems-architect": {
+    "governance_phases": ["shape"],
+    "governance_norm_group": "repo-hygiene",
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-dotfiles", "user-asks-about-xdg", "context:system-configuration"],
+    "complements": ["github-repository-standards", "github-repo-curator", "coding-standards-enforcer"]
+  },
+  "feature-workflow-orchestrator": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-workflow", "user-asks-about-feature-development", "context:feature-development"]
+  },
+  "frontend-design-systems": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["organ-iii", "organ-ii"],
+    "triggers": ["user-asks-about-design-system", "user-asks-about-components", "context:frontend"],
+    "complements": ["responsive-design-patterns", "accessibility-patterns"]
+  },
+  "fullstack-starter-pack": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-fullstack", "context:new-project"]
+  },
+  "gcp-resource-optimizer": {
+    "governance_phases": ["ship"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-gcp", "user-asks-about-cloud-costs", "context:infrastructure"]
+  },
+  "iterative-code-exploration": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-codebase", "context:onboarding", "context:unfamiliar-code"]
+  },
+  "mcp-builder": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iv", "meta"],
+    "triggers_mode": "merge",
+    "complements": ["mcp-integration-patterns", "mcp-server-orchestrator"],
+    "complements_mode": "merge"
+  },
+  "mcp-server-orchestrator": {
+    "governance_phases": ["build", "ship"],
+    "organ_affinity": ["organ-iv", "meta"],
+    "triggers": ["user-asks-about-mcp-server", "user-asks-about-mcp-configuration", "context:mcp-setup"],
+    "complements": ["mcp-builder", "mcp-integration-patterns"]
+  },
+  "mobile-platform-architect": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-mobile", "user-asks-about-react-native", "user-asks-about-flutter"]
+  },
+  "nextjs-fullstack-patterns": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii", "organ-ii", "meta"],
+    "triggers": ["user-asks-about-nextjs", "project-has-next-config-js", "context:nextjs"]
+  },
+  "postgres-advanced-patterns": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii", "organ-vi"],
+    "triggers": ["user-asks-about-postgres", "user-asks-about-database", "file-type:*.sql", "context:database"]
+  },
+  "responsive-design-patterns": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii", "organ-ii"],
+    "triggers": ["user-asks-about-responsive", "user-asks-about-mobile-first", "context:frontend"],
+    "complements": ["frontend-design-systems", "accessibility-patterns"]
+  },
+  "rust-systems-design": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-rust", "project-has-cargo-toml", "file-type:*.rs", "context:systems-programming"]
+  },
+  "tdd-workflow": {
+    "governance_phases": ["build", "prove"],
+    "governance_norm_group": "quality-gate",
+    "governance_auto_activate": true,
+    "organ_affinity": ["all"],
+    "triggers_mode": "merge",
+    "complements": ["backend-implementation-patterns", "testing-patterns", "verification-loop"],
+    "complements_mode": "merge"
+  },
+  "testing-patterns": {
+    "governance_phases": ["prove"],
+    "governance_norm_group": "quality-gate",
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-testing", "project-has-jest-config-js", "project-has-pytest-ini", "file-type:*.test.*", "context:testing"],
+    "complements": ["tdd-workflow", "verification-loop"]
+  },
   "verification-loop": {
     "governance_phases": ["prove"],
     "governance_norm_group": "quality-gate",
     "governance_auto_activate": true,
     "organ_affinity": ["all"],
     "triggers": ["context:pre-commit", "context:code-review", "context:promotion"],
-    "complements": ["testing-patterns", "tdd-workflow", "webapp-testing"]
+    "complements": ["testing-patterns", "tdd-workflow", "deployment-cicd"]
+  },
+  "web-artifacts-builder": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii", "organ-iii"],
+    "triggers": ["user-asks-about-web-artifacts", "context:claude-ai"]
+  },
+  "webapp-testing": {
+    "governance_phases": ["prove"],
+    "governance_norm_group": "quality-gate",
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-e2e-testing", "user-asks-about-playwright", "context:testing"]
+  },
+
+  "doc-coauthoring": {
+    "governance_phases": ["shape", "prove"],
+    "governance_norm_group": "documentation-standard",
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-documentation", "command:docs", "context:documentation"]
+  },
+  "github-profile-architect": {
+    "governance_phases": ["ship"],
+    "governance_norm_group": "documentation-standard",
+    "organ_affinity": ["organ-v", "meta"],
+    "triggers": ["user-asks-about-github-profile", "context:github-setup"],
+    "complements": ["content-distribution", "portfolio-presentation", "networking-outreach"]
+  },
+  "github-repo-curator": {
+    "governance_phases": ["shape", "prove"],
+    "governance_norm_group": "repo-hygiene",
+    "governance_auto_activate": true,
+    "organ_affinity": ["all"],
+    "triggers": ["context:repo-setup", "context:promotion", "command:repo-audit"],
+    "complements": ["github-repository-standards", "coding-standards-enforcer", "dotfile-systems-architect"]
   },
   "github-repository-standards": {
     "governance_phases": ["shape", "prove"],
@@ -20,10 +294,320 @@
     "triggers": ["context:repo-setup", "context:promotion", "command:repo-standards"],
     "complements": ["github-repo-curator", "coding-standards-enforcer", "dotfile-systems-architect"]
   },
-  "algorithmic-art": {
+
+  "enc1101-curriculum-designer": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-vi"],
+    "triggers": ["user-asks-about-curriculum", "user-asks-about-composition-course"]
+  },
+  "evaluation-to-growth": {
+    "governance_phases": ["prove"],
+    "organ_affinity": ["organ-vi", "organ-i", "organ-v"],
+    "triggers": ["user-asks-about-evaluation", "user-asks-about-critique", "context:review"]
+  },
+  "feedback-pedagogy": {
+    "governance_phases": ["prove"],
+    "organ_affinity": ["organ-vi"],
+    "triggers": ["user-asks-about-feedback", "user-asks-about-rubrics", "context:education"]
+  },
+  "socratic-tutor": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["organ-vi", "organ-i"],
+    "triggers": ["user-asks-about-learning", "user-asks-about-understanding", "context:education"]
+  },
+
+  "mcp-integration-patterns": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iv", "meta"],
+    "triggers": ["user-asks-about-mcp", "user-asks-about-mcp-client", "context:mcp-integration"],
+    "complements": ["mcp-builder", "mcp-server-orchestrator"]
+  },
+  "oauth-flow-architect": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-oauth", "user-asks-about-authentication", "context:auth"]
+  },
+  "specstory-guard": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["command:specstory-guard", "user-asks-about-secret-scanning", "context:security"]
+  },
+  "specstory-link-trail": {
+    "governance_phases": ["prove"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["command:link-trail", "user-asks-about-fetched-urls"]
+  },
+  "specstory-organize": {
+    "governance_phases": ["prove"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["command:specstory-organize", "user-asks-about-organizing-sessions"]
+  },
+  "specstory-project-stats": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["command:project-stats", "user-asks-about-specstory-stats"]
+  },
+  "specstory-session-summary": {
+    "governance_phases": ["prove"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["command:session-summary", "user-asks-about-sessions"]
+  },
+  "specstory-yak": {
+    "governance_phases": ["prove"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["command:yak-shave", "user-asks-about-yak-shaving"]
+  },
+  "webhook-integration-patterns": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii", "organ-iv", "organ-vii"],
+    "triggers": ["user-asks-about-webhooks", "user-asks-about-event-driven", "context:integration"]
+  },
+
+  "claude-project-manifest": {
+    "governance_phases": ["frame", "prove"],
+    "organ_affinity": ["organ-i", "meta"],
+    "triggers": ["user-asks-about-project-manifest", "user-asks-about-file-inventory", "context:project-documentation"]
+  },
+  "knowledge-architecture": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["organ-i", "meta"],
+    "triggers": ["user-asks-about-knowledge-management", "user-asks-about-ontology", "context:information-architecture"],
+    "complements": ["research-synthesis-workflow", "knowledge-graph-builder"]
+  },
+  "knowledge-graph-builder": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-i"],
+    "triggers": ["user-asks-about-knowledge-graph", "user-asks-about-neo4j", "context:data-modeling"],
+    "complements": ["research-synthesis-workflow", "knowledge-architecture"]
+  },
+  "recursive-systems-architect": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["organ-i", "organ-iv"],
+    "triggers": ["user-asks-about-recursive-systems", "user-asks-about-strange-loops", "context:meta-design"]
+  },
+  "research-synthesis-workflow": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["organ-i", "organ-v"],
+    "triggers": ["user-asks-about-research", "user-asks-about-literature-review", "context:research"],
+    "complements": ["knowledge-architecture", "knowledge-graph-builder"]
+  },
+  "second-brain-librarian": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["organ-i", "organ-vi"],
+    "triggers": ["user-asks-about-knowledge-base", "user-asks-about-obsidian", "user-asks-about-notion", "context:note-taking"]
+  },
+
+  "brand-guidelines": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-v", "organ-vii"],
+    "triggers": ["user-asks-about-branding", "user-asks-about-anthropic-brand", "context:visual-identity"]
+  },
+  "content-distribution": {
+    "governance_phases": ["ship"],
+    "governance_norm_group": "distribution-readiness",
+    "organ_affinity": ["organ-vii"],
+    "triggers": ["user-asks-about-promotion", "user-asks-about-content-strategy", "context:distribution"],
+    "complements": ["portfolio-presentation", "networking-outreach", "github-profile-architect"]
+  },
+  "cv-resume-builder": {
+    "governance_phases": ["build"],
+    "organ_affinity": [],
+    "triggers": ["user-asks-about-resume", "user-asks-about-cv", "context:job-search"]
+  },
+  "freelance-client-ops": {
+    "governance_phases": ["frame", "shape"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-freelance", "user-asks-about-contracts", "user-asks-about-invoicing", "context:client-work"]
+  },
+  "grant-proposal-writer": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-v", "organ-vi"],
+    "triggers": ["user-asks-about-grants", "user-asks-about-funding", "user-asks-about-nsf"]
+  },
+  "internal-comms": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-v"],
+    "triggers": ["user-asks-about-internal-communications", "user-asks-about-status-report", "context:corporate-communications"]
+  },
+  "interview-preparation": {
+    "governance_phases": ["build"],
+    "organ_affinity": [],
+    "triggers": ["user-asks-about-interview", "user-asks-about-behavioral-questions", "context:job-search"]
+  },
+  "networking-outreach": {
+    "governance_phases": ["ship"],
+    "organ_affinity": [],
+    "triggers": ["user-asks-about-networking", "user-asks-about-outreach", "user-asks-about-linkedin"],
+    "complements": ["content-distribution", "portfolio-presentation", "github-profile-architect"]
+  },
+  "portfolio-presentation": {
+    "governance_phases": ["ship"],
+    "governance_norm_group": "distribution-readiness",
+    "organ_affinity": ["organ-v"],
+    "triggers": ["user-asks-about-portfolio", "user-asks-about-case-study", "context:presentation"],
+    "complements": ["content-distribution", "networking-outreach", "github-profile-architect"]
+  },
+  "slack-gif-creator": {
     "governance_phases": ["build"],
     "organ_affinity": ["organ-ii"],
-    "triggers": ["user-asks-about-generative-art", "user-asks-about-p5js", "context:creative-coding"],
-    "complements": ["generative-art-algorithms", "three-js-interactive-builder", "canvas-design"]
+    "triggers": ["user-asks-about-gif", "user-asks-about-slack-emoji", "user-asks-about-animation"]
+  },
+  "workshop-presentation-design": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-vi", "organ-v"],
+    "triggers": ["user-asks-about-workshop", "user-asks-about-presentation", "user-asks-about-talk"]
+  },
+
+  "github-roadmap-strategist": {
+    "governance_phases": ["shape"],
+    "governance_norm_group": "documentation-standard",
+    "organ_affinity": ["meta", "organ-iv"],
+    "triggers": ["user-asks-about-roadmap", "user-asks-about-github-projects", "context:planning"]
+  },
+  "product-requirements-designer": {
+    "governance_phases": ["frame", "shape"],
+    "governance_norm_group": "documentation-standard",
+    "governance_auto_activate": true,
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-prd", "user-asks-about-requirements", "context:product-planning"],
+    "complements": ["api-design-patterns"]
+  },
+  "project-alchemy-orchestrator": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["meta"],
+    "triggers": ["user-asks-about-portfolio-management", "user-asks-about-creative-portfolio", "context:multi-project"]
+  },
+  "project-orchestration": {
+    "governance_phases": ["frame", "shape"],
+    "organ_affinity": ["meta", "organ-iv"],
+    "triggers": ["user-asks-about-project-management", "user-asks-about-coordination", "context:multi-project"]
+  },
+
+  "contract-risk-analyzer": {
+    "governance_phases": ["frame"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-contract-risk", "user-asks-about-sow", "context:legal-review"]
+  },
+  "gdpr-compliance-check": {
+    "governance_phases": ["prove"],
+    "governance_norm_group": "security-baseline",
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-gdpr", "user-asks-about-privacy", "context:compliance"],
+    "complements": ["security-threat-modeler", "security-implementation-guide", "incident-response-commander"]
+  },
+  "incident-response-commander": {
+    "governance_phases": ["prove"],
+    "governance_norm_group": "security-baseline",
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["user-asks-about-incident", "user-asks-about-outage", "context:incident-response"],
+    "complements": ["security-threat-modeler", "security-implementation-guide", "gdpr-compliance-check"]
+  },
+  "security-essentials-pack": {
+    "governance_phases": ["build", "prove"],
+    "governance_norm_group": "security-baseline",
+    "organ_affinity": ["all"],
+    "triggers": ["context:new-project", "context:security-review"]
+  },
+  "security-implementation-guide": {
+    "governance_phases": ["build"],
+    "governance_norm_group": "security-baseline",
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-security-patterns", "user-asks-about-auth", "context:authentication"],
+    "complements": ["security-threat-modeler", "gdpr-compliance-check", "incident-response-commander"]
+  },
+  "security-threat-modeler": {
+    "governance_phases": ["prove"],
+    "governance_norm_group": "security-baseline",
+    "governance_auto_activate": true,
+    "organ_affinity": ["all"],
+    "triggers_mode": "merge",
+    "complements": ["security-implementation-guide", "gdpr-compliance-check", "incident-response-commander"],
+    "complements_mode": "merge"
+  },
+
+  "blockchain-integration-builder": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-blockchain", "user-asks-about-web3", "user-asks-about-smart-contracts"]
+  },
+  "defi-trading-systems": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii"],
+    "triggers": ["user-asks-about-defi", "user-asks-about-trading", "user-asks-about-liquidity"]
+  },
+  "game-mechanics-designer": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-ii", "organ-iii"],
+    "triggers": ["user-asks-about-game-design", "user-asks-about-game-mechanics", "context:game-development"]
+  },
+  "interfaith-sacred-geometry": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-ii"],
+    "triggers": ["user-asks-about-sacred-geometry", "user-asks-about-interfaith", "context:spiritual-art"]
+  },
+  "local-llm-fine-tuning": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iii", "organ-iv"],
+    "triggers": ["user-asks-about-fine-tuning", "user-asks-about-lora", "user-asks-about-qlora", "context:local-llm"]
+  },
+  "location-ar-experience": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-ii", "organ-iii"],
+    "triggers": ["user-asks-about-ar", "user-asks-about-augmented-reality", "user-asks-about-geospatial"]
+  },
+
+  "agent-swarm-orchestrator": {
+    "governance_phases": ["shape", "build"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["user-asks-about-agent-swarm", "user-asks-about-multi-agent", "context:multi-agent"],
+    "complements": ["multi-agent-workforce-planner", "skill-chain-prompts"]
+  },
+  "multi-agent-workforce-planner": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["user-asks-about-parallel-agents", "user-asks-about-agent-planning", "context:multi-agent"],
+    "complements": ["agent-swarm-orchestrator", "skill-chain-prompts"]
+  },
+  "ontological-renamer": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-naming", "user-asks-about-renaming", "context:naming"]
+  },
+  "skill-chain-prompts": {
+    "governance_phases": ["shape"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["user-asks-about-skill-chains", "user-asks-about-workflow-composition", "context:skill-orchestration"],
+    "complements": ["agent-swarm-orchestrator", "multi-agent-workforce-planner"]
+  },
+  "skill-creator": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["user-asks-about-creating-skills", "command:create-skill"]
+  },
+  "speckit": {
+    "governance_phases": ["frame", "shape"],
+    "organ_affinity": ["organ-iv"],
+    "triggers": ["user-asks-about-specifications", "command:speckit", "context:specification"]
+  },
+
+  "docx": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-docx", "user-asks-about-word-document", "file-type:*.docx"]
+  },
+  "pdf": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-pdf", "file-type:*.pdf"]
+  },
+  "pptx": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-presentation", "user-asks-about-powerpoint", "file-type:*.pptx"]
+  },
+  "xlsx": {
+    "governance_phases": ["build"],
+    "organ_affinity": ["all"],
+    "triggers": ["user-asks-about-spreadsheet", "user-asks-about-excel", "file-type:*.xlsx"]
   }
 }

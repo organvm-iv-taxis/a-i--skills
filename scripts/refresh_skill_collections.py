@@ -139,6 +139,27 @@ def _write_tier_lists(
     _write_list(collections_dir / "community-skills.txt", community)
 
 
+def _write_governance_lists(
+    collections_dir: Path, skill_dirs: list[Path],
+) -> None:
+    """Generate governance-norms.txt and auto-activate-skills.txt."""
+    norms: list[Path] = []
+    auto_activate: list[Path] = []
+    for d in skill_dirs:
+        skill_file = d / "SKILL.md"
+        try:
+            text = skill_file.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        fm = _extract_frontmatter(text)
+        if fm.get("governance_norm_group"):
+            norms.append(d)
+        if fm.get("governance_auto_activate") == "true":
+            auto_activate.append(d)
+    _write_list(collections_dir / "governance-norms.txt", norms)
+    _write_list(collections_dir / "auto-activate-skills.txt", auto_activate)
+
+
 def _update_marketplace(example_paths: list[str], document_paths: list[str]) -> None:
     marketplace_path = ROOT / ".claude-plugin" / "marketplace.json"
     if not marketplace_path.exists():
@@ -192,6 +213,7 @@ def main() -> int:
     _write_list(collections_dir / "example-skills.txt", example_skill_dirs)
     _write_list(collections_dir / "document-skills.txt", document_skill_dirs)
     _write_tier_lists(collections_dir, example_skill_dirs + document_skill_dirs)
+    _write_governance_lists(collections_dir, example_skill_dirs + document_skill_dirs)
 
     if not args.skip_marketplace:
         _update_marketplace(

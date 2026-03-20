@@ -12,6 +12,10 @@ tags:
   - procedural
   - particles
   - flow-fields
+governance_phases: [build]
+organ_affinity: [organ-ii]
+triggers: [user-asks-about-generative-art, user-asks-about-p5js, context:creative-coding]
+complements: [generative-art-algorithms, three-js-interactive-builder, canvas-design]
 ---
 
 Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorithms).

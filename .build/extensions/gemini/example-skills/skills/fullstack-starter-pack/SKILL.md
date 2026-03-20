@@ -21,6 +21,9 @@ includes:
   - deployment-cicd
   - nextjs-fullstack-patterns
 tier: core
+governance_phases: [shape]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-fullstack, context:new-project]
 ---
 
 # Fullstack Starter Pack

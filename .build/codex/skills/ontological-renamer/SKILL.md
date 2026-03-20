@@ -5,6 +5,9 @@ license: MIT
 complexity: intermediate
 time_to_learn: 30min
 tags: [naming, ontology, taxonomy, branding, translation]
+governance_phases: [shape]
+organ_affinity: [all]
+triggers: [user-asks-about-naming, user-asks-about-renaming, context:naming]
 ---
 
 # Ontological Renamer

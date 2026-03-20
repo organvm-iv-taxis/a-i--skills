@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "repository": "anthropic-agent-skills",
   "skills": [
     {
@@ -12,14 +12,32 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "quality-gate",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-accessibility",
+        "user-asks-about-wcag",
+        "file-type:*.html",
+        "context:frontend"
+      ],
+      "complements": [
+        "frontend-design-systems",
+        "responsive-design-patterns"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -41,14 +59,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-agent-swarm",
+        "user-asks-about-multi-agent",
+        "context:multi-agent"
+      ],
+      "complements": [
+        "multi-agent-workforce-planner",
+        "skill-chain-prompts"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -69,6 +103,8 @@
       "complexity": "intermediate",
       "time_to_learn": "1hour",
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "generative-art",
@@ -82,9 +118,23 @@
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-generative-art",
+        "user-asks-about-p5js",
+        "context:creative-coding"
+      ],
+      "complements": [
+        "generative-art-algorithms",
+        "three-js-interactive-builder",
+        "canvas-design"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -105,6 +155,8 @@
       "complexity": "intermediate",
       "time_to_learn": "30min",
       "tier": "core",
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "api",
@@ -130,13 +182,24 @@
         "user-asks-about-rest",
         "user-asks-about-graphql",
         "file-type:*.openapi.yaml",
-        "project-has-openapi-spec"
-      ],
-      "complements": [
+        "project-has-openapi-spec",
         "backend-implementation-patterns",
         "mcp-builder"
       ],
+      "complements": [
+        "product-requirements-designer",
+        "backend-implementation-patterns"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-iv",
+        "organ-vii",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -157,14 +220,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-artifacts",
+        "context:claude-ai"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [
           "bundle-artifact.sh",
@@ -187,14 +262,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-audio",
+        "user-asks-about-dsp",
+        "user-asks-about-mixing",
+        "context:audio-production"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -215,14 +303,32 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-backend",
+        "user-asks-about-api-implementation",
+        "context:backend"
+      ],
+      "complements": [
+        "api-design-patterns",
+        "tdd-workflow"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-vi",
+        "organ-vii",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -241,14 +347,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-blockchain",
+        "user-asks-about-web3",
+        "user-asks-about-smart-contracts"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -268,14 +386,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-branding",
+        "user-asks-about-anthropic-brand",
+        "context:visual-identity"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-v",
+        "organ-vii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -296,6 +427,8 @@
       "complexity": "intermediate",
       "time_to_learn": "30min",
       "tier": "core",
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "design",
@@ -321,13 +454,24 @@
         "user-asks-about-design",
         "user-asks-about-poster",
         "user-asks-about-art",
-        "context:visual-design"
-      ],
-      "complements": [
+        "context:visual-design",
         "algorithmic-art",
         "theme-factory"
       ],
+      "complements": [
+        "algorithmic-art",
+        "generative-art-algorithms",
+        "three-js-interactive-builder"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-v",
+        "organ-vii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -350,6 +494,8 @@
       "complexity": "intermediate",
       "time_to_learn": "30min",
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "documentation",
@@ -361,9 +507,21 @@
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-project-manifest",
+        "user-asks-about-file-inventory",
+        "context:project-documentation"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -387,14 +545,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-refactoring",
+        "context:code-review",
+        "context:technical-debt"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -413,14 +584,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "repo-hygiene",
+      "governance_auto_activate": true,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "context:new-project",
+        "project-has-package-json",
+        "project-has-pyproject-toml"
+      ],
+      "complements": [
+        "github-repository-standards",
+        "github-repo-curator",
+        "dotfile-systems-architect"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -439,14 +626,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "distribution-readiness",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-promotion",
+        "user-asks-about-content-strategy",
+        "context:distribution"
+      ],
+      "complements": [
+        "portfolio-presentation",
+        "networking-outreach",
+        "github-profile-architect"
+      ],
       "includes": [],
+      "governance_phases": [
+        "ship"
+      ],
+      "organ_affinity": [
+        "organ-vii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -467,14 +670,25 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-agent-learning",
+        "context:ai-agents"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -493,14 +707,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-contract-risk",
+        "user-asks-about-sow",
+        "context:legal-review"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -520,14 +746,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-writing",
+        "user-asks-about-fiction",
+        "user-asks-about-prose",
+        "context:creative-writing"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-v"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -548,6 +788,8 @@
       "complexity": "beginner",
       "time_to_learn": "30min",
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "resume",
@@ -560,9 +802,17 @@
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-resume",
+        "user-asks-about-cv",
+        "context:job-search"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [],
       "resources": {
         "scripts": [],
         "references": [
@@ -586,14 +836,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-etl",
+        "user-asks-about-data-pipeline",
+        "context:data-engineering"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-i",
+        "organ-vi",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -615,14 +881,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-data-visualization",
+        "user-asks-about-data-narrative",
+        "context:data-analysis"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-v"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -643,14 +923,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-defi",
+        "user-asks-about-trading",
+        "user-asks-about-liquidity"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -671,14 +963,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "distribution-readiness",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-deployment",
+        "user-asks-about-cicd",
+        "file-type:.github/workflows/*.yml",
+        "project-has-dockerfile"
+      ],
+      "complements": [
+        "verification-loop"
+      ],
       "includes": [],
+      "governance_phases": [
+        "ship"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -700,14 +1008,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "documentation-standard",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-documentation",
+        "command:docs",
+        "context:documentation"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -727,6 +1048,8 @@
       "complexity": "intermediate",
       "time_to_learn": "1hour",
       "tier": null,
+      "governance_norm_group": "repo-hygiene",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "dotfiles",
@@ -738,9 +1061,23 @@
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-dotfiles",
+        "user-asks-about-xdg",
+        "context:system-configuration"
+      ],
+      "complements": [
+        "github-repository-standards",
+        "github-repo-curator",
+        "coding-standards-enforcer"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -767,14 +1104,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-curriculum",
+        "user-asks-about-composition-course"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-vi"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -795,14 +1144,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-evaluation",
+        "user-asks-about-critique",
+        "context:review"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-vi",
+        "organ-i",
+        "organ-v"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -823,14 +1186,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-workflow",
+        "user-asks-about-feature-development",
+        "context:feature-development"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -849,14 +1225,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-feedback",
+        "user-asks-about-rubrics",
+        "context:education"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-vi"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -877,14 +1265,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-freelance",
+        "user-asks-about-contracts",
+        "user-asks-about-invoicing",
+        "context:client-work"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame",
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -905,14 +1307,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-design-system",
+        "user-asks-about-components",
+        "context:frontend"
+      ],
+      "complements": [
+        "responsive-design-patterns",
+        "accessibility-patterns"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -932,6 +1350,8 @@
       "complexity": "intermediate",
       "time_to_learn": "5min",
       "tier": "core",
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "bundle",
@@ -946,7 +1366,10 @@
         "skill-bundle"
       ],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-fullstack",
+        "context:new-project"
+      ],
       "complements": [],
       "includes": [
         "api-design-patterns",
@@ -955,6 +1378,12 @@
         "backend-implementation-patterns",
         "deployment-cicd",
         "nextjs-fullstack-patterns"
+      ],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-iii"
       ],
       "resources": {
         "scripts": [],
@@ -972,14 +1401,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-game-design",
+        "user-asks-about-game-mechanics",
+        "context:game-development"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -999,14 +1442,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-gcp",
+        "user-asks-about-cloud-costs",
+        "context:infrastructure"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "ship"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1026,14 +1481,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "security-baseline",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-gdpr",
+        "user-asks-about-privacy",
+        "context:compliance"
+      ],
+      "complements": [
+        "security-threat-modeler",
+        "security-implementation-guide",
+        "incident-response-commander"
+      ],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1053,14 +1524,31 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-generative-art",
+        "user-asks-about-fractals",
+        "user-asks-about-noise-functions",
+        "context:creative-coding"
+      ],
+      "complements": [
+        "algorithmic-art",
+        "three-js-interactive-builder",
+        "canvas-design"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1082,14 +1570,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-algorithmic-music",
+        "user-asks-about-composition",
+        "context:music-generation"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1111,14 +1611,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "documentation-standard",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-github-profile",
+        "context:github-setup"
+      ],
+      "complements": [
+        "content-distribution",
+        "portfolio-presentation",
+        "networking-outreach"
+      ],
       "includes": [],
+      "governance_phases": [
+        "ship"
+      ],
+      "organ_affinity": [
+        "organ-v",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1140,14 +1656,31 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "repo-hygiene",
+      "governance_auto_activate": true,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "context:repo-setup",
+        "context:promotion",
+        "command:repo-audit"
+      ],
+      "complements": [
+        "github-repository-standards",
+        "coding-standards-enforcer",
+        "dotfile-systems-architect"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1169,14 +1702,31 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "repo-hygiene",
+      "governance_auto_activate": true,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "context:repo-setup",
+        "context:promotion",
+        "command:repo-standards"
+      ],
+      "complements": [
+        "github-repo-curator",
+        "coding-standards-enforcer",
+        "dotfile-systems-architect"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1198,14 +1748,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "documentation-standard",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-roadmap",
+        "user-asks-about-github-projects",
+        "context:planning"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "meta",
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1227,14 +1790,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-grants",
+        "user-asks-about-funding",
+        "user-asks-about-nsf"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-v",
+        "organ-vi"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1255,14 +1832,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "security-baseline",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-incident",
+        "user-asks-about-outage",
+        "context:incident-response"
+      ],
+      "complements": [
+        "security-threat-modeler",
+        "security-implementation-guide",
+        "gdpr-compliance-check"
+      ],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1282,14 +1875,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-theatre",
+        "user-asks-about-interactive-narrative",
+        "context:performance"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1310,14 +1916,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-sacred-geometry",
+        "user-asks-about-interfaith",
+        "context:spiritual-art"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1337,14 +1955,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-internal-communications",
+        "user-asks-about-status-report",
+        "context:corporate-communications"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-v"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1364,14 +1994,24 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-interview",
+        "user-asks-about-behavioral-questions",
+        "context:job-search"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [],
       "resources": {
         "scripts": [],
         "references": [
@@ -1393,14 +2033,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-codebase",
+        "context:onboarding",
+        "context:unfamiliar-code"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1419,14 +2071,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-knowledge-management",
+        "user-asks-about-ontology",
+        "context:information-architecture"
+      ],
+      "complements": [
+        "research-synthesis-workflow",
+        "knowledge-graph-builder"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1447,14 +2115,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-knowledge-graph",
+        "user-asks-about-neo4j",
+        "context:data-modeling"
+      ],
+      "complements": [
+        "research-synthesis-workflow",
+        "knowledge-architecture"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-i"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1476,14 +2160,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-fine-tuning",
+        "user-asks-about-lora",
+        "user-asks-about-qlora",
+        "context:local-llm"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1503,14 +2201,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-ar",
+        "user-asks-about-augmented-reality",
+        "user-asks-about-geospatial"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1531,6 +2243,8 @@
       "complexity": "intermediate",
       "time_to_learn": "1hour",
       "tier": "core",
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [
         "backend-implementation-patterns"
       ],
@@ -1557,12 +2271,21 @@
       "triggers": [
         "user-asks-about-mcp",
         "user-asks-about-model-context-protocol",
-        "context:mcp-server"
-      ],
-      "complements": [
+        "context:mcp-server",
         "api-design-patterns"
       ],
+      "complements": [
+        "mcp-integration-patterns",
+        "mcp-server-orchestrator"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iv",
+        "meta"
+      ],
       "resources": {
         "scripts": [
           "connections.py",
@@ -1587,14 +2310,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-mcp",
+        "user-asks-about-mcp-client",
+        "context:mcp-integration"
+      ],
+      "complements": [
+        "mcp-builder",
+        "mcp-server-orchestrator"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iv",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1616,14 +2355,31 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-mcp-server",
+        "user-asks-about-mcp-configuration",
+        "context:mcp-setup"
+      ],
+      "complements": [
+        "mcp-builder",
+        "mcp-integration-patterns"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build",
+        "ship"
+      ],
+      "organ_affinity": [
+        "organ-iv",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1644,14 +2400,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-ml-experiments",
+        "user-asks-about-mlflow",
+        "context:machine-learning"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-i"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1673,14 +2443,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-mobile",
+        "user-asks-about-react-native",
+        "user-asks-about-flutter"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1699,14 +2482,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-modular-systems",
+        "user-asks-about-synthesis",
+        "context:system-architecture"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1727,14 +2523,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-choreography",
+        "user-asks-about-movement",
+        "user-asks-about-laban"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1755,6 +2564,8 @@
       "complexity": "advanced",
       "time_to_learn": "1hour",
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [
         "product-requirements-designer"
       ],
@@ -1768,9 +2579,22 @@
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-parallel-agents",
+        "user-asks-about-agent-planning",
+        "context:multi-agent"
+      ],
+      "complements": [
+        "agent-swarm-orchestrator",
+        "skill-chain-prompts"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1795,14 +2619,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-narrative",
+        "user-asks-about-story-structure",
+        "context:narrative-analysis"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame",
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1824,14 +2662,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-networking",
+        "user-asks-about-outreach",
+        "user-asks-about-linkedin"
+      ],
+      "complements": [
+        "content-distribution",
+        "portfolio-presentation",
+        "github-profile-architect"
+      ],
       "includes": [],
+      "governance_phases": [
+        "ship"
+      ],
+      "organ_affinity": [],
       "resources": {
         "scripts": [],
         "references": [
@@ -1853,14 +2705,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-nextjs",
+        "project-has-next-config-js",
+        "context:nextjs"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-ii",
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1883,14 +2749,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-oauth",
+        "user-asks-about-authentication",
+        "context:auth"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1912,6 +2790,8 @@
       "complexity": "intermediate",
       "time_to_learn": "30min",
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "naming",
@@ -1923,9 +2803,19 @@
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-naming",
+        "user-asks-about-renaming",
+        "context:naming"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1949,14 +2839,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "distribution-readiness",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-portfolio",
+        "user-asks-about-case-study",
+        "context:presentation"
+      ],
+      "complements": [
+        "content-distribution",
+        "networking-outreach",
+        "github-profile-architect"
+      ],
       "includes": [],
+      "governance_phases": [
+        "ship"
+      ],
+      "organ_affinity": [
+        "organ-v"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -1979,14 +2885,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-postgres",
+        "user-asks-about-database",
+        "file-type:*.sql",
+        "context:database"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-vi"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2005,14 +2925,29 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "documentation-standard",
+      "governance_auto_activate": true,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-prd",
+        "user-asks-about-requirements",
+        "context:product-planning"
+      ],
+      "complements": [
+        "api-design-patterns"
+      ],
       "includes": [],
+      "governance_phases": [
+        "frame",
+        "shape"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2037,14 +2972,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-portfolio-management",
+        "user-asks-about-creative-portfolio",
+        "context:multi-project"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "meta"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2064,14 +3011,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-project-management",
+        "user-asks-about-coordination",
+        "context:multi-project"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame",
+        "shape"
+      ],
+      "organ_affinity": [
+        "meta",
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2091,14 +3052,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-reality-tv",
+        "context:media-analysis"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2118,14 +3091,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-recursive-systems",
+        "user-asks-about-strange-loops",
+        "context:meta-design"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2147,14 +3133,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-research",
+        "user-asks-about-literature-review",
+        "context:research"
+      ],
+      "complements": [
+        "knowledge-architecture",
+        "knowledge-graph-builder"
+      ],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "organ-v"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2176,14 +3178,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-responsive",
+        "user-asks-about-mobile-first",
+        "context:frontend"
+      ],
+      "complements": [
+        "frontend-design-systems",
+        "accessibility-patterns"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2203,14 +3221,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-rust",
+        "project-has-cargo-toml",
+        "file-type:*.rs",
+        "context:systems-programming"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2229,14 +3260,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-knowledge-base",
+        "user-asks-about-obsidian",
+        "user-asks-about-notion",
+        "context:note-taking"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "organ-i",
+        "organ-vi"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2257,6 +3302,8 @@
       "complexity": "intermediate",
       "time_to_learn": "5min",
       "tier": "core",
+      "governance_norm_group": "security-baseline",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "bundle",
@@ -2271,7 +3318,10 @@
         "skill-bundle"
       ],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "context:new-project",
+        "context:security-review"
+      ],
       "complements": [],
       "includes": [
         "security-threat-modeler",
@@ -2279,6 +3329,13 @@
         "gdpr-compliance-check",
         "incident-response-commander",
         "contract-risk-analyzer"
+      ],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
       ],
       "resources": {
         "scripts": [],
@@ -2296,14 +3353,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "security-baseline",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-security-patterns",
+        "user-asks-about-auth",
+        "context:authentication"
+      ],
+      "complements": [
+        "security-threat-modeler",
+        "gdpr-compliance-check",
+        "incident-response-commander"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2323,6 +3396,8 @@
       "complexity": "advanced",
       "time_to_learn": "1hour",
       "tier": "core",
+      "governance_norm_group": "security-baseline",
+      "governance_auto_activate": true,
       "prerequisites": [],
       "tags": [
         "security",
@@ -2347,13 +3422,22 @@
         "user-asks-about-security",
         "user-asks-about-threat-modeling",
         "user-asks-about-stride",
-        "context:security-review"
-      ],
-      "complements": [
+        "context:security-review",
         "security-implementation-guide",
         "incident-response-commander"
       ],
+      "complements": [
+        "security-implementation-guide",
+        "gdpr-compliance-check",
+        "incident-response-commander"
+      ],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2373,6 +3457,8 @@
       "complexity": "intermediate",
       "time_to_learn": "30min",
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "orchestration",
@@ -2385,9 +3471,22 @@
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-skill-chains",
+        "user-asks-about-workflow-composition",
+        "context:skill-orchestration"
+      ],
+      "complements": [
+        "agent-swarm-orchestrator",
+        "multi-agent-workforce-planner"
+      ],
       "includes": [],
+      "governance_phases": [
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2411,14 +3510,25 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-creating-skills",
+        "command:create-skill"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [
           "init_skill.py",
@@ -2442,14 +3552,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-gif",
+        "user-asks-about-slack-emoji",
+        "user-asks-about-animation"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2469,14 +3591,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-learning",
+        "user-asks-about-understanding",
+        "context:education"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "organ-vi",
+        "organ-i"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2496,14 +3631,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-specifications",
+        "command:speckit",
+        "context:specification"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame",
+        "shape"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [
           "init_spec_dir.py",
@@ -2529,14 +3677,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "command:specstory-guard",
+        "user-asks-about-secret-scanning",
+        "context:security"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [
           "guard.py",
@@ -2561,14 +3721,25 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "command:link-trail",
+        "user-asks-about-fetched-urls"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2588,14 +3759,25 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "command:specstory-organize",
+        "user-asks-about-organizing-sessions"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [
           "organize.py"
@@ -2616,14 +3798,25 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "command:project-stats",
+        "user-asks-about-specstory-stats"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [
           "get-stats.js"
@@ -2645,14 +3838,25 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "command:session-summary",
+        "user-asks-about-sessions"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2672,14 +3876,25 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "command:yak-shave",
+        "user-asks-about-yak-shaving"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iv"
+      ],
       "resources": {
         "scripts": [
           "analyze.py",
@@ -2702,14 +3917,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-sql-performance",
+        "file-type:*.sql",
+        "context:database"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2730,14 +3957,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-product-analysis",
+        "user-asks-about-market-fit",
+        "context:strategic-analysis"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "frame"
+      ],
+      "organ_affinity": [
+        "meta",
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2757,6 +3997,8 @@
       "complexity": "intermediate",
       "time_to_learn": "30min",
       "tier": "core",
+      "governance_norm_group": "quality-gate",
+      "governance_auto_activate": true,
       "prerequisites": [
         "testing-patterns"
       ],
@@ -2783,13 +4025,23 @@
         "user-asks-about-tdd",
         "user-asks-about-testing",
         "file-type:*.test.ts",
-        "file-type:*.spec.py"
+        "file-type:*.spec.py",
+        "testing-patterns",
+        "verification-loop"
       ],
       "complements": [
+        "backend-implementation-patterns",
         "testing-patterns",
         "verification-loop"
       ],
       "includes": [],
+      "governance_phases": [
+        "build",
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2808,6 +4060,8 @@
       "complexity": "beginner",
       "time_to_learn": "30min",
       "tier": null,
+      "governance_norm_group": "quality-gate",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [
         "testing",
@@ -2821,9 +4075,24 @@
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-testing",
+        "project-has-jest-config-js",
+        "project-has-pytest-ini",
+        "file-type:*.test.*",
+        "context:testing"
+      ],
+      "complements": [
+        "tdd-workflow",
+        "verification-loop"
+      ],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2845,14 +4114,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-theming",
+        "user-asks-about-styling",
+        "context:visual-design"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-v",
+        "organ-vii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2872,14 +4155,32 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "user-asks-about-threejs",
+        "user-asks-about-3d",
+        "user-asks-about-webgl",
+        "context:webgl"
+      ],
+      "complements": [
+        "algorithmic-art",
+        "generative-art-algorithms",
+        "canvas-design"
+      ],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [
           "sacred_geometry.py"
@@ -2904,14 +4205,27 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-time-series",
+        "user-asks-about-forecasting",
+        "context:data-analysis"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-i"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2933,14 +4247,30 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "quality-gate",
+      "governance_auto_activate": true,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
-      "complements": [],
+      "triggers": [
+        "context:pre-commit",
+        "context:code-review",
+        "context:promotion"
+      ],
+      "complements": [
+        "testing-patterns",
+        "tdd-workflow",
+        "deployment-cicd"
+      ],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -2959,14 +4289,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-web-artifacts",
+        "context:claude-ai"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-ii",
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [
           "bundle-artifact.sh",
@@ -2990,14 +4332,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": "quality-gate",
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-e2e-testing",
+        "user-asks-about-playwright",
+        "context:testing"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "prove"
+      ],
+      "organ_affinity": [
+        "organ-iii"
+      ],
       "resources": {
         "scripts": [
           "with_server.py"
@@ -3018,14 +4372,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-webhooks",
+        "user-asks-about-event-driven",
+        "context:integration"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-iii",
+        "organ-iv",
+        "organ-vii"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -3047,14 +4415,28 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-workshop",
+        "user-asks-about-presentation",
+        "user-asks-about-talk"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "shape",
+        "build"
+      ],
+      "organ_affinity": [
+        "organ-vi",
+        "organ-v"
+      ],
       "resources": {
         "scripts": [],
         "references": [
@@ -3075,14 +4457,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-docx",
+        "user-asks-about-word-document",
+        "file-type:*.docx"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [
           "__init__.py",
@@ -3107,14 +4501,25 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-pdf",
+        "file-type:*.pdf"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [
           "check_bounding_boxes.py",
@@ -3143,14 +4548,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-presentation",
+        "user-asks-about-powerpoint",
+        "file-type:*.pptx"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [
           "html2pptx.js",
@@ -3176,14 +4593,26 @@
       "complexity": null,
       "time_to_learn": null,
       "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
       "prerequisites": [],
       "tags": [],
       "inputs": [],
       "outputs": [],
       "side_effects": [],
-      "triggers": [],
+      "triggers": [
+        "user-asks-about-spreadsheet",
+        "user-asks-about-excel",
+        "file-type:*.xlsx"
+      ],
       "complements": [],
       "includes": [],
+      "governance_phases": [
+        "build"
+      ],
+      "organ_affinity": [
+        "all"
+      ],
       "resources": {
         "scripts": [],
         "references": [

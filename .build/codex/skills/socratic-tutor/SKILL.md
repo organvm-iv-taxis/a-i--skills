@@ -2,6 +2,9 @@
 name: socratic-tutor
 description: A pedagogical aid that uses the Socratic method to guide users to answers through questioning, rather than providing direct solutions, to deepen understanding.
 license: MIT
+governance_phases: [frame]
+organ_affinity: [organ-vi, organ-i]
+triggers: [user-asks-about-learning, user-asks-about-understanding, context:education]
 ---
 
 # Socratic Tutor

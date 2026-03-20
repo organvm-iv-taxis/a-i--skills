@@ -5,6 +5,12 @@ license: MIT
 metadata:
   adapted-by: ai-skills
   category: code-quality
+governance_phases: [build]
+governance_norm_group: repo-hygiene
+governance_auto_activate: true
+organ_affinity: [all]
+triggers: [context:new-project, project-has-package-json, project-has-pyproject-toml]
+complements: [github-repository-standards, github-repo-curator, dotfile-systems-architect]
 ---
 
 # Coding Standards Enforcer

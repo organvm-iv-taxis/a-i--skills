@@ -2,6 +2,9 @@
 name: workshop-presentation-design
 description: Design engaging workshops, conference talks, and educational presentations. Covers learning objectives, activity design, slide craft, and facilitation techniques. Triggers on workshop design, presentation prep, talk structure, or training session requests.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-vi, organ-v]
+triggers: [user-asks-about-workshop, user-asks-about-presentation, user-asks-about-talk]
 ---
 
 # Workshop & Presentation Design

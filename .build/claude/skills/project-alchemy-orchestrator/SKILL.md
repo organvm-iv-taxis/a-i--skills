@@ -2,6 +2,9 @@
 name: project-alchemy-orchestrator
 description: A strategic guide for managing complex creative portfolios as a system of "organs" (Art, Commerce, Tools), diagnosing lifecycle stages (Nigredo, Albedo, Rubedo), and balancing the "Four Fields" of creative labor.
 license: MIT
+governance_phases: [frame]
+organ_affinity: [meta]
+triggers: [user-asks-about-portfolio-management, user-asks-about-creative-portfolio, context:multi-project]
 ---
 
 # Project Alchemy Orchestrator

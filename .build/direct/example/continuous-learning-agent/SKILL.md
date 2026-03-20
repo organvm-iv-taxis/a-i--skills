@@ -6,6 +6,9 @@ metadata:
   source: affaan-m/everything-claude-code
   adapted-by: ai-skills
   category: agent-improvement
+governance_phases: [prove]
+organ_affinity: [organ-iv]
+triggers: [user-asks-about-agent-learning, context:ai-agents]
 ---
 
 # Continuous Learning Agent

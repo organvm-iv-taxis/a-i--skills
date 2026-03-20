@@ -2,6 +2,10 @@
 name: agent-swarm-orchestrator
 description: Designs multi-agent systems with coordinated agent swarms, task distribution, inter-agent communication, and emergent collective behavior.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-iv]
+triggers: [user-asks-about-agent-swarm, user-asks-about-multi-agent, context:multi-agent]
+complements: [multi-agent-workforce-planner, skill-chain-prompts]
 ---
 
 # Agent Swarm Orchestrator

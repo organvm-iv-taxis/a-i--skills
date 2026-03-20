@@ -6,6 +6,9 @@ metadata:
   source: affaan-m/everything-claude-code
   adapted-by: ai-skills
   category: database
+governance_phases: [build]
+organ_affinity: [organ-iii, organ-vi]
+triggers: [user-asks-about-postgres, user-asks-about-database, file-type:*.sql, context:database]
 ---
 
 # PostgreSQL Advanced Patterns

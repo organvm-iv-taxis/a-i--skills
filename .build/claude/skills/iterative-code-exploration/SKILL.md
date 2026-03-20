@@ -6,6 +6,9 @@ metadata:
   source: affaan-m/everything-claude-code
   adapted-by: ai-skills
   category: code-exploration
+governance_phases: [frame]
+organ_affinity: [all]
+triggers: [user-asks-about-codebase, context:onboarding, context:unfamiliar-code]
 ---
 
 # Iterative Code Exploration

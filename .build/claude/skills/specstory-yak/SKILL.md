@@ -6,6 +6,9 @@ metadata:
   author: specstory
   version: "1.0.0"
   argument-hint: "[days|date-range]"
+governance_phases: [prove]
+organ_affinity: [organ-iv]
+triggers: [command:yak-shave, user-asks-about-yak-shaving]
 ---
 
 # Specstory Yak Shave Analyzer

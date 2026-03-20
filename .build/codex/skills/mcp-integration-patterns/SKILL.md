@@ -2,6 +2,10 @@
 name: mcp-integration-patterns
 description: Builds MCP (Model Context Protocol) servers and clients for extending AI assistants with custom tools, resources, and prompts.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iv, meta]
+triggers: [user-asks-about-mcp, user-asks-about-mcp-client, context:mcp-integration]
+complements: [mcp-builder, mcp-server-orchestrator]
 ---
 
 # MCP Integration Patterns

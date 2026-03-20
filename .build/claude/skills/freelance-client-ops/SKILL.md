@@ -2,6 +2,9 @@
 name: freelance-client-ops
 description: Manage freelance and client work professionally—proposals, contracts, scope management, invoicing, and client communication. Covers the business side of creative work. Triggers on freelance, client work, proposals, contracts, pricing, or project scope requests.
 license: MIT
+governance_phases: [frame, shape]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-freelance, user-asks-about-contracts, user-asks-about-invoicing, context:client-work]
 ---
 
 # Freelance Client Operations

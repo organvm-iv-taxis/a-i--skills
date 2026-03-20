@@ -2,6 +2,9 @@
 name: movement-notation-systems
 description: Designs systems for encoding, scoring, and generating choreographic movement using Laban notation, computational geometry, and procedural animation principles.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-ii]
+triggers: [user-asks-about-choreography, user-asks-about-movement, user-asks-about-laban]
 ---
 
 # Movement Notation Systems

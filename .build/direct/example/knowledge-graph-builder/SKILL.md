@@ -2,6 +2,10 @@
 name: knowledge-graph-builder
 description: Designs and builds knowledge graphs to represent entities, relationships, and semantic connections, with query patterns for Neo4j, RDF, and property graphs.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-i]
+triggers: [user-asks-about-knowledge-graph, user-asks-about-neo4j, context:data-modeling]
+complements: [research-synthesis-workflow, knowledge-architecture]
 ---
 
 # Knowledge Graph Builder

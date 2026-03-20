@@ -5,6 +5,9 @@ license: MIT
 metadata:
   adapted-by: ai-skills
   category: code-quality
+governance_phases: [build, prove]
+organ_affinity: [all]
+triggers: [user-asks-about-refactoring, context:code-review, context:technical-debt]
 ---
 
 # Code Refactoring Patterns

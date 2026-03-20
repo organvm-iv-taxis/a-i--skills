@@ -2,6 +2,9 @@
 name: generative-music-composer
 description: Creates algorithmic music composition systems using procedural generation, Markov chains, L-systems, and neural approaches for ambient, adaptive, and experimental music.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-ii]
+triggers: [user-asks-about-algorithmic-music, user-asks-about-composition, context:music-generation]
 ---
 
 # Generative Music Composer

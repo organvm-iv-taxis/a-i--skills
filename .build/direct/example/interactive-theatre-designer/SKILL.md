@@ -2,6 +2,9 @@
 name: interactive-theatre-designer
 description: Designs interactive theatrical experiences with branching narratives, audience participation systems, and immersive environmental storytelling.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-ii]
+triggers: [user-asks-about-theatre, user-asks-about-interactive-narrative, context:performance]
 ---
 
 # Interactive Theatre Designer

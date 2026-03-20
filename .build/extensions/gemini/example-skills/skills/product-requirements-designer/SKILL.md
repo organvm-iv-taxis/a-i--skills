@@ -2,6 +2,12 @@
 name: product-requirements-designer
 description: Comprehensive product requirements documentation from problem definition through launch planning. Supports both enterprise PRD (full specs, cross-functional alignment) and lean/startup style (hypothesis-driven one-pagers). Framework-agnostic with templates for Agile, Jobs-to-Be-Done, and hybrid approaches. Scaffolds related artifacts including user stories, acceptance criteria, wireframes brief, and technical handoff specs. Triggers on PRD creation, product specs, feature requirements, or product design documentation.
 license: MIT
+governance_phases: [frame, shape]
+governance_norm_group: documentation-standard
+governance_auto_activate: true
+organ_affinity: [all]
+triggers: [user-asks-about-prd, user-asks-about-requirements, context:product-planning]
+complements: [api-design-patterns]
 ---
 
 # Product Requirements Designer

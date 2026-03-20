@@ -2,6 +2,9 @@
 name: enc1101-curriculum-designer
 description: Design and generate curriculum materials for college composition courses (ENC1101 and similar). Use when creating syllabi, assignment prompts, rubrics, lesson plans, scaffolded writing sequences, peer review guides, or D2L/LMS-formatted content. Triggers on requests for composition pedagogy, writing assignment design, grading criteria, or freshman writing course materials.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-vi]
+triggers: [user-asks-about-curriculum, user-asks-about-composition-course]
 ---
 
 # ENC1101 Curriculum Designer

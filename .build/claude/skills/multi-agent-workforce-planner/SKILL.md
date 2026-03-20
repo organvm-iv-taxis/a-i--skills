@@ -6,6 +6,10 @@ complexity: advanced
 time_to_learn: 1hour
 prerequisites: [product-requirements-designer]
 tags: [multi-agent, parallel, planning, workstream, task-decomposition]
+governance_phases: [shape]
+organ_affinity: [organ-iv]
+triggers: [user-asks-about-parallel-agents, user-asks-about-agent-planning, context:multi-agent]
+complements: [agent-swarm-orchestrator, skill-chain-prompts]
 ---
 
 # Multi-Agent Workforce Planner

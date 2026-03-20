@@ -7,6 +7,9 @@ metadata:
   version: "1.0.0"
   argument-hint: "[--dry-run]"
 allowed-tools: Bash, Read
+governance_phases: [prove]
+organ_affinity: [organ-iv]
+triggers: [command:specstory-organize, user-asks-about-organizing-sessions]
 ---
 
 # SpecStory Organize

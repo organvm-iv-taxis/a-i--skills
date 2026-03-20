@@ -2,6 +2,9 @@
 name: gcp-resource-optimizer
 description: Optimize Google Cloud Platform resource allocation and manage cloud credits efficiently. Use when planning GCP deployments, analyzing cloud spend, maximizing value from expiring credits, right-sizing instances, or designing cost-effective architectures. Triggers on GCP cost optimization, credit management, resource allocation planning, or cloud budget concerns.
 license: MIT
+governance_phases: [ship]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-gcp, user-asks-about-cloud-costs, context:infrastructure]
 ---
 
 # GCP Resource Optimizer

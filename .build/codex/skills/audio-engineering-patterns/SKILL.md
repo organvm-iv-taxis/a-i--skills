@@ -2,6 +2,9 @@
 name: audio-engineering-patterns
 description: Audio production concepts, DSP fundamentals, mixing/mastering techniques, and DAW workflows. Bridges modular synthesis philosophy with practical audio engineering. Triggers on audio production, mixing, sound design, DSP, or music technology requests.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-ii]
+triggers: [user-asks-about-audio, user-asks-about-dsp, user-asks-about-mixing, context:audio-production]
 ---
 
 # Audio Engineering Patterns

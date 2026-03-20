@@ -5,6 +5,9 @@ license: MIT
 metadata:
   adapted-by: ai-skills
   category: development-workflow
+governance_phases: [shape, build]
+organ_affinity: [all]
+triggers: [user-asks-about-workflow, user-asks-about-feature-development, context:feature-development]
 ---
 
 # Feature Workflow Orchestrator

@@ -2,6 +2,11 @@
 name: accessibility-patterns
 description: Build inclusive web experiences following WCAG guidelines. Covers semantic HTML, ARIA, keyboard navigation, color contrast, and testing strategies. Triggers on accessibility, a11y, WCAG, screen readers, or inclusive design requests.
 license: MIT
+governance_phases: [build, prove]
+governance_norm_group: quality-gate
+organ_affinity: [organ-iii, organ-ii]
+triggers: [user-asks-about-accessibility, user-asks-about-wcag, file-type:*.html, context:frontend]
+complements: [frontend-design-systems, responsive-design-patterns]
 ---
 
 # Accessibility Patterns

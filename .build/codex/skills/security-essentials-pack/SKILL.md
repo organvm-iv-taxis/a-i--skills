@@ -20,6 +20,10 @@ includes:
   - incident-response-commander
   - contract-risk-analyzer
 tier: core
+governance_phases: [build, prove]
+governance_norm_group: security-baseline
+organ_affinity: [all]
+triggers: [context:new-project, context:security-review]
 ---
 
 # Security Essentials Pack

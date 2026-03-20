@@ -2,6 +2,10 @@
 name: knowledge-architecture
 description: Design knowledge systems using ontological principles—organizing by what things ARE rather than arbitrary hierarchies. Use when structuring personal knowledge bases, designing documentation systems, creating cross-domain linking patterns, building the {OS.me} ecosystem, or architecting information that reveals rather than obscures essential nature. Triggers on knowledge management, documentation architecture, information ontology, or systematic organization of complex domains.
 license: MIT
+governance_phases: [shape]
+organ_affinity: [organ-i, meta]
+triggers: [user-asks-about-knowledge-management, user-asks-about-ontology, context:information-architecture]
+complements: [research-synthesis-workflow, knowledge-graph-builder]
 ---
 
 # Knowledge Architecture

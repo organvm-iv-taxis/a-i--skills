@@ -12,6 +12,11 @@ tags:
   - vitest
   - playwright
   - mocking
+governance_phases: [prove]
+governance_norm_group: quality-gate
+organ_affinity: [all]
+triggers: [user-asks-about-testing, project-has-jest-config-js, project-has-pytest-ini, file-type:*.test.*, context:testing]
+complements: [tdd-workflow, verification-loop]
 ---
 
 # Testing Patterns

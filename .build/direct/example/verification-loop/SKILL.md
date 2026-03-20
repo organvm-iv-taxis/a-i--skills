@@ -6,6 +6,12 @@ metadata:
   source: affaan-m/everything-claude-code
   adapted-by: ai-skills
   category: quality-assurance
+governance_phases: [prove]
+governance_norm_group: quality-gate
+governance_auto_activate: true
+organ_affinity: [all]
+triggers: [context:pre-commit, context:code-review, context:promotion]
+complements: [testing-patterns, tdd-workflow, deployment-cicd]
 ---
 
 # Verification Loop

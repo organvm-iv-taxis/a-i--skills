@@ -2,6 +2,10 @@
 name: mcp-server-orchestrator
 description: Configure, deploy, and troubleshoot Model Context Protocol (MCP) servers for AI agent workflows. Use when setting up MCP servers, debugging connection issues, managing multi-server configurations, integrating with Claude Desktop/Code/Cowork, or designing custom tool servers. Triggers on MCP configuration, tool server development, Claude integration issues, or agent infrastructure setup.
 license: MIT
+governance_phases: [build, ship]
+organ_affinity: [organ-iv, meta]
+triggers: [user-asks-about-mcp-server, user-asks-about-mcp-configuration, context:mcp-setup]
+complements: [mcp-builder, mcp-integration-patterns]
 ---
 
 # MCP Server Orchestrator

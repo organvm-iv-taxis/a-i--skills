@@ -2,6 +2,9 @@
 name: speckit
 description: Specification-Driven Development (SDD) toolkit. Transforms ideas into executable specifications, implementation plans, and task lists. Use for feature planning, PRD creation, or when user invokes /speckit.specify, /speckit.plan, /speckit.tasks commands.
 license: MIT
+governance_phases: [frame, shape]
+organ_affinity: [organ-iv]
+triggers: [user-asks-about-specifications, command:speckit, context:specification]
 ---
 
 # Spec Kit: Specification-Driven Development

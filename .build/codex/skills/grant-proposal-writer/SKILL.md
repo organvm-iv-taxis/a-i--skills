@@ -2,6 +2,9 @@
 name: grant-proposal-writer
 description: Write compelling grant proposals for academic research, creative projects, and nonprofit initiatives. Covers federal (NSF, NEA, NEH), foundation, and institutional grants with attention to narrative, budget justification, and review criteria. Triggers on grant writing, funding proposals, research funding, or fellowship applications.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-v, organ-vi]
+triggers: [user-asks-about-grants, user-asks-about-funding, user-asks-about-nsf]
 ---
 
 # Grant Proposal Writer

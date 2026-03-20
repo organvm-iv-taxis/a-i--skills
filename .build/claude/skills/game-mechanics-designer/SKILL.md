@@ -2,6 +2,9 @@
 name: game-mechanics-designer
 description: Designs engaging gameplay loops, economies, and progression systems, balancing challenge and reward for interactive experiences.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-ii, organ-iii]
+triggers: [user-asks-about-game-design, user-asks-about-game-mechanics, context:game-development]
 ---
 
 # Game Mechanics Designer

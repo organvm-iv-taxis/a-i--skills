@@ -5,6 +5,10 @@ license: MIT
 complexity: intermediate
 time_to_learn: 30min
 tags: [orchestration, workflow, chaining, multi-skill, automation, meta]
+governance_phases: [shape]
+organ_affinity: [organ-iv]
+triggers: [user-asks-about-skill-chains, user-asks-about-workflow-composition, context:skill-orchestration]
+complements: [agent-swarm-orchestrator, multi-agent-workforce-planner]
 ---
 
 # Skill Chain Prompts

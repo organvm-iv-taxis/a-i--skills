@@ -2,6 +2,9 @@
 name: nextjs-fullstack-patterns
 description: Build production Next.js applications with App Router patterns, server components, data fetching strategies, authentication, and deployment. Covers the full stack from database to UI. Triggers on Next.js development, React server components, App Router, or full-stack TypeScript requests.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iii, organ-ii, meta]
+triggers: [user-asks-about-nextjs, project-has-next-config-js, context:nextjs]
 ---
 
 # Next.js Full-Stack Patterns

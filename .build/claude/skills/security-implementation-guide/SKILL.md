@@ -5,6 +5,11 @@ license: MIT
 metadata:
   adapted-by: ai-skills
   category: security
+governance_phases: [build]
+governance_norm_group: security-baseline
+organ_affinity: [all]
+triggers: [user-asks-about-security-patterns, user-asks-about-auth, context:authentication]
+complements: [security-threat-modeler, gdpr-compliance-check, incident-response-commander]
 ---
 
 # Security Implementation Guide

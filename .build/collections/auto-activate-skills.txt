@@ -1,0 +1,7 @@
+skills/development/coding-standards-enforcer
+skills/documentation/github-repo-curator
+skills/documentation/github-repository-standards
+skills/project-management/product-requirements-designer
+skills/security/security-threat-modeler
+skills/development/tdd-workflow
+skills/development/verification-loop

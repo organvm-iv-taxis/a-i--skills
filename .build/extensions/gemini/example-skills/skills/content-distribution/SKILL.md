@@ -2,6 +2,11 @@
 name: content-distribution
 description: Promote creative and technical work through strategic content distribution. Covers platform selection, audience building, content repurposing, and engagement strategies without becoming a full-time marketer. Triggers on promotion, audience building, social media strategy, or content marketing requests.
 license: MIT
+governance_phases: [ship]
+governance_norm_group: distribution-readiness
+organ_affinity: [organ-vii]
+triggers: [user-asks-about-promotion, user-asks-about-content-strategy, context:distribution]
+complements: [portfolio-presentation, networking-outreach, github-profile-architect]
 ---
 
 # Content Distribution

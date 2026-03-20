@@ -2,6 +2,9 @@
 name: sql-query-optimizer
 description: Analyzes complex SQL queries to improve performance, suggesting indexing strategies, schema refactoring, and query rewrites.
 license: MIT
+governance_phases: [prove]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-sql-performance, file-type:*.sql, context:database]
 ---
 
 # SQL Query Optimizer

@@ -2,6 +2,9 @@
 name: rust-systems-design
 description: Provides expert guidance on Rust programming, focusing on memory safety, concurrency patterns, and idiomatic architectural choices for systems software.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-rust, project-has-cargo-toml, file-type:*.rs, context:systems-programming]
 ---
 
 # Rust Systems Architect

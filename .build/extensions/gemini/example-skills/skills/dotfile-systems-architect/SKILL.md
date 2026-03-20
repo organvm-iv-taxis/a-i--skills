@@ -5,6 +5,11 @@ license: MIT
 complexity: intermediate
 time_to_learn: 1hour
 tags: [dotfiles, xdg, git, configuration, cross-platform]
+governance_phases: [shape]
+governance_norm_group: repo-hygiene
+organ_affinity: [all]
+triggers: [user-asks-about-dotfiles, user-asks-about-xdg, context:system-configuration]
+complements: [github-repository-standards, github-repo-curator, coding-standards-enforcer]
 ---
 
 # Dotfile Systems Architect

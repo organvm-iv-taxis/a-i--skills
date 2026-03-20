@@ -26,9 +26,11 @@ triggers:
   - user-asks-about-mcp
   - user-asks-about-model-context-protocol
   - context:mcp-server
-complements:
   - api-design-patterns
 tier: core
+governance_phases: [build]
+organ_affinity: [organ-iv, meta]
+complements: [mcp-integration-patterns, mcp-server-orchestrator]
 ---
 
 # MCP Server Development Guide

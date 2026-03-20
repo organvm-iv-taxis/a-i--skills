@@ -2,6 +2,9 @@
 name: data-storytelling-analyst
 description: Transforms raw data into compelling visual narratives using Python or R, focusing on clarity, insight, and aesthetic presentation.
 license: MIT
+governance_phases: [build, prove]
+organ_affinity: [organ-iii, organ-v]
+triggers: [user-asks-about-data-visualization, user-asks-about-data-narrative, context:data-analysis]
 ---
 
 # Data Storytelling Analyst

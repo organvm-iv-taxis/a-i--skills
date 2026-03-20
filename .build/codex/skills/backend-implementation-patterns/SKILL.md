@@ -5,6 +5,10 @@ license: MIT
 metadata:
   adapted-by: ai-skills
   category: backend-development
+governance_phases: [build]
+organ_affinity: [organ-iii, organ-vi, organ-vii, meta]
+triggers: [user-asks-about-backend, user-asks-about-api-implementation, context:backend]
+complements: [api-design-patterns, tdd-workflow]
 ---
 
 # Backend Implementation Patterns

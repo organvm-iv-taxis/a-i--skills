@@ -2,6 +2,8 @@
 name: interview-preparation
 description: Prepare for job interviews across formats—behavioral, technical, portfolio reviews, and negotiations. STAR/CAR frameworks for stories, common question patterns, research strategies, and follow-up templates. Triggers on interview prep, job interviews, behavioral questions, or salary negotiation requests.
 license: MIT
+governance_phases: [build]
+triggers: [user-asks-about-interview, user-asks-about-behavioral-questions, context:job-search]
 ---
 
 # Interview Preparation

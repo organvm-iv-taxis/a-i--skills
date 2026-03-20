@@ -2,6 +2,9 @@
 name: ml-experiment-tracker
 description: Guides ML experiment logging, versioning, and reproducibility using tools like MLflow, Weights & Biases, and DVC for systematic model development.
 license: MIT
+governance_phases: [build, prove]
+organ_affinity: [organ-iii, organ-i]
+triggers: [user-asks-about-ml-experiments, user-asks-about-mlflow, context:machine-learning]
 ---
 
 # ML Experiment Tracker

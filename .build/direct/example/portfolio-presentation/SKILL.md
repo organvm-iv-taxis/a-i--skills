@@ -2,6 +2,11 @@
 name: portfolio-presentation
 description: Curate and present creative/technical work for maximum impact. Structure case studies, craft project narratives, optimize for different audiences (hiring managers, clients, collaborators). Supports portfolio websites, PDF decks, and presentation formats. Triggers on portfolio review, case study writing, project showcase, or work presentation requests.
 license: MIT
+governance_phases: [ship]
+governance_norm_group: distribution-readiness
+organ_affinity: [organ-v]
+triggers: [user-asks-about-portfolio, user-asks-about-case-study, context:presentation]
+complements: [content-distribution, networking-outreach, github-profile-architect]
 ---
 
 # Portfolio Presentation

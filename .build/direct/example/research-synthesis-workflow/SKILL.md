@@ -2,6 +2,10 @@
 name: research-synthesis-workflow
 description: Systematic methodology for gathering, analyzing, and synthesizing research from multiple sources into coherent insights and actionable knowledge.
 license: MIT
+governance_phases: [frame]
+organ_affinity: [organ-i, organ-v]
+triggers: [user-asks-about-research, user-asks-about-literature-review, context:research]
+complements: [knowledge-architecture, knowledge-graph-builder]
 ---
 
 # Research Synthesis Workflow

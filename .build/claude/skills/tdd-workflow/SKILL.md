@@ -26,7 +26,6 @@ triggers:
   - user-asks-about-testing
   - file-type:*.test.ts
   - file-type:*.spec.py
-complements:
   - testing-patterns
   - verification-loop
 tier: core
@@ -34,6 +33,11 @@ metadata:
   source: affaan-m/everything-claude-code
   adapted-by: ai-skills
   category: development-workflow
+governance_phases: [build, prove]
+governance_norm_group: quality-gate
+governance_auto_activate: true
+organ_affinity: [all]
+complements: [backend-implementation-patterns, testing-patterns, verification-loop]
 ---
 
 # Test-Driven Development Workflow

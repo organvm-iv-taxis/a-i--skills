@@ -2,6 +2,11 @@
 name: gdpr-compliance-check
 description: Audits web applications and architectures for compliance with GDPR, CCPA, and other privacy regulations, focusing on consent, data minimization, and user rights.
 license: MIT
+governance_phases: [prove]
+governance_norm_group: security-baseline
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-gdpr, user-asks-about-privacy, context:compliance]
+complements: [security-threat-modeler, security-implementation-guide, incident-response-commander]
 ---
 
 # GDPR & Privacy Compliance Auditor

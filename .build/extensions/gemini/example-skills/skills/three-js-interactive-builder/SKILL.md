@@ -2,6 +2,10 @@
 name: three-js-interactive-builder
 description: Scaffold and build interactive 3D visualizations using Three.js with emphasis on algorithmic art, sacred geometry, temporal animations, and modular architecture. Use when creating WebGL visualizations, generative art pieces, interactive 3D experiences, particle systems, flow fields, or projects like gravitational spirals, temporal perspective pieces, or illuminated visual narratives. Triggers on requests for Three.js projects, 3D web graphics, algorithmic visualizations, or sacred geometry renders.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-ii, organ-iii]
+triggers: [user-asks-about-threejs, user-asks-about-3d, user-asks-about-webgl, context:webgl]
+complements: [algorithmic-art, generative-art-algorithms, canvas-design]
 ---
 
 # Three.js Interactive Builder

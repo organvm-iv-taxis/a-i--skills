@@ -6,6 +6,9 @@ metadata:
   author: SpecStory, Inc.
   version: "1.0.0"
 allowed-tools: Bash(node *)
+governance_phases: [frame]
+organ_affinity: [organ-iv]
+triggers: [command:project-stats, user-asks-about-specstory-stats]
 ---
 
 # SpecStory Project Stats

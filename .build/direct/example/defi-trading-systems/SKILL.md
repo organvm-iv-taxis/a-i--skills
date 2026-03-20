@@ -2,6 +2,9 @@
 name: defi-trading-systems
 description: Designs DeFi trading systems for perpetual futures, liquidity provision, and automated strategies with risk management and MEV protection.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-defi, user-asks-about-trading, user-asks-about-liquidity]
 ---
 
 # DeFi Trading Systems

@@ -2,6 +2,11 @@
 name: deployment-cicd
 description: Deploy applications with confidence using CI/CD pipelines, containerization, and infrastructure as code. Covers GitHub Actions, Docker, Vercel, and cloud deployment patterns. Triggers on deployment, CI/CD, Docker, GitHub Actions, or DevOps requests.
 license: MIT
+governance_phases: [ship]
+governance_norm_group: distribution-readiness
+organ_affinity: [organ-iii, organ-iv]
+triggers: [user-asks-about-deployment, user-asks-about-cicd, file-type:.github/workflows/*.yml, project-has-dockerfile]
+complements: [verification-loop]
 ---
 
 # Deployment & CI/CD

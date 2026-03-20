@@ -24,10 +24,14 @@ triggers:
   - user-asks-about-threat-modeling
   - user-asks-about-stride
   - context:security-review
-complements:
   - security-implementation-guide
   - incident-response-commander
 tier: core
+governance_phases: [prove]
+governance_norm_group: security-baseline
+governance_auto_activate: true
+organ_affinity: [all]
+complements: [security-implementation-guide, gdpr-compliance-check, incident-response-commander]
 ---
 
 # Security Threat Modeler

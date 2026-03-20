@@ -2,6 +2,9 @@
 name: mobile-platform-architect
 description: Architects cross-platform and native mobile applications, providing guidance on state management, navigation, and platform-specific best practices for React Native, Flutter, iOS, and Android.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-iii]
+triggers: [user-asks-about-mobile, user-asks-about-react-native, user-asks-about-flutter]
 ---
 
 # Mobile Platform Architect

@@ -2,6 +2,9 @@
 name: modular-synthesis-philosophy
 description: Apply modular synthesis principles to system design, workflow architecture, and conceptual frameworks. Use when designing modular systems, creating architecture diagrams using synthesis metaphors, applying signal flow thinking to data pipelines, or translating between audio engineering and software concepts. Triggers on modular architecture design, signal flow diagrams, synthesis-inspired system thinking, or "oscillator/patch" metaphors.
 license: MIT
+governance_phases: [shape]
+organ_affinity: [organ-ii, organ-iv]
+triggers: [user-asks-about-modular-systems, user-asks-about-synthesis, context:system-architecture]
 ---
 
 # Modular Synthesis Philosophy

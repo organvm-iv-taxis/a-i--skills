@@ -2,6 +2,9 @@
 name: local-llm-fine-tuning
 description: Guides users through the process of preparing datasets and fine-tuning local Large Language Models (LLMs) using techniques like LoRA and QLoRA.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-iii, organ-iv]
+triggers: [user-asks-about-fine-tuning, user-asks-about-lora, user-asks-about-qlora, context:local-llm]
 ---
 
 # Local LLM Fine-Tuning Specialist

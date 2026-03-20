@@ -2,6 +2,9 @@
 name: location-ar-experience
 description: Designs location-based augmented reality experiences with geospatial anchoring, GPS integration, and real-world interactive overlays.
 license: MIT
+governance_phases: [shape, build]
+organ_affinity: [organ-ii, organ-iii]
+triggers: [user-asks-about-ar, user-asks-about-augmented-reality, user-asks-about-geospatial]
 ---
 
 # Location-Based AR Experience

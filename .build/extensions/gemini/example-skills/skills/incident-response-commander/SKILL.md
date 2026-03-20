@@ -2,6 +2,11 @@
 name: incident-response-commander
 description: Guides teams through IT outages and security incidents, providing structured workflows for detection, containment, eradication, and post-mortem analysis.
 license: MIT
+governance_phases: [prove]
+governance_norm_group: security-baseline
+organ_affinity: [organ-iv]
+triggers: [user-asks-about-incident, user-asks-about-outage, context:incident-response]
+complements: [security-threat-modeler, security-implementation-guide, gdpr-compliance-check]
 ---
 
 # Incident Response Commander

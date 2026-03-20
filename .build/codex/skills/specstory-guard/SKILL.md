@@ -7,6 +7,9 @@ metadata:
   version: "1.0.0"
   argument-hint: "[install|scan|check|uninstall] [--root PATH]"
 allowed-tools: Bash, Read, Write
+governance_phases: [build]
+organ_affinity: [organ-iv]
+triggers: [command:specstory-guard, user-asks-about-secret-scanning, context:security]
 ---
 
 # SpecStory Guard

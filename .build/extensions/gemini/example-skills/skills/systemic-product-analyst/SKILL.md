@@ -2,6 +2,9 @@
 name: systemic-product-analyst
 description: A rigorous protocol for auditing projects ("The Thing") and their market fit ("The World"). Uses parallel analysis lanes, friction mapping, and outcome testing to create actionable 30/60/90 day plans.
 license: MIT
+governance_phases: [frame]
+organ_affinity: [meta, organ-iii]
+triggers: [user-asks-about-product-analysis, user-asks-about-market-fit, context:strategic-analysis]
 ---
 
 # Systemic Product Analyst

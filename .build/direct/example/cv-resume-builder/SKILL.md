@@ -11,6 +11,8 @@ tags:
   - job-search
   - ats
   - professional
+governance_phases: [build]
+triggers: [user-asks-about-resume, user-asks-about-cv, context:job-search]
 ---
 
 # CV/Resume Builder

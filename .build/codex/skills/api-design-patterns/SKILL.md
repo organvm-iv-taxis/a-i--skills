@@ -25,10 +25,12 @@ triggers:
   - user-asks-about-graphql
   - file-type:*.openapi.yaml
   - project-has-openapi-spec
-complements:
   - backend-implementation-patterns
   - mcp-builder
 tier: core
+governance_phases: [shape]
+organ_affinity: [organ-iii, organ-iv, organ-vii, meta]
+complements: [product-requirements-designer, backend-implementation-patterns]
 ---
 
 # API Design Patterns

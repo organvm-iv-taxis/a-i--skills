@@ -2,6 +2,12 @@
 name: github-repo-curator
 description: Organize GitHub repositories for professional presentation and maintainability. README templates, documentation standards, repo organization patterns, and profile optimization. Triggers on GitHub cleanup, repo organization, README writing, or open source presentation requests.
 license: MIT
+governance_phases: [shape, prove]
+governance_norm_group: repo-hygiene
+governance_auto_activate: true
+organ_affinity: [all]
+triggers: [context:repo-setup, context:promotion, command:repo-audit]
+complements: [github-repository-standards, coding-standards-enforcer, dotfile-systems-architect]
 ---
 
 # GitHub Repo Curator

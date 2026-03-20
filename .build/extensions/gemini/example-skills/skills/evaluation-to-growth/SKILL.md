@@ -2,6 +2,9 @@
 name: evaluation-to-growth
 description: Systematic content evaluation framework progressing through Critique → Reinforcement → Risk Analysis → Growth. Use when reviewing writing, arguments, proposals, code documentation, or any content requiring rigorous multi-dimensional assessment. Supports interactive guided mode or autonomous full-report mode, with output as markdown report, structured checklist, or inline revision suggestions. Triggers on requests to evaluate, critique, improve, strengthen, or review content quality.
 license: MIT
+governance_phases: [prove]
+organ_affinity: [organ-vi, organ-i, organ-v]
+triggers: [user-asks-about-evaluation, user-asks-about-critique, context:review]
 ---
 
 # Evaluation to Growth

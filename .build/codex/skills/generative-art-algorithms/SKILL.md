@@ -2,6 +2,10 @@
 name: generative-art-algorithms
 description: Create algorithmic and generative art using mathematical patterns, noise functions, particle systems, and procedural generation. Covers flow fields, L-systems, fractals, and creative coding foundations. Triggers on generative art, algorithmic art, creative coding, procedural generation, or mathematical visualization requests.
 license: MIT
+governance_phases: [build]
+organ_affinity: [organ-ii]
+triggers: [user-asks-about-generative-art, user-asks-about-fractals, user-asks-about-noise-functions, context:creative-coding]
+complements: [algorithmic-art, three-js-interactive-builder, canvas-design]
 ---
 
 # Generative Art Algorithms

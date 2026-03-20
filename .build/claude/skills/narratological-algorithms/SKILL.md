@@ -2,6 +2,9 @@
 name: narratological-algorithms
 description: Distill artist/theorist narrative principles into formal, implementable algorithmic frameworks. Use when asked to extract, formalize, or systematize narrative techniques from any storytelling source—filmmakers, writers, theorists, game designers, showrunners. Triggers on requests involving narrative principle extraction, story structure analysis, craft methodology formalization, or creating implementable storytelling protocols.
 license: MIT
+governance_phases: [frame, shape]
+organ_affinity: [organ-i, organ-ii]
+triggers: [user-asks-about-narrative, user-asks-about-story-structure, context:narrative-analysis]
 ---
 
 # Narratological Algorithm Distillation

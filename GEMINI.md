@@ -17,7 +17,7 @@ See `CLAUDE.md` in this repo for full development instructions, architecture, an
 ### Governance
 - *Standard ORGANVM governance applies*
 
-*Last synced: 2026-03-20T10:58:30Z*
+*Last synced: 2026-03-21T13:21:00Z*
 
 ## Session Review Protocol
 
@@ -111,31 +111,40 @@ Resolve: `organvm ontologia resolve a-i--skills` | History: `organvm ontologia h
 
 | Variable | Value | Scope | Updated |
 |----------|-------|-------|---------|
-| `active_repos` | 1 | global | 2026-03-20 |
-| `archived_repos` | 0 | global | 2026-03-20 |
-| `ci_workflows` | 1 | global | 2026-03-20 |
-| `code_files` | 0 | global | 2026-03-20 |
-| `dependency_edges` | 0 | global | 2026-03-20 |
-| `operational_organs` | 1 | global | 2026-03-20 |
-| `published_essays` | 0 | global | 2026-03-20 |
-| `repos_with_tests` | 0 | global | 2026-03-20 |
-| `sprints_completed` | 0 | global | 2026-03-20 |
-| `test_files` | 0 | global | 2026-03-20 |
-| `total_organs` | 1 | global | 2026-03-20 |
-| `total_repos` | 1 | global | 2026-03-20 |
-| `total_words_formatted` | 0 | global | 2026-03-20 |
-| `total_words_numeric` | 0 | global | 2026-03-20 |
-| `total_words_short` | 0K+ | global | 2026-03-20 |
+| `active_repos` | 62 | global | 2026-03-21 |
+| `archived_repos` | 53 | global | 2026-03-21 |
+| `ci_workflows` | 104 | global | 2026-03-21 |
+| `code_files` | 23121 | global | 2026-03-21 |
+| `dependency_edges` | 55 | global | 2026-03-21 |
+| `operational_organs` | 8 | global | 2026-03-21 |
+| `published_essays` | 0 | global | 2026-03-21 |
+| `repos_with_tests` | 47 | global | 2026-03-21 |
+| `sprints_completed` | 0 | global | 2026-03-21 |
+| `test_files` | 4337 | global | 2026-03-21 |
+| `total_organs` | 8 | global | 2026-03-21 |
+| `total_repos` | 116 | global | 2026-03-21 |
+| `total_words_formatted` | 740,907 | global | 2026-03-21 |
+| `total_words_numeric` | 740907 | global | 2026-03-21 |
+| `total_words_short` | 741K+ | global | 2026-03-21 |
 
-Metrics: 9 registered | Observations: 7184 recorded
+Metrics: 9 registered | Observations: 8632 recorded
 Resolve: `organvm ontologia status` | Refresh: `organvm refresh`
 
 
 ## System Density (auto-generated)
 
-AMMOI: 54% | Edges: 28 | Tensions: 33 | Clusters: 5 | Adv: 3 | Events(24h): 12929
+AMMOI: 54% | Edges: 28 | Tensions: 33 | Clusters: 5 | Adv: 3 | Events(24h): 14977
 Structure: 8 organs / 117 repos / 1654 components (depth 17) | Inference: 98% | Organs: META-ORGANVM:66%, ORGAN-I:55%, ORGAN-II:47%, ORGAN-III:56% +4 more
-Last pulse: 2026-03-20T10:58:23 | Δ24h: -3.7% | Δ7d: n/a
+Last pulse: 2026-03-21T13:20:54 | Δ24h: n/a | Δ7d: n/a
+
+
+## Dialect Identity (Trivium)
+
+**Dialect:** GOVERNANCE_LOGIC | **Classical Parallel:** Rhetoric | **Translation Role:** The Meta-Logic — governance rules ARE propositions
+
+Strongest translations: I (formal), V (structural), META (structural)
+
+Scan: `organvm trivium scan IV <OTHER>` | Matrix: `organvm trivium matrix` | Synthesize: `organvm trivium synthesize`
 
 <!-- ORGANVM:AUTO:END -->
 

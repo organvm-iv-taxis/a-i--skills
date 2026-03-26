@@ -6288,6 +6288,42 @@
       }
     },
     {
+      "name": "voice-enforcement",
+      "description": "Enforce the Orchestrator Voice Constitution during text generation. Provides voice constraints, anti-pattern awareness, and scoring guidance. Use when writing or reviewing prose-heavy documents (READMEs, design docs, essays, manifestos).",
+      "category": "tools",
+      "collection": "example",
+      "path": "skills/tools/voice-enforcement",
+      "license": null,
+      "complexity": null,
+      "time_to_learn": null,
+      "tier": null,
+      "governance_norm_group": null,
+      "governance_auto_activate": false,
+      "prerequisites": [],
+      "tags": [],
+      "inputs": [],
+      "outputs": [],
+      "side_effects": [],
+      "triggers": [
+        "voice",
+        "voice enforcement",
+        "voice check",
+        "orchestrator voice"
+      ],
+      "complements": [],
+      "includes": [],
+      "governance_phases": [],
+      "organ_affinity": [],
+      "resources": {
+        "scripts": [],
+        "references": [
+          "VOICE_CONSTITUTION.md",
+          "VOICE_RULEBOOK.md"
+        ],
+        "assets": []
+      }
+    },
+    {
       "name": "web-artifacts-builder",
       "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
       "category": "development",
@@ -6685,7 +6721,7 @@
       ]
     },
     "tools": {
-      "count": 11,
+      "count": 12,
       "skills": [
         "agent-development-pack",
         "agent-swarm-orchestrator",
@@ -6697,7 +6733,8 @@
         "session-lifecycle-patterns",
         "skill-chain-prompts",
         "skill-creator",
-        "speckit"
+        "speckit",
+        "voice-enforcement"
       ]
     },
     "creative": {

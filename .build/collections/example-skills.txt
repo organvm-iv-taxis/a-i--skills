@@ -136,6 +136,7 @@ skills/creative/three-js-interactive-builder
 skills/data/time-series-analyst
 skills/development/vector-search-patterns
 skills/development/verification-loop
+skills/tools/voice-enforcement
 skills/development/web-artifacts-builder
 skills/development/webapp-testing
 skills/integrations/webhook-integration-patterns

@@ -692,6 +692,11 @@
       "sha256": "8188bc50fc5cfd06c5c270445bff41646edb6342d10d4043b4859b31dfabe960"
     },
     {
+      "name": "voice-enforcement",
+      "path": "skills/tools/voice-enforcement",
+      "sha256": "8e51ba059ee764015ee87df95a921bfba5a2211ce2a60c44613b049e91479800"
+    },
+    {
       "name": "web-artifacts-builder",
       "path": "skills/development/web-artifacts-builder",
       "sha256": "bf19df3b8771bd2afe3aa90ebd66168da227c4ede43b254dfce2d99c14cf66f7"
